@@ -1,0 +1,475 @@
+/*-----------------------MAJOR DIVS*/
+/*crimson*/
+body{
+	text-align: center;
+	background-color:crimson;
+	overflow: hidden;
+	height: 98%;
+	position: fixed;
+}
+
+/*grey*/
+#Overlord{
+	/* Set height to device height. */
+	height: 97%;
+	left: 0.6%;
+	right: 0.6%;
+	background-color: #B2BEB5;
+	padding: 0%;
+	z-index: 0;
+	border-style:ridge;
+	border-color:darkgray;
+	border-width: 0.3em;
+	border-radius: 5%;
+}
+
+#Interface{
+	position: relative;
+	top: 9vh;
+	width: 94.5%;
+	display: inline-block;
+	height: auto;
+	font-size: 100%;
+}
+
+#Interface2{
+	display: inline-block;
+	position: relative;
+	top: 9vh;
+	width: 94.5%;
+	height: auto;
+	font-size: 100%;
+}
+
+/* 3d world */
+.webgl {
+	position: absolute;
+	margin: auto;
+	width: 95%;
+	height: 95%;
+	top:0%;
+	bottom:0%;
+	left:0%;
+	right:0%;
+	z-index: 3;
+  }
+
+
+
+
+
+/*-----------------------OUTSIDE OF INTERFACE*/
+/*When aspect is less than 0.625 */
+#Title{
+	position: relative;
+	display: block;
+	top: 5vh;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	/* max-width:200px;	 */
+}
+
+
+
+/* Marquee */
+.marquee {
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	background: #000000;
+	color: #ffff33;
+	border: .2em solid darkgray;
+	border-style: ridge;
+	top: 1%;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(fonts/W95FA.otf);
+  }
+
+.marquee p {
+	position: absolute;
+	font-size: 15px;
+	width: 28em;
+	height: 15px;
+	margin: 0;
+	line-height: 20px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 10s linear infinite;
+	font-family: myFirstFont;
+}
+
+#OKAY{
+	display: inline-block;
+	position: absolute;
+	width: 6%;
+	left: 102%;
+	top: 0%;
+	z-index: 5;
+}
+
+
+
+
+
+/*-----------------------INTERFACE ITEMS*/
+
+/* When aspect is less than 0.625 */
+#Computer{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	z-index: 5;
+	pointer-events: none;
+}
+
+
+/*CRT Overlay*/
+#overlay2 {
+	position:absolute;
+	top:17%; bottom:12%; left:10%; right:10%;
+	display:block;
+	z-index:6;
+	background:transparent;
+	pointer-events: none;
+}
+
+#Socials{
+	position: absolute;
+	left: 13%;
+	top: 55%;
+	bottom: 16.2%;
+	width: 20%;
+	display: block;
+	z-index: 8;
+	font-size:82%; /*percentages don't work for fonts. use vw*/
+	font-style: italic;
+	text-shadow: 1px 1px black;
+	background-color:crimson;
+	text-align: left;
+	border-style:inset;
+	border-color: black;
+	border-width: medium;
+}
+
+/*Buttons svg */
+#Buttons{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    width: 75%;
+    left: 12%;
+    top: 24%;
+    z-index: 7;
+}
+
+/* Container for html buttons */
+#Listen{
+	left: 12.8%;
+    top: 24.4%;
+    width: 73.3%;
+    height: 20.5%;
+    display: inline-block;
+    position: absolute;
+    z-index: 8;
+}
+
+/*html button, sets style of all button anchors*/
+.Transparent{
+	background: transparent;
+    border: none;
+    color: transparent;
+    width: 32%;
+    height: 50%;
+	cursor: pointer;
+
+}
+
+/* The following id's affect the position of each button */
+#Spotify{position: absolute; top: 0%; left: 0%;}
+#Apple{position: absolute; top: 0%; left: 34%;}
+#Youtube{position: absolute; top: 0%; left: 67.7%;}
+#Tidal{position: absolute; top: 65%; left: 16.1%;}
+#Bandcamp{position: absolute; top: 65%; left: 50%;}
+
+
+#sociallink{
+	position: relative;
+	margin-left: 2%;
+}
+
+#Cover{
+	display: inline-block;
+	position: absolute;
+	width: 21%;
+	left: 65%;
+	top: 57%;
+	z-index: 7;
+	animation: tilt linear 5s infinite;
+	box-shadow: 0 0 10px #222222;
+	}
+
+/*Cover animation*/
+@keyframes tilt {
+	0%{
+		transform: skewY(10deg);
+	}
+	50%{
+		transform: skewY(-10deg);
+	}
+	100%{
+		transform: skewY(10deg);
+	}
+	
+}
+
+
+
+
+
+
+
+/*-----------------------MEDIA QUERIES*/
+@media only screen and (min-width: 2000px){
+	body{
+		text-align: center;
+		background-color:crimson;
+		overflow: hidden;
+		height: 98vh;
+	}
+	#Overlord{
+		
+		/* Set height to device height. */
+		height: 97vh;
+		/* overflow: hidden; */
+		position: relative;
+		/* Background image (unblurred) centering and cropping */
+		background-color: mediumblue;
+		
+		/* Center div */
+		padding: 0%;
+		z-index: 0;
+		border-style:ridge;
+		border-color:lightgray;
+		border-radius: 10%;
+		border-width: thick;
+	}
+	.marquee {
+		height: 20px;
+		overflow: hidden;
+		position: relative;
+		background: #000000;
+		color: #ffff33;
+		border: 2px solid gray;
+		border-style: ridge;
+		top: 1%;
+		border-width: thick;
+	}
+}
+
+
+#overlay3{
+	position:absolute;
+	top:17%; bottom:12%; left:10%; right:10%;
+	display:block;
+	z-index:5;
+	background:transparent;
+}
+
+
+@media only screen and (min-aspect-ratio: 5/8) {
+
+	body{
+		text-align: center;
+		background-color:crimson;
+		overflow: hidden;
+		height: 98vh;
+		position: relative;
+	}
+
+	#Interface{
+		position: relative;
+		top: 9vh;
+		height: 50%;
+		display: inline-block;
+		width: auto;
+
+	}
+
+	#Interface2{
+		position: relative;
+		top: 9vh;
+		height: 50%;
+		display: inline-block;
+		width: auto;
+
+	}
+
+
+
+	#Title{
+		position: relative;
+		display: block;
+		top: 5vh;
+		margin-right: auto;
+		margin-left: auto;
+		height: 30%;
+		width: auto;
+	}
+
+	#Socials{
+		position: absolute;
+		left: 14%;
+		top: 53%;
+		bottom: 12.5%;
+		width: 12vh;
+		display: block;
+		z-index: 8;
+		font-size:2.6vh; /*more than 0.625, font based on height*/
+		font-style: italic;
+		border-style:inset;
+		margin-left: 1%
+	}
+
+	#Computer{
+		position: relative;
+		top: 3%;
+		margin: auto;
+		height: 100%;	
+		z-index: 5;
+		width: auto;
+		pointer-events: none;
+	}
+
+	#overlay2 {
+		position:absolute;
+		top:22%; bottom:8%; left:10%; right:10%;
+		display:block;
+		z-index:6;
+		background:transparent;
+		pointer-events: none;  
+	}
+
+	#overlay3 {
+		position:absolute;
+		top:22%; bottom:8%; left:10%; right:10%;
+		display:block;
+		z-index:5;
+		background:transparent;
+	}
+
+	.ComputerLoading{
+		position: relative;
+		top: 3%;
+		margin: auto;
+		height: 100%;	
+		z-index: 5;
+		width: auto;
+	}
+}
+
+
+
+
+/* Marquee Animation */
+@-moz-keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(200%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes scroll-left {
+	0% {
+		-webkit-transform: translateX(200%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		transform: translateX(200%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+
+/*Temporary Refresh Fix*/
+#Refresh{
+	position: absolute;
+	z-index: -50;
+	left: 50%;
+	right: 50%;
+	font-family: myFirstFont;
+	font-size: 5vh;
+}
+
+
+/*Listen links hover settings*/
+#Spotify:hover{	
+	transition: 0.2s ease-in;
+	background-color: green;
+	opacity: 25%;}
+#Apple:hover{	
+	transition: 0.2s ease-in;
+	background-color: blue;
+	opacity: 25%;}
+#Youtube:hover{	
+	transition: 0.2s ease-in;
+	background-color: red;
+	opacity: 25%;}
+#Tidal:hover{	
+	transition: 0.2s ease-in;
+	background-color: black;
+	opacity: 25%;}
+#Bandcamp:hover{	
+	transition: 0.2s ease-in;
+	background-color: skyblue;
+	opacity: 25%;}
+
+/*socials hover settings*/
+a:link{
+	color: #3366CC;
+}
+a:hover{
+	color: #0645AD;
+}
+a:visited{
+	color: #0645AD;
+}
+ 
+
+
+
+/* --------------------New Shit */
+#Navigation{
+	position: absolute;
+	z-index: 100;
+	bottom: 10%;
+}
+
+
+.ComputerLoading{
+	position: relative;
+	margin: auto;
+    width: 100%;	
+	z-index: 4;
+}
+
