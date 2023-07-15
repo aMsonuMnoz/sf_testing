@@ -13,10 +13,26 @@
 		<link rel="stylesheet" href="./crt-effect.css">
 		<link rel="shortcut icon" type="image/jpg" href="./images/Favicon.webp"/>
 		<title>sweetfighter.net</title>
-
+		<script type="text/javascript">
+			var imageURLs = [
+				 "images/Scene1.webp"
+			   , "images/Scene2.webp"
+			   , "images/Scene3.webp"
+			   , "images/Scene5.webp"
+			   , "images/Scene6_glitch.webp"
+			   , "images/Scene7_website.webp"
+			];
+			function getImageTag() {
+			  var img = '<img id="Computer" src=\"';
+			  var randomIndex = Math.floor(Math.random() * imageURLs.length);
+			  img += imageURLs[randomIndex];
+			  img += '\" alt=\"Yet another mysterious transmission from unknown origin.\"/>';
+			  return img;
+			}
+		  </script>
 		<!-- JQuery -->
 		<script src="./jquery.min.js" type="module"></script>
-		<script src="./jq.js" type="module"></script>
+		
 
 	</head>
 
@@ -28,6 +44,9 @@
 
 			<div id="Interface">
 				<div id="overlay2" class="crt"></div>  
+				<script type="text/javascript">
+					document.write(getImageTag());
+				</script>
 				<img id="Buttons" alt="links for listening" src="./images/Buttons.svg">
 				<img id="Cover" alt="the cover for our new single" src="./images/sewn.webp">
 				<div id="Listen">
@@ -58,9 +77,11 @@
 
 
 
+
 			<div id="Interface2">
 				<div id="overlay2" class="crt"></div>  
 				<div id="overlay3">
+					<p id="modelTitle"></p>
 					<script src="./main.js" type = "module"></script>
 					<canvas class="webgl"></canvas>   
 				</div> 
@@ -74,6 +95,8 @@
 				<button id = "nextmodel">next</button>
 				
 			</div>
+
+			<script src="./jq.js" type="module"></script>
 			
 		</div>
 	</body>

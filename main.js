@@ -40,6 +40,7 @@ container.appendChild(renderer.domElement);
 //Controls
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
+controls.enablePan = false;
 
 
 //Array of models
@@ -75,7 +76,8 @@ function loadModel(index){
             // action.play();
             currentModel = object;
             scene.add(gltf.scene);
-            
+            $('#modelTitle').empty();
+            $('#modelTitle').append(modelPaths[index]);
         },
         // called while loading is progressing
         function ( xhr ) {

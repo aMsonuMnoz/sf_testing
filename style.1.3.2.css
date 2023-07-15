@@ -33,6 +33,7 @@ body{
 }
 
 #Interface2{
+	visibility: hidden;
 	display: inline-block;
 	position: relative;
 	top: 9vh;
@@ -304,6 +305,7 @@ body{
 	}
 
 	#Interface2{
+		visibility: hidden;
 		position: relative;
 		top: 9vh;
 		height: 50%;
@@ -359,7 +361,7 @@ body{
 
 	#overlay3 {
 		position:absolute;
-		top:22%; bottom:8%; left:10%; right:10%;
+		top:21%; bottom:8%; left:10%; right:10%;
 		display:block;
 		z-index:5;
 		background:transparent;
@@ -471,5 +473,16 @@ a:visited{
 	margin: auto;
     width: 100%;	
 	z-index: 4;
+}
+
+#modelTitle {
+	position: absolute;
+	left: 5%;
+	top: 1%;
+	font-size:82%; /*percentages don't work for fonts. use vw*/
+	font-style: italic;
+	text-shadow: 1px 1px black;
+	color: yellow;
+	z-index: 10;
 }
 
