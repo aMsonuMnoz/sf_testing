@@ -15,7 +15,7 @@ $(function(){
         
     });
 
-    $("#3dInterface").on("click", function() {
+    $("#ThreeDimInterface").on("click", function() {
 
         $("#Interface2").css("visibility","visible");
         $("#Interface2").css("display","inline-block");

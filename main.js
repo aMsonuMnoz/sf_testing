@@ -19,15 +19,19 @@ var container = document.getElementById("overlay3");
 var w = container.offsetWidth;
 var h = container.offsetHeight;
 let aspect = w/h;
-const camera = new THREE.PerspectiveCamera(100, aspect, 0.01, 20000);
-camera.zoom = 75;
+
+
+const camera = new THREE.OrthographicCamera(-0.3654, 0.3654, 0.27615, -0.27615, 0.01, 20000);
+camera.zoom = 1;
 scene.add( camera );
-camera.position.set(1,13,14);
+camera.position.set(1,1,1);
 
 
 //camera helper
-const helper = new THREE.CameraHelper(camera);
-scene.add(helper);
+// const helper = new THREE.CameraHelper(camera);
+// scene.add(helper);
+
+
 
 
 //renderer
@@ -47,6 +51,17 @@ controls.enablePan = false;
 var modelPaths = ['models/organelle4.glb','models/globe2.glb'];
 var currentPathIndex = 0;
 var currentModel;
+
+// const hlp = new THREE.AxesHelper(1);
+// scene.add(hlp);
+
+//plane geometry
+// const geometry = new THREE.PlaneGeometry( 5, 5 );
+// const material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} );
+// const plane = new THREE.Mesh( geometry, material );
+// plane.rotation.x=(Math.PI/180*90);
+// plane.position.y=-.1;
+// scene.add( plane );
 
 //GLTF Loader
 let clock = new THREE.Clock();

@@ -11,10 +11,10 @@ body{
 /*grey*/
 #Overlord{
 	/* Set height to device height. */
-	height: 97%;
+	height: 98%;
 	left: 0.6%;
 	right: 0.6%;
-	background-color: #B2BEB5;
+	background: url(gifs/magifondo.gif);
 	padding: 0%;
 	z-index: 0;
 	border-style:ridge;
@@ -462,7 +462,7 @@ a:visited{
 #Navigation{
 	position: absolute;
 	z-index: 100;
-	bottom: 10%;
+	bottom: 1.5%;
 }
 
 
@@ -486,17 +486,89 @@ a:visited{
 
 
 #prevmodel{
+	background: url(gifs/backred.gif);
 	position: absolute;
-	top:85%;
+	top:80%;
 	left: 3%;
 	z-index:10;
+	width: 34px;
+	height: 24px;
+	border:none;
 }
 
 #nextmodel{
+	background: url(gifs/nextred.gif);
 	position: absolute;
-	top:85%;
+	top:80%;
 	right: 3%;
 	z-index:10;
+	width: 34px;
+	height: 24px;
+	border:none;
+}
+
+#ThreeDimInterface{
+	background: url(images/click.gif);
+	background-size: cover;
+	width: 68px;
+	height: 30px;
+	border: none;
+}
+
+#PowerButton{
+	background: url(gifs/buttonclick.gif);
+	background-size: cover;
+	width: 39px;
+	height: 39px;
+	border: none;
+}
+
+#LinksInterface{
+	background: url(gifs/coollinks.gif);
+	background-size: cover;
+	width: 54px;
+	height: 35px;
+	border: none;
+}
+
+#Lyrics{
+	background: url(gifs/cdrom.gif);
+	background-size: cover;
+	width: 34px;
+	height: 34px;
+	border: none;
+}
+
+#Mail{
+	background: url(gifs/emailus.gif);
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	border: none;
+}
+
+#Guestbook{
+	background: url(gifs/sun_shine_GuestBook.gif);
+	background-size: cover;
+	width: 45px;
+	height: 45px;
+	border: none;
+}
+
+#Merch{
+	background: url(gifs/chinmerch.gif);
+	background-size: cover;
+	width: 45px;
+	height: 45px;
+	border: none;
+}
+
+#Flamebar{
+	width: 100%;
+	bottom: -1%;
+	z-index: 9;
+	position: absolute;
+	left: 0%;
 }
 
 
