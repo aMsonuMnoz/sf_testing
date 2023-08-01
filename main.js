@@ -35,8 +35,8 @@ camera.position.set(1,1,1);
 
 
 //renderer
-const renderer = new THREE.WebGLRenderer({canvas});
-renderer.setClearColor(0x0000ff);
+const renderer = new THREE.WebGLRenderer({canvas, alpha: true}); //delete alpha: true if not transparent
+renderer.setClearColor(0xffffff, 0); // set transparent color if not transparent 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(w, h);
 container.appendChild(renderer.domElement);

@@ -278,9 +278,19 @@ body{
 	position:absolute;
 	top:17%; bottom:12%; left:10%; right:10%;
 	display:block;
-	z-index:5;
 	background:transparent;
 }
+
+#Navigation{
+	position: absolute;
+	z-index: 100;
+	bottom: 1.5vh;
+	width: 99%;
+	margin: auto;
+	left: -0.6%;
+
+}
+
 
 
 @media only screen and (min-aspect-ratio: 5/8) {
@@ -373,6 +383,15 @@ body{
 		z-index: 11;
 		width: auto;
 	}
+
+	#Navigation{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		left: 1%;
+		top: 38%;
+	}
 }
 
 
@@ -459,11 +478,6 @@ a:visited{
 
 
 /* --------------------New Shit */
-#Navigation{
-	position: absolute;
-	z-index: 100;
-	bottom: 1.5%;
-}
 
 
 .ComputerLoading{
