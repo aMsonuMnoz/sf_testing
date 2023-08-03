@@ -41,6 +41,15 @@ body{
 	font-size: 100%;
 }
 
+#Interface3{
+	display: none;
+	position: relative;
+	top: 9vh;
+	width: 94.5%;
+	height: auto;
+	margin: auto;
+}
+
 /* 3d world */
 .webgl {
 	position: absolute;
@@ -139,6 +148,19 @@ body{
 	z-index:6;
 	background:transparent;
 	pointer-events: none;
+}
+
+#overlay4{
+	position: absolute;
+	top: 18.7%;
+  bottom: 12.3%;
+  left: 10%;
+  right: 10%;
+	display: block;
+	background-image: url(gifs/AnimatedBackGroundSky.gif);
+    overflow: scroll;
+    background-size: cover;
+	pointer-events: all;
 }
 
 #Socials{
@@ -391,6 +413,24 @@ body{
 		flex-wrap: wrap;
 		left: 1%;
 		top: 38%;
+		width: 20%;
+	}
+
+	#Interface3{
+		position: relative;
+		top: 9vh;
+		height: 50%;
+		display: none;
+		width: auto;
+	}
+
+    #overlay4 {
+		position:absolute;
+		top:22%; bottom:8%; left:10%; right:10%;
+		z-index:5;
+		background:url(gifs/AnimatedBackGroundSky.gif);
+		overflow: scroll;
+		
 	}
 }
 
@@ -584,6 +624,77 @@ a:visited{
 	position: absolute;
 	left: 0%;
 }
+
+/* switches from vw to vh at the the aspect threshold. 3.125/5 = 0.625 */
+.songs{
+    font-size: min(5vw, 3.125vh);
+    color: yellow;
+    font-style: italic;
+    text-shadow: .1em .1em darkslategray;
+}
+
+.songs:hover{
+    color:dodgerblue;
+    text-shadow: .1em .1em darkslategray;
+}
+
+#songlist{
+    margin-left: 2%;
+	margin-top: 0;
+	text-align: justify;
+	margin-bottom: 0;
+}
+
+#scroll{
+    position: absolute;
+    width: 6.56%;
+    height: 10%;
+    top: 85%;
+    left: 90%;
+}
+
+#chair{
+    position: relative;
+    width: 17%;
+    height: 17%;
+    top: -10%;
+    left: -15%;
+    z-index: 0;
+}
+
+#turner{
+    position: relative;
+    width: 25%;
+    height: 25%;
+	left: -7%;
+    bottom: 7%;
+    z-index: 1;
+}
+
+#ad1{
+    position: relative;
+    width: 35%;
+    height: 35%;
+    top: -4%;
+    left: 7%;
+    z-index: 1;
+}
+
+#candle1{
+    position: absolute;
+    width: 17.79%;
+    height: 30%;
+    top: 8%;
+    left: 65%;
+}
+
+#poems{
+	position: relative;
+	left: 0%;
+	top: 2.5%;
+	width: 80%;
+}
+
 
 
 
