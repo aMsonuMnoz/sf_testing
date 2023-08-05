@@ -15,7 +15,7 @@ scene.add(light);
 
 //camera
 const canvas = document.querySelector(".webgl")
-var container = document.getElementById("overlay3");
+var container = document.getElementById("overlay-models");
 var w = container.offsetWidth;
 var h = container.offsetHeight;
 let aspect = w/h;
@@ -35,8 +35,8 @@ camera.position.set(1,1,1);
 
 
 //renderer
-const renderer = new THREE.WebGLRenderer({canvas, alpha: true}); //delete alpha: true if not transparent
-renderer.setClearColor(0xffffff, 0); // set transparent color if not transparent 
+const renderer = new THREE.WebGLRenderer({canvas}); //delete alpha: true if not transparent
+renderer.setClearColor(0x0000ff); // set transparent color if not transparent 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(w, h);
 container.appendChild(renderer.domElement);

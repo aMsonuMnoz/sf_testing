@@ -1,48 +1,52 @@
 import $ from 'jquery';
-
+import { getImageTag, imageURLs } from './bg';
 
 function hideAll() {
-    $("#Interface2").css("visibility","hidden");
-    $("#Interface2").css("display","none");
-    $('div[id^="Interface"]').hide();
+    $("#overlay-models").css("visibility","hidden");
+    $("#overlay-models").css("display","none");
+    $('div[id^="overlay"]').hide();
     $(".ComputerLoading").remove();
+    $("#crt-overlay").show();
 }
-
 
 
 $(function(){
 
-    $("#Interface2").css("display","none");
+    $("#overlay-models").css("display","none");
 
     $("#LinksInterface").on("click", function() {
         hideAll();
-        $("#Interface").show();
+        $("#overlay-links").css("background",getImageTag());
+        $("#overlay-links").css("background-size","cover");
+        $("#overlay-links").show();
         
     });
 
     $("#ThreeDimInterface").on("click", function() {
         hideAll();
-        $("#Interface2").css("visibility","visible");
-        $("#Interface2").css("display","inline-block");
+        $("#overlay-models").css("visibility","visible");
+        $("#overlay-models").css("display","inline-block");
         
     });
 
     $("#PowerButton").on("click", function() {
         hideAll();
 
-        $("#Interface").show();
-        $('#Interface').prepend($('<img>',{class:'ComputerLoading',src:'images/CRT_off.webp'}));
+        $("#overlay-links").show();
+        $('#overlay-links').prepend($('<img>',{class:'ComputerLoading',src:'images/CRT_off.webp'}));
         setTimeout(() => {
-          $(".ComputerLoading").attr("src","images/Scene8_off.png");
-        }, "1000");
+          $(".ComputerLoading").attr("src","images/Scene1-off.webp");
+          $("#crt-overlay").hide();
+        }, "1300");
+        
 
     });
 
     $("#Lyrics").on("click", function() {
 
         hideAll();
-        $("#Interface3").show();
-        $("#Interface3").css("display","inline-block");
+        $("#overlay-lyrics").show();
+        $("#overlay-lyrics").css("display","inline-block");
         
     });
 

@@ -43,58 +43,49 @@
 			<img id="Title" alt="globular title" src="./images/globe2.webp">
 
 			<div id="Interface">
-				<div id="overlay2" class="crt"></div>  
-				<script type="text/javascript">
-					document.write(getImageTag());
-				</script>
-				<img id="Buttons" alt="links for listening" src="./images/Buttons.svg">
-				<img id="Cover" alt="the cover for our new single" src="./images/sewn.webp">
-				<div id="Listen">
-					<a href="https://open.spotify.com/track/79FCD5DM93Zt3JdUrwbvKc?si=7e41ebbc485a41be">
-						<button class="Transparent" id="Spotify" type="button">Click Me</button>
-					</a>
-					<a href="https://music.apple.com/us/album/sewn-single/1691009243">
-						<button class="Transparent" id="Apple" type="button">Click Me</button>
-					</a>
-					<a href="https://www.youtube.com/watch?v=D7ePWQc7sY8&ab_channel=SweetFighter-Topic">
-						<button class="Transparent" id="Youtube" type="button">Click Me</button>
-					</a>
-					<a href="https://tidal.com/browse/track/298329530">
-						<button class="Transparent" id="Tidal" type="button">Click Me</button>
-					</a>
-					<a href="https://sweetfighter.bandcamp.com/releases">
-						<button class="Transparent" id="Bandcamp" type="button">Click Me</button>
-					</a>
+				<div id="crt-overlay" class="crt"></div>
+				<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?">
+				<script type="module" src="bg.js"></script>
+				<div id="overlay-links">
+					<img id="Buttons" alt="links for listening" src="./images/Buttons.svg">
+					<img id="Cover" alt="the cover for our new single" src="./images/sewn.webp">
+					<div id="Listen">
+						<a href="https://open.spotify.com/track/79FCD5DM93Zt3JdUrwbvKc?si=7e41ebbc485a41be">
+							<button class="Transparent" id="Spotify" type="button">Click Me</button>
+						</a>
+						<a href="https://music.apple.com/us/album/sewn-single/1691009243">
+							<button class="Transparent" id="Apple" type="button">Click Me</button>
+						</a>
+						<a href="https://www.youtube.com/watch?v=D7ePWQc7sY8&ab_channel=SweetFighter-Topic">
+							<button class="Transparent" id="Youtube" type="button">Click Me</button>
+						</a>
+						<a href="https://tidal.com/browse/track/298329530">
+							<button class="Transparent" id="Tidal" type="button">Click Me</button>
+						</a>
+						<a href="https://sweetfighter.bandcamp.com/releases">
+							<button class="Transparent" id="Bandcamp" type="button">Click Me</button>
+						</a>
+					</div>
+					<div id="Socials">
+						<a id="sociallink" href="https://www.instagram.com/sweetfightertx/">Instagram</a><br>
+						<a id="sociallink" href="https://tinyurl.com/2qnx4oba">Bopdrop</a><br>
+						<a id="sociallink" href="https://discord.gg/wHJC9N3">Discord</a><br>
+						<a id="sociallink" href="https://twitter.com/sweetfightertx">Twitter</a><br>
+						<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
+					</div>
 				</div>
-				<div id="Socials">
-					<a id="sociallink" href="https://www.instagram.com/sweetfightertx/">Instagram</a><br>
-					<a id="sociallink" href="https://tinyurl.com/2qnx4oba">Bopdrop</a><br>
-					<a id="sociallink" href="https://discord.gg/wHJC9N3">Discord</a><br>
-					<a id="sociallink" href="https://twitter.com/sweetfightertx">Twitter</a><br>
-					<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
-				</div>
-			</div>
 
-
-
-
-			<div id="Interface2">
-				<div id="overlay2" class="crt"></div>  
-				<div id="overlay3">
+				<div id="overlay-models">
 					<p id="modelTitle"></p>
 					<script src="./main.js" type = "module"></script>
 					<canvas class="webgl"></canvas>   
 					<button class = "cycle" id = "prevmodel"></button>
 					<button class = "cycle" id = "nextmodel"></button>
 					<img src = "gifs/Flamebar.gif" id="Flamebar">
+					<p id="Error">Error! Refresh!</p>
 				</div> 
-				<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?">
 
-			</div>
-
-			<div id="Interface3">
-				<div id="overlay2" class="crt"></div>  
-				<div id = "overlay4">
+				<div id = "overlay-lyrics">
 					<img id="poems" src="gifs/StoriesNPoems.gif">
 					<img id="scroll" src="/gifs/scroll.gif">
 					<img id="candle1" src="/gifs/candlest.gif">
@@ -118,12 +109,11 @@
 					<img id="turner" src="gifs/turner.gif">
 					<img id="chair" src="/gifs/rocker1.gif">
 					<img id="ad1" src="/gifs/toolsscroll.gif">
-					
 				</div>
-				<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?">
+
+
 			</div>
-	
-			
+
 			
 			<div id = "Navigation">
 				<button id = "LinksInterface"></button>
