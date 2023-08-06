@@ -72,7 +72,7 @@ body{
 	color: #ffff33;
 	border: .2em solid darkgray;
 	border-style: ridge;
-	top: 1%;
+	top: 0%;
 }
 
 @font-face {
@@ -137,7 +137,7 @@ body{
 	position:absolute;
 	top:18.4%; bottom:12%; left:10%; right:10%;
 	display:block;
-	z-index:5;
+	z-index:6;
 	background:transparent;
 	pointer-events: none;
 }
@@ -153,6 +153,21 @@ body{
     background-size: cover;
 	pointer-events: all;
 	display: none;
+}
+
+#overlay-guest {
+	position:absolute;
+	top:22%; bottom:8%; left:10%; right:10%;
+	z-index:5;
+	overflow: scroll;
+	display: none;
+}
+
+#guest{
+	position: absolute;
+	width: 98%;
+	height: 35%;
+	left: 0%;
 }
 
 #Socials{
@@ -293,7 +308,7 @@ body{
 #overlay-models{
 	position:absolute;
 	top:18.4%; bottom:12%; left:10%; right:10%;
-	display:block;
+	display:inline-block;
 	background:transparent;
 }
 
@@ -367,7 +382,7 @@ body{
 		position:absolute;
 		top:21.7%; bottom:8%; left:10%; right:10%;
 		display:block;
-		z-index:5;
+		z-index:6;
 		background:transparent;
 		pointer-events: none;  
 	}
@@ -383,9 +398,17 @@ body{
 	#overlay-models {
 		position:absolute;
 		top:21.7%; bottom:8%; left:10%; right:10%;
-		display:block;
+		display:inline-block;
 		z-index:5;
 		background:transparent;
+	}
+
+	#overlay-guest {
+		position:absolute;
+		top:21.7%; bottom:8%; left:10%; right:7.2%;
+		display:none;
+		z-index:2;
+		pointer-events: all;  
 	}
 
 	.ComputerLoading{
@@ -416,8 +439,8 @@ body{
 		background:url(gifs/AnimatedBackGroundSky.gif);
 		overflow: scroll;
 		display: none;
-		
 	}
+
 }
 
 
