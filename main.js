@@ -14,6 +14,7 @@ light.position.set(0,5,5);
 scene.add(light);
 
 //camera
+
 const canvas = document.querySelector(".webgl")
 var container = document.getElementById("overlay-models");
 var w = container.offsetWidth;
