@@ -168,6 +168,19 @@ body{
 	display: none;
 }
 
+#overlay-email {
+	position:absolute;
+	background: url(gifs/sparklepinkbackground.gif);
+
+	top: 18.4%;
+    bottom: 12.3%;
+    left: 10%;
+    right: 10%;
+	z-index:5;
+	overflow: hidden;
+	display: none;
+}
+
 #overlay-merch {
 	position:absolute;
 	top: 18.4%;
@@ -440,6 +453,14 @@ body{
 		pointer-events: all;  
 	}
 
+	#overlay-email {
+		position:absolute;
+		top:18.6%; bottom:11.1%; left:10%; right:10%;
+		display:none;
+		z-index:2;
+		pointer-events: all;  
+	}
+
 	#overlay-merch {
 		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
@@ -620,8 +641,8 @@ a:visited{
 #ThreeDimInterface{
 	background: url(images/click.gif);
 	background-size: cover;
-	width: 68px;
-	height: 30px;
+	width: 60px;
+	height: 26.5px;
 	border: none;
 }
 
@@ -644,16 +665,16 @@ a:visited{
 #Lyrics{
 	background: url(gifs/cdrom.gif);
 	background-size: cover;
-	width: 34px;
-	height: 34px;
+	width: 38px;
+	height: 38px;
 	border: none;
 }
 
 #Mail{
-	background: url(gifs/emailus.gif);
+	background: url(gifs/eMailNew.gif);
 	background-size: cover;
-	width: 40px;
-	height: 40px;
+	width: 44px;
+	height: 44px;
 	border: none;
 }
 
@@ -798,6 +819,32 @@ a:visited{
 	top: 87%;
     right: 13%;
     z-index: 8;
+}
+
+#email{
+	position: absolute;
+	font-size: min(5vw, 3.125vh);
+    color: yellow;
+    font-style: italic;
+    text-shadow: 0.1em 0.1em black;
+	text-align: left;
+	margin-left: 2%;
+	top: 10%;
+	
+}
+
+#seeing{
+	position: absolute;
+	top: 67%;
+	width: 25%;
+	left: 35%;
+
+}
+
+#ad2{
+	position: absolute;
+	width: 100%;
+	left: 0%;
 }
 
 

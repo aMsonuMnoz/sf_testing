@@ -84,7 +84,7 @@ $(function(){
         
     });
 
-    $("#Mail").on("click", function() {
+    $("#Guestbook").on("click", function() {
         hideAll();
         $("#overlay-loading").show();
         $("#overlay-guest").show();
@@ -103,6 +103,15 @@ $(function(){
           }, "200");
         
     });
+
+    $("#Mail").on("click", function(){
+        hideAll();
+        $("#overlay-loading").show();
+        $("#overlay-email").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "200");
+    })
 
 
   
