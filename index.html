@@ -13,23 +13,7 @@
 		<link rel="stylesheet" href="./crt-effect.css">
 		<link rel="shortcut icon" type="image/jpg" href="./images/Favicon.webp"/>
 		<title>sweetfighter.net</title>
-		<script type="text/javascript">
-			var imageURLs = [
-				 "images/Scene1.webp"
-			   , "images/Scene2.webp"
-			   , "images/Scene3.webp"
-			   , "images/Scene5.webp"
-			   , "images/Scene6_glitch.webp"
-			   , "images/Scene7_website.webp"
-			];
-			function getImageTag() {
-			  var img = '<img id="Computer" src=\"';
-			  var randomIndex = Math.floor(Math.random() * imageURLs.length);
-			  img += imageURLs[randomIndex];
-			  img += '\" alt=\"Yet another mysterious transmission from unknown origin.\"/>';
-			  return img;
-			}
-		  </script>
+		<script type="module" src="bg.js"></script>
 		<!-- JQuery -->
 		<script src="./jquery.min.js" type="module"></script>
 		
@@ -45,14 +29,14 @@
 			<div id="Interface">
 				<div id="crt-overlay" class="crt"></div>
 				<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?">
-				<img id="PowerButton" src="gifs/ColorButton.gif">
-				<img id="LinksOff" src="gifs/eyebullet.gif">
+				<img id="PowerButton" src="gifs/ColorButton.webp">
+				<img id="LinksOff" src="gifs/eyebullet.webp">
 				<div id="overlay-loading">
 				</div>
-				<script type="module" src="bg.js"></script>
+				
 				<div id="overlay-links">
 					<img id="Buttons" alt="links for listening" src="./images/Buttons.svg">
-					<img id="newSong" class="new" src="gifs/newSpin.GIF">
+					<img id="newSong" class="new" src="gifs/newSpin.webp">
 					<img id="Cover" alt="the cover for our new single" src="./images/sewn.webp">
 					<div id="Listen">
 						<a href="https://open.spotify.com/track/79FCD5DM93Zt3JdUrwbvKc?si=7e41ebbc485a41be">
@@ -82,19 +66,19 @@
 
 				<div id="overlay-models">
 					<p id="modelTitle"></p>
-					<img id="newModel" class="new" src="gifs/newSpin.gif">
+					<img id="newModel" class="new" src="gifs/newSpin.webp">
 					<script src="./main.js" type = "module"></script>
 					<canvas class="webgl"></canvas>   
 					<button class = "cycle" id = "prevmodel"></button>
 					<button class = "cycle" id = "nextmodel"></button>
-					<img src = "gifs/Flamebar.gif" id="Flamebar">
+					<img src = "gifs/Flamebar.webp" id="Flamebar">
 					<p id="Error">Error! Refresh!</p>
 				</div> 
 
 				<div id = "overlay-lyrics">
-					<img id="poems" src="gifs/StoriesNPoems.gif">
-					<img id="scroll" src="/gifs/scroll.gif">
-					<img id="candle1" src="/gifs/candlest.gif">
+					<img id="poems" src="gifs/StoriesNPoems.webp">
+					<img id="scroll" src="/gifs/scroll.webp">
+					<img id="candle1" src="/gifs/candlest.webp">
 					<p id = "songlist">
 						<a id="sewn" class="songs">/Sewn.txt</a><br>
 						<a class="songs">/Dialogue.txt</a><br>
@@ -112,9 +96,9 @@
 						<a class="songs">/Roses.txt</a><br>
 						<a class="songs">/Oh_Well.txt</a><br>
 					</p>
-					<img id="turner" src="gifs/turner.gif">
-					<img id="chair" src="/gifs/rocker1.gif">
-					<img id="ad1" src="/gifs/toolsscroll.gif">
+					<img id="turner" src="gifs/turner.webp">
+					<img id="chair" src="/gifs/rocker1.webp">
+					<img id="ad1" src="/gifs/toolsscroll.webp">
 				</div>
 
 				<div id="overlay-guest">
@@ -131,8 +115,8 @@
 						See a bug or something? Maybe something else? Something greater? Direct your concerns at
 						<a href="mailto:masonzonum18@gmail.com">masonzonum18@gmail.com</a>
 					</p>
-					<img src = "gifs/comp1.gif" id = "seeing">
-					<img src = "gifs/alot468x60a3.gif" id="ad2">
+					<img src = "gifs/comp1.webp" id = "seeing">
+					<img src = "gifs/alot468x60a3.webp" id="ad2">
 				</div>
 
 

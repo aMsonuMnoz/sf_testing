@@ -9,7 +9,7 @@ export var imageURLs = [
   , "url(images/Scene5-B.webp)"
   , "url(images/Scene8-glitch.webp)"
   , "url(images/Scene7-Website.webp)"
-  , "url(gifs/waterfal.gif"
+  , "url(gifs/waterfal.webp"
 ];
 export function getImageTag() {
     var randomIndex = Math.floor(Math.random() * imageURLs.length);
