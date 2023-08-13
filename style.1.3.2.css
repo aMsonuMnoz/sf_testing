@@ -693,8 +693,8 @@ a:visited{
 #Merch{
 	background: url(gifs/chinmerch.webp);
 	background-size: cover;
-	width: 45px;
-	height: 45px;
+	width: 40px;
+	height: 40px;
 	border: none;
 }
 
@@ -871,6 +871,15 @@ a:visited{
     color: yellow;
     font-style: italic;
     text-shadow: .1em .1em darkslategray;
+}
+
+#model-loading{
+    position: absolute;
+    z-index: 6;
+    left: 30%;
+    top: 48%;
+    width: 40%;
+    display: none;
 }
 
 

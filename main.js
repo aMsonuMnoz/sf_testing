@@ -3,6 +3,7 @@ import $ from 'jquery';
 import { OrbitControls } from "/node_modules/three/examples/jsm/controls/OrbitControls.js";
 import * as THREE from '/node_modules/three';
 import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { hideAll } from './jq';
 
 
 //scene
@@ -94,10 +95,11 @@ function loadModel(index){
             scene.add(gltf.scene);
             $('#modelTitle').empty();
             $('#modelTitle').append(modelPaths[index]);
+            $("#model-loading").hide();
         },
         // called while loading is progressing
         function ( xhr ) {
-
+            $("#model-loading").show();
             console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
 
         },
@@ -108,19 +110,30 @@ function loadModel(index){
 
         }
     );
+    
+
     }
 
-loadModel(currentPathIndex);
+$("#ThreeDimInterface").on("click", function() {
+    hideAll();
+    loadModel(0);
+    $("#overlay-loading").show();
+    $("#overlay-models").css("visibility","visible");
+    setTimeout(() => {
+        $("#overlay-loading").hide();
+        }, "200")
+});
+
 
 
 //Changes model on click
 function next(){
-    currentPathIndex ++;
+    currentPathIndex = (currentPathIndex + 1) % modelPaths.length;
     loadModel(currentPathIndex);
 }
 
 function previous(){
-    currentPathIndex --;
+    currentPathIndex = (currentPathIndex - 1 + modelPaths.length) % modelPaths.length;
     loadModel(currentPathIndex);
 }
 
