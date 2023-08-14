@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 $(function(){   
     $("#back-to-list").on("click", function(){
         $("#overlay-loading").show();

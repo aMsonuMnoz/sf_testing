@@ -47,10 +47,12 @@ container.appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
 controls.enablePan = false;
+controls.enableDamping = true;
 
 
 //Array of models
-var modelPaths = ['models/organelle4.glb','models/globe2.glb'];
+var modelPaths = ['models/organelle.glb','models/globe2.glb'];
+var modelScales = [1,0.23];
 var currentPathIndex = 0;
 var currentModel;
 
@@ -70,7 +72,7 @@ let clock = new THREE.Clock();
 let mixer;
 const loader = new GLTFLoader();
 
-function loadModel(index){
+function loadModel(index, scale){
 
     if (currentModel){
         scene.remove(currentModel); //remove current
@@ -82,7 +84,7 @@ function loadModel(index){
         function ( gltf ) {
             mixer = new THREE.AnimationMixer( gltf.scene );
             const object = gltf.scene;
-            gltf.scene.scale.set(1,1,1);
+            gltf.scene.scale.set(scale,scale,scale);
             gltf.scene.position.x = 0;
             gltf.scene.position.y = 0;
             gltf.scene.position.z = 0;
@@ -116,7 +118,7 @@ function loadModel(index){
 
 $("#ThreeDimInterface").on("click", function() {
     hideAll();
-    loadModel(0);
+    loadModel(0,1);
     $("#overlay-loading").show();
     $("#overlay-models").css("visibility","visible");
     setTimeout(() => {
@@ -129,12 +131,12 @@ $("#ThreeDimInterface").on("click", function() {
 //Changes model on click
 function next(){
     currentPathIndex = (currentPathIndex + 1) % modelPaths.length;
-    loadModel(currentPathIndex);
+    loadModel(currentPathIndex, modelScales[currentPathIndex]);
 }
 
 function previous(){
     currentPathIndex = (currentPathIndex - 1 + modelPaths.length) % modelPaths.length;
-    loadModel(currentPathIndex);
+    loadModel(currentPathIndex, modelScales[currentPathIndex]);
 }
 
 $("#nextmodel").on("click", function() {
