@@ -3,7 +3,7 @@ var __commonJS = (cb, mod) => function __require() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 var require_index_001 = __commonJS({
-  "assets/index-c57128b4.js"(exports, module) {
+  "assets/index-99e21f2c.js"(exports, module) {
     (function polyfill() {
       const relList = document.createElement("link").relList;
       if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -65,11 +65,11 @@ var require_index_001 = __commonJS({
     (function(module2) {
       (function(global2, factory) {
         {
-          module2.exports = global2.document ? factory(global2, true) : function(w2) {
-            if (!w2.document) {
+          module2.exports = global2.document ? factory(global2, true) : function(w) {
+            if (!w.document) {
               throw new Error("jQuery requires a window with a document");
             }
-            return factory(w2);
+            return factory(w);
           };
         }
       })(typeof window !== "undefined" ? window : commonjsGlobal, function(window2, noGlobal) {
@@ -6562,7 +6562,7 @@ var require_index_001 = __commonJS({
       };
       var ye = C, me = s;
       !function() {
-        var e2, b2, w3, o2, a2, T2, r2, C2, d2, i2, k2 = me, S2 = ce.expando, E2 = 0, n2 = 0, s2 = W2(), c2 = W2(), u2 = W2(), h3 = W2(), l2 = function(e3, t3) {
+        var e2, b2, w2, o2, a2, T2, r2, C2, d2, i2, k2 = me, S2 = ce.expando, E2 = 0, n2 = 0, s2 = W2(), c2 = W2(), u2 = W2(), h2 = W2(), l2 = function(e3, t3) {
           return e3 === t3 && (a2 = true), 0;
         }, f2 = "checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped", t2 = "(?:\\\\[\\da-fA-F]{1,6}" + ge + "?|\\\\[^\\r\\n\\f]|[\\w-]|[^\0-\\x7f])+", p2 = "\\[" + ge + "*(" + t2 + ")(?:" + ge + "*([*^$|!~]?=)" + ge + `*(?:'((?:\\\\.|[^\\\\'])*)'|"((?:\\\\.|[^\\\\"])*)"|(` + t2 + "))|)" + ge + "*\\]", g2 = ":(" + t2 + `)(?:\\((('((?:\\\\.|[^\\\\'])*)'|"((?:\\\\.|[^\\\\"])*)")|((?:\\\\.|[^\\\\()[\\]]|` + p2 + ")*)|.*)\\)|)", v2 = new RegExp(ge + "+", "g"), y2 = new RegExp("^" + ge + "*," + ge + "*"), m2 = new RegExp("^" + ge + "*([>+~]|" + ge + ")" + ge + "*"), x2 = new RegExp(ge + "|>"), j2 = new RegExp(g2), A2 = new RegExp("^" + t2 + "$"), D2 = { ID: new RegExp("^#(" + t2 + ")"), CLASS: new RegExp("^\\.(" + t2 + ")"), TAG: new RegExp("^(" + t2 + "|[*])"), ATTR: new RegExp("^" + p2), PSEUDO: new RegExp("^" + g2), CHILD: new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(" + ge + "*(even|odd|(([+-]|)(\\d*)n|)" + ge + "*(?:([+-]|)" + ge + "*(\\d+)|))" + ge + "*\\)|)", "i"), bool: new RegExp("^(?:" + f2 + ")$", "i"), needsContext: new RegExp("^" + ge + "*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(" + ge + "*((?:-\\d)?\\d*)" + ge + "*\\)|)(?=[^-]|$)", "i") }, N2 = /^(?:input|select|textarea|button)$/i, q2 = /^h\d$/i, L2 = /^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/, H2 = /[+~]/, O2 = new RegExp("\\\\[\\da-fA-F]{1,6}" + ge + "?|\\\\([^\\r\\n\\f])", "g"), P2 = function(e3, t3) {
           var n3 = "0x" + e3.slice(1) - 65536;
@@ -6601,7 +6601,7 @@ var require_index_001 = __commonJS({
                 if ((i3 = u3[3]) && e3.getElementsByClassName)
                   return k2.apply(n3, e3.getElementsByClassName(i3)), n3;
               }
-            if (!(h3[t3 + " "] || d2 && d2.test(t3))) {
+            if (!(h2[t3 + " "] || d2 && d2.test(t3))) {
               if (c3 = t3, f3 = e3, 1 === p3 && (x2.test(t3) || m2.test(t3))) {
                 (f3 = H2.test(t3) && z2(e3.parentNode) || e3) == e3 && le.scope || ((s3 = e3.getAttribute("id")) ? s3 = ce.escapeSelector(s3) : e3.setAttribute("id", s3 = S2)), o3 = (l3 = Y2(t3)).length;
                 while (o3--)
@@ -6611,7 +6611,7 @@ var require_index_001 = __commonJS({
               try {
                 return k2.apply(n3, f3.querySelectorAll(c3)), n3;
               } catch (e4) {
-                h3(t3, true);
+                h2(t3, true);
               } finally {
                 s3 === S2 && e3.removeAttribute("id");
               }
@@ -6726,13 +6726,13 @@ var require_index_001 = __commonJS({
         for (e2 in I2.matches = function(e3, t3) {
           return I2(e3, null, null, t3);
         }, I2.matchesSelector = function(e3, t3) {
-          if (V2(e3), C2 && !h3[t3 + " "] && (!d2 || !d2.test(t3)))
+          if (V2(e3), C2 && !h2[t3 + " "] && (!d2 || !d2.test(t3)))
             try {
               var n3 = i2.call(e3, t3);
               if (n3 || le.disconnectedMatch || e3.document && 11 !== e3.document.nodeType)
                 return n3;
             } catch (e4) {
-              h3(t3, true);
+              h2(t3, true);
             }
           return 0 < I2(t3, T2, null, [e3]).length;
         }, I2.contains = function(e3, t3) {
@@ -6778,9 +6778,9 @@ var require_index_001 = __commonJS({
             var t3 = I2.attr(e3, n3);
             return null == t3 ? "!=" === r3 : !r3 || (t3 += "", "=" === r3 ? t3 === i3 : "!=" === r3 ? t3 !== i3 : "^=" === r3 ? i3 && 0 === t3.indexOf(i3) : "*=" === r3 ? i3 && -1 < t3.indexOf(i3) : "$=" === r3 ? i3 && t3.slice(-i3.length) === i3 : "~=" === r3 ? -1 < (" " + t3.replace(v2, " ") + " ").indexOf(i3) : "|=" === r3 && (t3 === i3 || t3.slice(0, i3.length + 1) === i3 + "-"));
           };
-        }, CHILD: function(d3, e3, t3, h4, g3) {
+        }, CHILD: function(d3, e3, t3, h3, g3) {
           var v3 = "nth" !== d3.slice(0, 3), y3 = "last" !== d3.slice(-4), m3 = "of-type" === e3;
-          return 1 === h4 && 0 === g3 ? function(e4) {
+          return 1 === h3 && 0 === g3 ? function(e4) {
             return !!e4.parentNode;
           } : function(e4, t4, n3) {
             var r3, i3, o3, a3, s3, u3 = v3 !== y3 ? "nextSibling" : "previousSibling", l3 = e4.parentNode, c3 = m3 && e4.nodeName.toLowerCase(), f3 = !n3 && !m3, p3 = false;
@@ -6807,7 +6807,7 @@ var require_index_001 = __commonJS({
                   if ((m3 ? fe(o3, c3) : 1 === o3.nodeType) && ++p3 && (f3 && ((i3 = o3[S2] || (o3[S2] = {}))[d3] = [E2, p3]), o3 === e4))
                     break;
               }
-              return (p3 -= g3) === h4 || p3 % h4 == 0 && 0 <= p3 / h4;
+              return (p3 -= g3) === h3 || p3 % h3 == 0 && 0 <= p3 / h3;
             }
           };
         }, PSEUDO: function(e3, o3) {
@@ -6965,13 +6965,13 @@ var require_index_001 = __commonJS({
             (o3 = e3[s3]) && (n3 && !n3(o3, r3, i3) || (a3.push(o3), l3 && t3.push(s3)));
           return a3;
         }
-        function ee2(d3, h4, g3, v3, y3, e3) {
+        function ee2(d3, h3, g3, v3, y3, e3) {
           return v3 && !v3[S2] && (v3 = ee2(v3)), y3 && !y3[S2] && (y3 = ee2(y3, e3)), F2(function(e4, t3, n3, r3) {
             var i3, o3, a3, s3, u3 = [], l3 = [], c3 = t3.length, f3 = e4 || function(e5, t4, n4) {
               for (var r4 = 0, i4 = t4.length; r4 < i4; r4++)
                 I2(e5, t4[r4], n4);
               return n4;
-            }(h4 || "*", n3.nodeType ? [n3] : n3, []), p3 = !d3 || !e4 && h4 ? f3 : Z2(f3, u3, d3, n3, r3);
+            }(h3 || "*", n3.nodeType ? [n3] : n3, []), p3 = !d3 || !e4 && h3 ? f3 : Z2(f3, u3, d3, n3, r3);
             if (g3 ? g3(p3, s3 = y3 || (e4 ? d3 : c3 || v3) ? [] : t3, n3, r3) : s3 = p3, v3) {
               i3 = Z2(s3, l3), v3(i3, [], n3, r3), o3 = i3.length;
               while (o3--)
@@ -6999,7 +6999,7 @@ var require_index_001 = __commonJS({
           }, a3, true), l3 = J2(function(e4) {
             return -1 < se.call(i3, e4);
           }, a3, true), c3 = [function(e4, t4, n4) {
-            var r4 = !o3 && (n4 || t4 != w3) || ((i3 = t4).nodeType ? u3(e4, t4, n4) : l3(e4, t4, n4));
+            var r4 = !o3 && (n4 || t4 != w2) || ((i3 = t4).nodeType ? u3(e4, t4, n4) : l3(e4, t4, n4));
             return i3 = null, r4;
           }]; s3 < r3; s3++)
             if (t3 = b2.relative[e3[s3].type])
@@ -7022,8 +7022,8 @@ var require_index_001 = __commonJS({
             while (n3--)
               (a3 = te2(t3[n3]))[S2] ? i3.push(a3) : o3.push(a3);
             (a3 = u2(e3, (v3 = o3, m3 = 0 < (y3 = i3).length, x3 = 0 < v3.length, r3 = function(e4, t4, n4, r4, i4) {
-              var o4, a4, s3, u3 = 0, l3 = "0", c3 = e4 && [], f3 = [], p3 = w3, d3 = e4 || x3 && b2.find.TAG("*", i4), h4 = E2 += null == p3 ? 1 : Math.random() || 0.1, g3 = d3.length;
-              for (i4 && (w3 = t4 == T2 || t4 || i4); l3 !== g3 && null != (o4 = d3[l3]); l3++) {
+              var o4, a4, s3, u3 = 0, l3 = "0", c3 = e4 && [], f3 = [], p3 = w2, d3 = e4 || x3 && b2.find.TAG("*", i4), h3 = E2 += null == p3 ? 1 : Math.random() || 0.1, g3 = d3.length;
+              for (i4 && (w2 = t4 == T2 || t4 || i4); l3 !== g3 && null != (o4 = d3[l3]); l3++) {
                 if (x3 && o4) {
                   a4 = 0, t4 || o4.ownerDocument == T2 || (V2(o4), n4 = !C2);
                   while (s3 = v3[a4++])
@@ -7031,7 +7031,7 @@ var require_index_001 = __commonJS({
                       k2.call(r4, o4);
                       break;
                     }
-                  i4 && (E2 = h4);
+                  i4 && (E2 = h3);
                 }
                 m3 && ((o4 = !s3 && o4) && u3--, e4 && c3.push(o4));
               }
@@ -7047,7 +7047,7 @@ var require_index_001 = __commonJS({
                 }
                 k2.apply(r4, f3), i4 && !e4 && 0 < f3.length && 1 < u3 + y3.length && ce.uniqueSort(r4);
               }
-              return i4 && (E2 = h4, w3 = p3), c3;
+              return i4 && (E2 = h3, w2 = p3), c3;
             }, m3 ? F2(r3) : r3))).selector = e3;
           }
           return a3;
@@ -7086,11 +7086,11 @@ var require_index_001 = __commonJS({
             r2.push(e2);
           }
         return r2;
-      }, h2 = function(e2, t2) {
+      }, h = function(e2, t2) {
         for (var n2 = []; e2; e2 = e2.nextSibling)
           1 === e2.nodeType && e2 !== t2 && n2.push(e2);
         return n2;
-      }, b = ce.expr.match.needsContext, w2 = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+      }, b = ce.expr.match.needsContext, w = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
       function T(e2, n2, r2) {
         return v(n2) ? ce.grep(e2, function(e3, t2) {
           return !!n2.call(e3, t2, e3) !== r2;
@@ -7132,7 +7132,7 @@ var require_index_001 = __commonJS({
           if (!(r2 = "<" === e2[0] && ">" === e2[e2.length - 1] && 3 <= e2.length ? [null, e2, null] : S.exec(e2)) || !r2[1] && t2)
             return !t2 || t2.jquery ? (t2 || n2).find(e2) : this.constructor(t2).find(e2);
           if (r2[1]) {
-            if (t2 = t2 instanceof ce ? t2[0] : t2, ce.merge(this, ce.parseHTML(r2[1], t2 && t2.nodeType ? t2.ownerDocument || t2 : C, true)), w2.test(r2[1]) && ce.isPlainObject(t2))
+            if (t2 = t2 instanceof ce ? t2[0] : t2, ce.merge(this, ce.parseHTML(r2[1], t2 && t2.nodeType ? t2.ownerDocument || t2 : C, true)), w.test(r2[1]) && ce.isPlainObject(t2))
               for (r2 in t2)
                 v(this[r2]) ? this[r2](t2[r2]) : this.attr(r2, t2[r2]);
             return this;
@@ -7191,9 +7191,9 @@ var require_index_001 = __commonJS({
       }, prevUntil: function(e2, t2, n2) {
         return d(e2, "previousSibling", n2);
       }, siblings: function(e2) {
-        return h2((e2.parentNode || {}).firstChild, e2);
+        return h((e2.parentNode || {}).firstChild, e2);
       }, children: function(e2) {
-        return h2(e2.firstChild);
+        return h(e2.firstChild);
       }, contents: function(e2) {
         return null != e2.contentDocument && r(e2.contentDocument) ? e2.contentDocument : (fe(e2, "template") && (e2 = e2.content || e2), ce.merge([], e2.childNodes));
       } }, function(r2, i2) {
@@ -7537,7 +7537,7 @@ var require_index_001 = __commonJS({
       ke.tbody = ke.tfoot = ke.colgroup = ke.caption = ke.thead, ke.th = ke.td, le.option || (ke.optgroup = ke.option = [1, "<select multiple='multiple'>", "</select>"]);
       var je = /<|&#?\w+;/;
       function Ae(e2, t2, n2, r2, i2) {
-        for (var o2, a2, s2, u2, l2, c2, f2 = t2.createDocumentFragment(), p2 = [], d2 = 0, h3 = e2.length; d2 < h3; d2++)
+        for (var o2, a2, s2, u2, l2, c2, f2 = t2.createDocumentFragment(), p2 = [], d2 = 0, h2 = e2.length; d2 < h2; d2++)
           if ((o2 = e2[d2]) || 0 === o2)
             if ("object" === x(o2))
               ce.merge(p2, o2.nodeType ? [o2] : o2);
@@ -7596,24 +7596,24 @@ var require_index_001 = __commonJS({
         } })) : void 0 === _.get(e2, r2) && ce.event.add(e2, r2, Ne);
       }
       ce.event = { global: {}, add: function(t2, e2, n2, r2, i2) {
-        var o2, a2, s2, u2, l2, c2, f2, p2, d2, h3, g2, v2 = _.get(t2);
+        var o2, a2, s2, u2, l2, c2, f2, p2, d2, h2, g2, v2 = _.get(t2);
         if ($2(t2)) {
           n2.handler && (n2 = (o2 = n2).handler, i2 = o2.selector), i2 && ce.find.matchesSelector(J, i2), n2.guid || (n2.guid = ce.guid++), (u2 = v2.events) || (u2 = v2.events = /* @__PURE__ */ Object.create(null)), (a2 = v2.handle) || (a2 = v2.handle = function(e3) {
             return "undefined" != typeof ce && ce.event.triggered !== e3.type ? ce.event.dispatch.apply(t2, arguments) : void 0;
           }), l2 = (e2 = (e2 || "").match(D) || [""]).length;
           while (l2--)
-            d2 = g2 = (s2 = De.exec(e2[l2]) || [])[1], h3 = (s2[2] || "").split(".").sort(), d2 && (f2 = ce.event.special[d2] || {}, d2 = (i2 ? f2.delegateType : f2.bindType) || d2, f2 = ce.event.special[d2] || {}, c2 = ce.extend({ type: d2, origType: g2, data: r2, handler: n2, guid: n2.guid, selector: i2, needsContext: i2 && ce.expr.match.needsContext.test(i2), namespace: h3.join(".") }, o2), (p2 = u2[d2]) || ((p2 = u2[d2] = []).delegateCount = 0, f2.setup && false !== f2.setup.call(t2, r2, h3, a2) || t2.addEventListener && t2.addEventListener(d2, a2)), f2.add && (f2.add.call(t2, c2), c2.handler.guid || (c2.handler.guid = n2.guid)), i2 ? p2.splice(p2.delegateCount++, 0, c2) : p2.push(c2), ce.event.global[d2] = true);
+            d2 = g2 = (s2 = De.exec(e2[l2]) || [])[1], h2 = (s2[2] || "").split(".").sort(), d2 && (f2 = ce.event.special[d2] || {}, d2 = (i2 ? f2.delegateType : f2.bindType) || d2, f2 = ce.event.special[d2] || {}, c2 = ce.extend({ type: d2, origType: g2, data: r2, handler: n2, guid: n2.guid, selector: i2, needsContext: i2 && ce.expr.match.needsContext.test(i2), namespace: h2.join(".") }, o2), (p2 = u2[d2]) || ((p2 = u2[d2] = []).delegateCount = 0, f2.setup && false !== f2.setup.call(t2, r2, h2, a2) || t2.addEventListener && t2.addEventListener(d2, a2)), f2.add && (f2.add.call(t2, c2), c2.handler.guid || (c2.handler.guid = n2.guid)), i2 ? p2.splice(p2.delegateCount++, 0, c2) : p2.push(c2), ce.event.global[d2] = true);
         }
       }, remove: function(e2, t2, n2, r2, i2) {
-        var o2, a2, s2, u2, l2, c2, f2, p2, d2, h3, g2, v2 = _.hasData(e2) && _.get(e2);
+        var o2, a2, s2, u2, l2, c2, f2, p2, d2, h2, g2, v2 = _.hasData(e2) && _.get(e2);
         if (v2 && (u2 = v2.events)) {
           l2 = (t2 = (t2 || "").match(D) || [""]).length;
           while (l2--)
-            if (d2 = g2 = (s2 = De.exec(t2[l2]) || [])[1], h3 = (s2[2] || "").split(".").sort(), d2) {
-              f2 = ce.event.special[d2] || {}, p2 = u2[d2 = (r2 ? f2.delegateType : f2.bindType) || d2] || [], s2 = s2[2] && new RegExp("(^|\\.)" + h3.join("\\.(?:.*\\.|)") + "(\\.|$)"), a2 = o2 = p2.length;
+            if (d2 = g2 = (s2 = De.exec(t2[l2]) || [])[1], h2 = (s2[2] || "").split(".").sort(), d2) {
+              f2 = ce.event.special[d2] || {}, p2 = u2[d2 = (r2 ? f2.delegateType : f2.bindType) || d2] || [], s2 = s2[2] && new RegExp("(^|\\.)" + h2.join("\\.(?:.*\\.|)") + "(\\.|$)"), a2 = o2 = p2.length;
               while (o2--)
                 c2 = p2[o2], !i2 && g2 !== c2.origType || n2 && n2.guid !== c2.guid || s2 && !s2.test(c2.namespace) || r2 && r2 !== c2.selector && ("**" !== r2 || !c2.selector) || (p2.splice(o2, 1), c2.selector && p2.delegateCount--, f2.remove && f2.remove.call(e2, c2));
-              a2 && !p2.length && (f2.teardown && false !== f2.teardown.call(e2, h3, v2.handle) || ce.removeEvent(e2, d2, v2.handle), delete u2[d2]);
+              a2 && !p2.length && (f2.teardown && false !== f2.teardown.call(e2, h2, v2.handle) || ce.removeEvent(e2, d2, v2.handle), delete u2[d2]);
             } else
               for (d2 in u2)
                 ce.event.remove(e2, d2 + t2[l2], n2, r2, true);
@@ -7754,11 +7754,11 @@ var require_index_001 = __commonJS({
       }
       function $e(n2, r2, i2, o2) {
         r2 = g(r2);
-        var e2, t2, a2, s2, u2, l2, c2 = 0, f2 = n2.length, p2 = f2 - 1, d2 = r2[0], h3 = v(d2);
-        if (h3 || 1 < f2 && "string" == typeof d2 && !le.checkClone && Pe.test(d2))
+        var e2, t2, a2, s2, u2, l2, c2 = 0, f2 = n2.length, p2 = f2 - 1, d2 = r2[0], h2 = v(d2);
+        if (h2 || 1 < f2 && "string" == typeof d2 && !le.checkClone && Pe.test(d2))
           return n2.each(function(e3) {
             var t3 = n2.eq(e3);
-            h3 && (r2[0] = d2.call(this, e3, t3.html())), $e(t3, r2, i2, o2);
+            h2 && (r2[0] = d2.call(this, e3, t3.html())), $e(t3, r2, i2, o2);
           });
         if (f2 && (t2 = (e2 = Ae(r2, n2[0].ownerDocument, false, n2, o2)).firstChild, 1 === e2.childNodes.length && (e2 = t2), t2 || o2)) {
           for (s2 = (a2 = ce.map(Se(e2, "script"), Ie)).length; c2 < f2; c2++)
@@ -8076,7 +8076,7 @@ var require_index_001 = __commonJS({
         for (var n2, r2 = 0, i2 = e2.length; r2 < i2; r2++)
           n2 = e2[r2], yt.tweeners[n2] = yt.tweeners[n2] || [], yt.tweeners[n2].unshift(t2);
       }, prefilters: [function(e2, t2, n2) {
-        var r2, i2, o2, a2, s2, u2, l2, c2, f2 = "width" in t2 || "height" in t2, p2 = this, d2 = {}, h3 = e2.style, g2 = e2.nodeType && ee(e2), v2 = _.get(e2, "fxshow");
+        var r2, i2, o2, a2, s2, u2, l2, c2, f2 = "width" in t2 || "height" in t2, p2 = this, d2 = {}, h2 = e2.style, g2 = e2.nodeType && ee(e2), v2 = _.get(e2, "fxshow");
         for (r2 in n2.queue || (null == (a2 = ce._queueHooks(e2, "fx")).unqueued && (a2.unqueued = 0, s2 = a2.empty.fire, a2.empty.fire = function() {
           a2.unqueued || s2();
         }), a2.unqueued++, p2.always(function() {
@@ -8093,10 +8093,10 @@ var require_index_001 = __commonJS({
             d2[r2] = v2 && v2[r2] || ce.style(e2, r2);
           }
         if ((u2 = !ce.isEmptyObject(t2)) || !ce.isEmptyObject(d2))
-          for (r2 in f2 && 1 === e2.nodeType && (n2.overflow = [h3.overflow, h3.overflowX, h3.overflowY], null == (l2 = v2 && v2.display) && (l2 = _.get(e2, "display")), "none" === (c2 = ce.css(e2, "display")) && (l2 ? c2 = l2 : (re([e2], true), l2 = e2.style.display || l2, c2 = ce.css(e2, "display"), re([e2]))), ("inline" === c2 || "inline-block" === c2 && null != l2) && "none" === ce.css(e2, "float") && (u2 || (p2.done(function() {
-            h3.display = l2;
-          }), null == l2 && (c2 = h3.display, l2 = "none" === c2 ? "" : c2)), h3.display = "inline-block")), n2.overflow && (h3.overflow = "hidden", p2.always(function() {
-            h3.overflow = n2.overflow[0], h3.overflowX = n2.overflow[1], h3.overflowY = n2.overflow[2];
+          for (r2 in f2 && 1 === e2.nodeType && (n2.overflow = [h2.overflow, h2.overflowX, h2.overflowY], null == (l2 = v2 && v2.display) && (l2 = _.get(e2, "display")), "none" === (c2 = ce.css(e2, "display")) && (l2 ? c2 = l2 : (re([e2], true), l2 = e2.style.display || l2, c2 = ce.css(e2, "display"), re([e2]))), ("inline" === c2 || "inline-block" === c2 && null != l2) && "none" === ce.css(e2, "float") && (u2 || (p2.done(function() {
+            h2.display = l2;
+          }), null == l2 && (c2 = h2.display, l2 = "none" === c2 ? "" : c2)), h2.display = "inline-block")), n2.overflow && (h2.overflow = "hidden", p2.always(function() {
+            h2.overflow = n2.overflow[0], h2.overflowX = n2.overflow[1], h2.overflowY = n2.overflow[2];
           })), u2 = false, d2)
             u2 || (v2 ? "hidden" in v2 && (g2 = v2.hidden) : v2 = _.access(e2, "fxshow", { display: l2 }), o2 && (v2.hidden = !g2), g2 && re([e2], true), p2.done(function() {
               for (r2 in g2 || re([e2]), _.remove(e2, "fxshow"), d2)
@@ -8326,8 +8326,8 @@ var require_index_001 = __commonJS({
         e2.stopPropagation();
       };
       ce.extend(ce.event, { trigger: function(e2, t2, n2, r2) {
-        var i2, o2, a2, s2, u2, l2, c2, f2, p2 = [n2 || C], d2 = ue.call(e2, "type") ? e2.type : e2, h3 = ue.call(e2, "namespace") ? e2.namespace.split(".") : [];
-        if (o2 = f2 = a2 = n2 = n2 || C, 3 !== n2.nodeType && 8 !== n2.nodeType && !Dt.test(d2 + ce.event.triggered) && (-1 < d2.indexOf(".") && (d2 = (h3 = d2.split(".")).shift(), h3.sort()), u2 = d2.indexOf(":") < 0 && "on" + d2, (e2 = e2[ce.expando] ? e2 : new ce.Event(d2, "object" == typeof e2 && e2)).isTrigger = r2 ? 2 : 3, e2.namespace = h3.join("."), e2.rnamespace = e2.namespace ? new RegExp("(^|\\.)" + h3.join("\\.(?:.*\\.|)") + "(\\.|$)") : null, e2.result = void 0, e2.target || (e2.target = n2), t2 = null == t2 ? [e2] : ce.makeArray(t2, [e2]), c2 = ce.event.special[d2] || {}, r2 || !c2.trigger || false !== c2.trigger.apply(n2, t2))) {
+        var i2, o2, a2, s2, u2, l2, c2, f2, p2 = [n2 || C], d2 = ue.call(e2, "type") ? e2.type : e2, h2 = ue.call(e2, "namespace") ? e2.namespace.split(".") : [];
+        if (o2 = f2 = a2 = n2 = n2 || C, 3 !== n2.nodeType && 8 !== n2.nodeType && !Dt.test(d2 + ce.event.triggered) && (-1 < d2.indexOf(".") && (d2 = (h2 = d2.split(".")).shift(), h2.sort()), u2 = d2.indexOf(":") < 0 && "on" + d2, (e2 = e2[ce.expando] ? e2 : new ce.Event(d2, "object" == typeof e2 && e2)).isTrigger = r2 ? 2 : 3, e2.namespace = h2.join("."), e2.rnamespace = e2.namespace ? new RegExp("(^|\\.)" + h2.join("\\.(?:.*\\.|)") + "(\\.|$)") : null, e2.result = void 0, e2.target || (e2.target = n2), t2 = null == t2 ? [e2] : ce.makeArray(t2, [e2]), c2 = ce.event.special[d2] || {}, r2 || !c2.trigger || false !== c2.trigger.apply(n2, t2))) {
           if (!r2 && !c2.noBubble && !y(n2)) {
             for (s2 = c2.delegateType || d2, Dt.test(s2 + d2) || (o2 = o2.parentNode); o2; o2 = o2.parentNode)
               p2.push(o2), a2 = o2;
@@ -8425,9 +8425,9 @@ var require_index_001 = __commonJS({
         return t2 ? Gt(Gt(e2, ce.ajaxSettings), t2) : Gt(ce.ajaxSettings, e2);
       }, ajaxPrefilter: zt(Bt), ajaxTransport: zt(_t), ajax: function(e2, t2) {
         "object" == typeof e2 && (t2 = e2, e2 = void 0), t2 = t2 || {};
-        var c2, f2, p2, n2, d2, r2, h3, g2, i2, o2, v2 = ce.ajaxSetup({}, t2), y2 = v2.context || v2, m2 = v2.context && (y2.nodeType || y2.jquery) ? ce(y2) : ce.event, x2 = ce.Deferred(), b2 = ce.Callbacks("once memory"), w3 = v2.statusCode || {}, a2 = {}, s2 = {}, u2 = "canceled", T2 = { readyState: 0, getResponseHeader: function(e3) {
+        var c2, f2, p2, n2, d2, r2, h2, g2, i2, o2, v2 = ce.ajaxSetup({}, t2), y2 = v2.context || v2, m2 = v2.context && (y2.nodeType || y2.jquery) ? ce(y2) : ce.event, x2 = ce.Deferred(), b2 = ce.Callbacks("once memory"), w2 = v2.statusCode || {}, a2 = {}, s2 = {}, u2 = "canceled", T2 = { readyState: 0, getResponseHeader: function(e3) {
           var t3;
-          if (h3) {
+          if (h2) {
             if (!n2) {
               n2 = {};
               while (t3 = Wt.exec(p2))
@@ -8437,19 +8437,19 @@ var require_index_001 = __commonJS({
           }
           return null == t3 ? null : t3.join(", ");
         }, getAllResponseHeaders: function() {
-          return h3 ? p2 : null;
+          return h2 ? p2 : null;
         }, setRequestHeader: function(e3, t3) {
-          return null == h3 && (e3 = s2[e3.toLowerCase()] = s2[e3.toLowerCase()] || e3, a2[e3] = t3), this;
+          return null == h2 && (e3 = s2[e3.toLowerCase()] = s2[e3.toLowerCase()] || e3, a2[e3] = t3), this;
         }, overrideMimeType: function(e3) {
-          return null == h3 && (v2.mimeType = e3), this;
+          return null == h2 && (v2.mimeType = e3), this;
         }, statusCode: function(e3) {
           var t3;
           if (e3)
-            if (h3)
+            if (h2)
               T2.always(e3[T2.status]);
             else
               for (t3 in e3)
-                w3[t3] = [w3[t3], e3[t3]];
+                w2[t3] = [w2[t3], e3[t3]];
           return this;
         }, abort: function(e3) {
           var t3 = e3 || u2;
@@ -8463,22 +8463,22 @@ var require_index_001 = __commonJS({
             v2.crossDomain = true;
           }
         }
-        if (v2.data && v2.processData && "string" != typeof v2.data && (v2.data = ce.param(v2.data, v2.traditional)), Vt(Bt, v2, t2, T2), h3)
+        if (v2.data && v2.processData && "string" != typeof v2.data && (v2.data = ce.param(v2.data, v2.traditional)), Vt(Bt, v2, t2, T2), h2)
           return T2;
         for (i2 in (g2 = ce.event && v2.global) && 0 == ce.active++ && ce.event.trigger("ajaxStart"), v2.type = v2.type.toUpperCase(), v2.hasContent = !Ft.test(v2.type), f2 = v2.url.replace(Mt, ""), v2.hasContent ? v2.data && v2.processData && 0 === (v2.contentType || "").indexOf("application/x-www-form-urlencoded") && (v2.data = v2.data.replace(Rt, "+")) : (o2 = v2.url.slice(f2.length), v2.data && (v2.processData || "string" == typeof v2.data) && (f2 += (At.test(f2) ? "&" : "?") + v2.data, delete v2.data), false === v2.cache && (f2 = f2.replace(It, "$1"), o2 = (At.test(f2) ? "&" : "?") + "_=" + jt.guid++ + o2), v2.url = f2 + o2), v2.ifModified && (ce.lastModified[f2] && T2.setRequestHeader("If-Modified-Since", ce.lastModified[f2]), ce.etag[f2] && T2.setRequestHeader("If-None-Match", ce.etag[f2])), (v2.data && v2.hasContent && false !== v2.contentType || t2.contentType) && T2.setRequestHeader("Content-Type", v2.contentType), T2.setRequestHeader("Accept", v2.dataTypes[0] && v2.accepts[v2.dataTypes[0]] ? v2.accepts[v2.dataTypes[0]] + ("*" !== v2.dataTypes[0] ? ", " + Xt + "; q=0.01" : "") : v2.accepts["*"]), v2.headers)
           T2.setRequestHeader(i2, v2.headers[i2]);
-        if (v2.beforeSend && (false === v2.beforeSend.call(y2, T2, v2) || h3))
+        if (v2.beforeSend && (false === v2.beforeSend.call(y2, T2, v2) || h2))
           return T2.abort();
         if (u2 = "abort", b2.add(v2.complete), T2.done(v2.success), T2.fail(v2.error), c2 = Vt(_t, v2, t2, T2)) {
-          if (T2.readyState = 1, g2 && m2.trigger("ajaxSend", [T2, v2]), h3)
+          if (T2.readyState = 1, g2 && m2.trigger("ajaxSend", [T2, v2]), h2)
             return T2;
           v2.async && 0 < v2.timeout && (d2 = ie.setTimeout(function() {
             T2.abort("timeout");
           }, v2.timeout));
           try {
-            h3 = false, c2.send(a2, l2);
+            h2 = false, c2.send(a2, l2);
           } catch (e3) {
-            if (h3)
+            if (h2)
               throw e3;
             l2(-1, e3);
           }
@@ -8486,7 +8486,7 @@ var require_index_001 = __commonJS({
           l2(-1, "No Transport");
         function l2(e3, t3, n3, r3) {
           var i3, o3, a3, s3, u3, l3 = t3;
-          h3 || (h3 = true, d2 && ie.clearTimeout(d2), c2 = void 0, p2 = r3 || "", T2.readyState = 0 < e3 ? 4 : 0, i3 = 200 <= e3 && e3 < 300 || 304 === e3, n3 && (s3 = function(e4, t4, n4) {
+          h2 || (h2 = true, d2 && ie.clearTimeout(d2), c2 = void 0, p2 = r3 || "", T2.readyState = 0 < e3 ? 4 : 0, i3 = 200 <= e3 && e3 < 300 || 304 === e3, n3 && (s3 = function(e4, t4, n4) {
             var r4, i4, o4, a4, s4 = e4.contents, u4 = e4.dataTypes;
             while ("*" === u4[0])
               u4.shift(), void 0 === r4 && (r4 = e4.mimeType || t4.getResponseHeader("Content-Type"));
@@ -8542,7 +8542,7 @@ var require_index_001 = __commonJS({
                 }
               }
             return { state: "success", data: t4 };
-          }(v2, s3, T2, i3), i3 ? (v2.ifModified && ((u3 = T2.getResponseHeader("Last-Modified")) && (ce.lastModified[f2] = u3), (u3 = T2.getResponseHeader("etag")) && (ce.etag[f2] = u3)), 204 === e3 || "HEAD" === v2.type ? l3 = "nocontent" : 304 === e3 ? l3 = "notmodified" : (l3 = s3.state, o3 = s3.data, i3 = !(a3 = s3.error))) : (a3 = l3, !e3 && l3 || (l3 = "error", e3 < 0 && (e3 = 0))), T2.status = e3, T2.statusText = (t3 || l3) + "", i3 ? x2.resolveWith(y2, [o3, l3, T2]) : x2.rejectWith(y2, [T2, l3, a3]), T2.statusCode(w3), w3 = void 0, g2 && m2.trigger(i3 ? "ajaxSuccess" : "ajaxError", [T2, v2, i3 ? o3 : a3]), b2.fireWith(y2, [T2, l3]), g2 && (m2.trigger("ajaxComplete", [T2, v2]), --ce.active || ce.event.trigger("ajaxStop")));
+          }(v2, s3, T2, i3), i3 ? (v2.ifModified && ((u3 = T2.getResponseHeader("Last-Modified")) && (ce.lastModified[f2] = u3), (u3 = T2.getResponseHeader("etag")) && (ce.etag[f2] = u3)), 204 === e3 || "HEAD" === v2.type ? l3 = "nocontent" : 304 === e3 ? l3 = "notmodified" : (l3 = s3.state, o3 = s3.data, i3 = !(a3 = s3.error))) : (a3 = l3, !e3 && l3 || (l3 = "error", e3 < 0 && (e3 = 0))), T2.status = e3, T2.statusText = (t3 || l3) + "", i3 ? x2.resolveWith(y2, [o3, l3, T2]) : x2.rejectWith(y2, [T2, l3, a3]), T2.statusCode(w2), w2 = void 0, g2 && m2.trigger(i3 ? "ajaxSuccess" : "ajaxError", [T2, v2, i3 ? o3 : a3]), b2.fireWith(y2, [T2, l3]), g2 && (m2.trigger("ajaxComplete", [T2, v2]), --ce.active || ce.event.trigger("ajaxStop")));
         }
         return T2;
       }, getJSON: function(e2, t2, n2) {
@@ -8657,7 +8657,7 @@ var require_index_001 = __commonJS({
             void 0 === i2 ? ce(ie).removeProp(r2) : ie[r2] = i2, e2[r2] && (e2.jsonpCallback = t2.jsonpCallback, Kt.push(r2)), o2 && v(i2) && i2(o2[0]), o2 = i2 = void 0;
           }), "script";
       }), le.createHTMLDocument = ((Jt = C.implementation.createHTMLDocument("").body).innerHTML = "<form></form><form></form>", 2 === Jt.childNodes.length), ce.parseHTML = function(e2, t2, n2) {
-        return "string" != typeof e2 ? [] : ("boolean" == typeof t2 && (n2 = t2, t2 = false), t2 || (le.createHTMLDocument ? ((r2 = (t2 = C.implementation.createHTMLDocument("")).createElement("base")).href = C.location.href, t2.head.appendChild(r2)) : t2 = C), o2 = !n2 && [], (i2 = w2.exec(e2)) ? [t2.createElement(i2[1])] : (i2 = Ae([e2], t2, o2), o2 && o2.length && ce(o2).remove(), ce.merge([], i2.childNodes)));
+        return "string" != typeof e2 ? [] : ("boolean" == typeof t2 && (n2 = t2, t2 = false), t2 || (le.createHTMLDocument ? ((r2 = (t2 = C.implementation.createHTMLDocument("")).createElement("base")).href = C.location.href, t2.head.appendChild(r2)) : t2 = C), o2 = !n2 && [], (i2 = w.exec(e2)) ? [t2.createElement(i2[1])] : (i2 = Ae([e2], t2, o2), o2 && o2.length && ce(o2).remove(), ce.merge([], i2.childNodes)));
         var r2, i2, o2;
       }, ce.fn.load = function(e2, t2, n2) {
         var r2, i2, o2, a2 = this, s2 = e2.indexOf(" ");
@@ -9546,8 +9546,8 @@ var require_index_001 = __commonJS({
       }
       determinant() {
         const te = this.elements;
-        const a = te[0], b = te[1], c = te[2], d = te[3], e = te[4], f = te[5], g = te[6], h2 = te[7], i = te[8];
-        return a * e * i - a * f * h2 - b * d * i + b * f * g + c * d * h2 - c * e * g;
+        const a = te[0], b = te[1], c = te[2], d = te[3], e = te[4], f = te[5], g = te[6], h = te[7], i = te[8];
+        return a * e * i - a * f * h - b * d * i + b * f * g + c * d * h - c * e * g;
       }
       invert() {
         const te = this.elements, n11 = te[0], n21 = te[1], n31 = te[2], n12 = te[3], n22 = te[4], n32 = te[5], n13 = te[6], n23 = te[7], n33 = te[8], t11 = n33 * n22 - n32 * n23, t12 = n32 * n13 - n33 * n12, t13 = n23 * n12 - n22 * n13, det = n11 * t11 + n21 * t12 + n31 * t13;
@@ -10128,12 +10128,12 @@ var require_index_001 = __commonJS({
     Texture.DEFAULT_MAPPING = UVMapping;
     Texture.DEFAULT_ANISOTROPY = 1;
     class Vector4 {
-      constructor(x = 0, y = 0, z = 0, w2 = 1) {
+      constructor(x = 0, y = 0, z = 0, w = 1) {
         Vector4.prototype.isVector4 = true;
         this.x = x;
         this.y = y;
         this.z = z;
-        this.w = w2;
+        this.w = w;
       }
       get width() {
         return this.z;
@@ -10147,11 +10147,11 @@ var require_index_001 = __commonJS({
       set height(value) {
         this.w = value;
       }
-      set(x, y, z, w2) {
+      set(x, y, z, w) {
         this.x = x;
         this.y = y;
         this.z = z;
-        this.w = w2;
+        this.w = w;
         return this;
       }
       setScalar(scalar) {
@@ -10173,8 +10173,8 @@ var require_index_001 = __commonJS({
         this.z = z;
         return this;
       }
-      setW(w2) {
-        this.w = w2;
+      setW(w) {
+        this.w = w;
         return this;
       }
       setComponent(index, value) {
@@ -10284,12 +10284,12 @@ var require_index_001 = __commonJS({
         return this;
       }
       applyMatrix4(m) {
-        const x = this.x, y = this.y, z = this.z, w2 = this.w;
+        const x = this.x, y = this.y, z = this.z, w = this.w;
         const e = m.elements;
-        this.x = e[0] * x + e[4] * y + e[8] * z + e[12] * w2;
-        this.y = e[1] * x + e[5] * y + e[9] * z + e[13] * w2;
-        this.z = e[2] * x + e[6] * y + e[10] * z + e[14] * w2;
-        this.w = e[3] * x + e[7] * y + e[11] * z + e[15] * w2;
+        this.x = e[0] * x + e[4] * y + e[8] * z + e[12] * w;
+        this.y = e[1] * x + e[5] * y + e[9] * z + e[13] * w;
+        this.z = e[2] * x + e[6] * y + e[10] * z + e[14] * w;
+        this.w = e[3] * x + e[7] * y + e[11] * z + e[15] * w;
         return this;
       }
       divideScalar(scalar) {
@@ -10595,12 +10595,12 @@ var require_index_001 = __commonJS({
       }
     }
     class Quaternion {
-      constructor(x = 0, y = 0, z = 0, w2 = 1) {
+      constructor(x = 0, y = 0, z = 0, w = 1) {
         this.isQuaternion = true;
         this._x = x;
         this._y = y;
         this._z = z;
-        this._w = w2;
+        this._w = w;
       }
       static slerpFlat(dst, dstOffset, src0, srcOffset0, src1, srcOffset1, t) {
         let x0 = src0[srcOffset0 + 0], y0 = src0[srcOffset0 + 1], z0 = src0[srcOffset0 + 2], w0 = src0[srcOffset0 + 3];
@@ -10688,11 +10688,11 @@ var require_index_001 = __commonJS({
         this._w = value;
         this._onChangeCallback();
       }
-      set(x, y, z, w2) {
+      set(x, y, z, w) {
         this._x = x;
         this._y = y;
         this._z = z;
-        this._w = w2;
+        this._w = w;
         this._onChangeCallback();
         return this;
       }
@@ -10894,8 +10894,8 @@ var require_index_001 = __commonJS({
           return this;
         if (t === 1)
           return this.copy(qb);
-        const x = this._x, y = this._y, z = this._z, w2 = this._w;
-        let cosHalfTheta = w2 * qb._w + x * qb._x + y * qb._y + z * qb._z;
+        const x = this._x, y = this._y, z = this._z, w = this._w;
+        let cosHalfTheta = w * qb._w + x * qb._x + y * qb._y + z * qb._z;
         if (cosHalfTheta < 0) {
           this._w = -qb._w;
           this._x = -qb._x;
@@ -10906,7 +10906,7 @@ var require_index_001 = __commonJS({
           this.copy(qb);
         }
         if (cosHalfTheta >= 1) {
-          this._w = w2;
+          this._w = w;
           this._x = x;
           this._y = y;
           this._z = z;
@@ -10915,7 +10915,7 @@ var require_index_001 = __commonJS({
         const sqrSinHalfTheta = 1 - cosHalfTheta * cosHalfTheta;
         if (sqrSinHalfTheta <= Number.EPSILON) {
           const s = 1 - t;
-          this._w = s * w2 + t * this._w;
+          this._w = s * w + t * this._w;
           this._x = s * x + t * this._x;
           this._y = s * y + t * this._y;
           this._z = s * z + t * this._z;
@@ -10926,7 +10926,7 @@ var require_index_001 = __commonJS({
         const sinHalfTheta = Math.sqrt(sqrSinHalfTheta);
         const halfTheta = Math.atan2(sinHalfTheta, cosHalfTheta);
         const ratioA = Math.sin((1 - t) * halfTheta) / sinHalfTheta, ratioB = Math.sin(t * halfTheta) / sinHalfTheta;
-        this._w = w2 * ratioA + this._w * ratioB;
+        this._w = w * ratioA + this._w * ratioB;
         this._x = x * ratioA + this._x * ratioB;
         this._y = y * ratioA + this._y * ratioB;
         this._z = z * ratioA + this._z * ratioB;
@@ -11140,10 +11140,10 @@ var require_index_001 = __commonJS({
       applyMatrix4(m) {
         const x = this.x, y = this.y, z = this.z;
         const e = m.elements;
-        const w2 = 1 / (e[3] * x + e[7] * y + e[11] * z + e[15]);
-        this.x = (e[0] * x + e[4] * y + e[8] * z + e[12]) * w2;
-        this.y = (e[1] * x + e[5] * y + e[9] * z + e[13]) * w2;
-        this.z = (e[2] * x + e[6] * y + e[10] * z + e[14]) * w2;
+        const w = 1 / (e[3] * x + e[7] * y + e[11] * z + e[15]);
+        this.x = (e[0] * x + e[4] * y + e[8] * z + e[12]) * w;
+        this.y = (e[1] * x + e[5] * y + e[9] * z + e[13]) * w;
+        this.z = (e[2] * x + e[6] * y + e[10] * z + e[14]) * w;
         return this;
       }
       applyQuaternion(q) {
@@ -12688,11 +12688,11 @@ var require_index_001 = __commonJS({
       }
       compose(position, quaternion, scale) {
         const te = this.elements;
-        const x = quaternion._x, y = quaternion._y, z = quaternion._z, w2 = quaternion._w;
+        const x = quaternion._x, y = quaternion._y, z = quaternion._z, w = quaternion._w;
         const x2 = x + x, y2 = y + y, z2 = z + z;
         const xx = x * x2, xy = x * y2, xz = x * z2;
         const yy = y * y2, yz = y * z2, zz = z * z2;
-        const wx = w2 * x2, wy = w2 * y2, wz = w2 * z2;
+        const wx = w * x2, wy = w * y2, wz = w * z2;
         const sx = scale.x, sy = scale.y, sz = scale.z;
         te[0] = (1 - (yy + zz)) * sx;
         te[1] = (xy + wz) * sx;
@@ -12778,11 +12778,11 @@ var require_index_001 = __commonJS({
       }
       makeOrthographic(left, right, top, bottom, near, far, coordinateSystem = WebGLCoordinateSystem) {
         const te = this.elements;
-        const w2 = 1 / (right - left);
-        const h2 = 1 / (top - bottom);
+        const w = 1 / (right - left);
+        const h = 1 / (top - bottom);
         const p = 1 / (far - near);
-        const x = (right + left) * w2;
-        const y = (top + bottom) * h2;
+        const x = (right + left) * w;
+        const y = (top + bottom) * h;
         let z, zInv;
         if (coordinateSystem === WebGLCoordinateSystem) {
           z = (far + near) * p;
@@ -12793,12 +12793,12 @@ var require_index_001 = __commonJS({
         } else {
           throw new Error("THREE.Matrix4.makeOrthographic(): Invalid coordinate system: " + coordinateSystem);
         }
-        te[0] = 2 * w2;
+        te[0] = 2 * w;
         te[4] = 0;
         te[8] = 0;
         te[12] = -x;
         te[1] = 0;
-        te[5] = 2 * h2;
+        te[5] = 2 * h;
         te[9] = 0;
         te[13] = -y;
         te[2] = 0;
@@ -13732,7 +13732,7 @@ var require_index_001 = __commonJS({
       }
       closestPointToPoint(p, target) {
         const a = this.a, b = this.b, c = this.c;
-        let v, w2;
+        let v, w;
         _vab.subVectors(b, a);
         _vac.subVectors(c, a);
         _vap.subVectors(p, a);
@@ -13760,19 +13760,19 @@ var require_index_001 = __commonJS({
         }
         const vb = d5 * d2 - d1 * d6;
         if (vb <= 0 && d2 >= 0 && d6 <= 0) {
-          w2 = d2 / (d2 - d6);
-          return target.copy(a).addScaledVector(_vac, w2);
+          w = d2 / (d2 - d6);
+          return target.copy(a).addScaledVector(_vac, w);
         }
         const va = d3 * d6 - d5 * d4;
         if (va <= 0 && d4 - d3 >= 0 && d5 - d6 >= 0) {
           _vbc.subVectors(c, b);
-          w2 = (d4 - d3) / (d4 - d3 + (d5 - d6));
-          return target.copy(b).addScaledVector(_vbc, w2);
+          w = (d4 - d3) / (d4 - d3 + (d5 - d6));
+          return target.copy(b).addScaledVector(_vbc, w);
         }
         const denom = 1 / (va + vb + vc);
         v = vb * denom;
-        w2 = vc * denom;
-        return target.copy(a).addScaledVector(_vab, v).addScaledVector(_vac, w2);
+        w = vc * denom;
+        return target.copy(a).addScaledVector(_vab, v).addScaledVector(_vac, w);
       }
       equals(triangle) {
         return triangle.a.equals(this.a) && triangle.b.equals(this.b) && triangle.c.equals(this.c);
@@ -14378,8 +14378,8 @@ var require_index_001 = __commonJS({
         ColorManagement.toWorkingColorSpace(this, colorSpace);
         return this;
       }
-      setHSL(h2, s, l, colorSpace = ColorManagement.workingColorSpace) {
-        h2 = euclideanModulo(h2, 1);
+      setHSL(h, s, l, colorSpace = ColorManagement.workingColorSpace) {
+        h = euclideanModulo(h, 1);
         s = clamp(s, 0, 1);
         l = clamp(l, 0, 1);
         if (s === 0) {
@@ -14387,9 +14387,9 @@ var require_index_001 = __commonJS({
         } else {
           const p = l <= 0.5 ? l * (1 + s) : l + s - l * s;
           const q = 2 * l - p;
-          this.r = hue2rgb(q, p, h2 + 1 / 3);
-          this.g = hue2rgb(q, p, h2);
-          this.b = hue2rgb(q, p, h2 - 1 / 3);
+          this.r = hue2rgb(q, p, h + 1 / 3);
+          this.g = hue2rgb(q, p, h);
+          this.b = hue2rgb(q, p, h - 1 / 3);
         }
         ColorManagement.toWorkingColorSpace(this, colorSpace);
         return this;
@@ -14555,9 +14555,9 @@ var require_index_001 = __commonJS({
         }
         return `rgb(${Math.round(r * 255)},${Math.round(g * 255)},${Math.round(b * 255)})`;
       }
-      offsetHSL(h2, s, l) {
+      offsetHSL(h, s, l) {
         this.getHSL(_hslA);
-        _hslA.h += h2;
+        _hslA.h += h;
         _hslA.s += s;
         _hslA.l += l;
         this.setHSL(_hslA.h, _hslA.s, _hslA.l);
@@ -14614,10 +14614,10 @@ var require_index_001 = __commonJS({
       lerpHSL(color, alpha) {
         this.getHSL(_hslA);
         color.getHSL(_hslB);
-        const h2 = lerp(_hslA.h, _hslB.h, alpha);
+        const h = lerp(_hslA.h, _hslB.h, alpha);
         const s = lerp(_hslA.s, _hslB.s, alpha);
         const l = lerp(_hslA.l, _hslB.l, alpha);
-        this.setHSL(h2, s, l);
+        this.setHSL(h, s, l);
         return this;
       }
       setFromVector3(v) {
@@ -14843,15 +14843,15 @@ var require_index_001 = __commonJS({
         return this;
       }
       getW(index) {
-        let w2 = this.array[index * this.itemSize + 3];
+        let w = this.array[index * this.itemSize + 3];
         if (this.normalized)
-          w2 = denormalize(w2, this.array);
-        return w2;
+          w = denormalize(w, this.array);
+        return w;
       }
-      setW(index, w2) {
+      setW(index, w) {
         if (this.normalized)
-          w2 = normalize(w2, this.array);
-        this.array[index * this.itemSize + 3] = w2;
+          w = normalize(w, this.array);
+        this.array[index * this.itemSize + 3] = w;
         return this;
       }
       setXY(index, x, y) {
@@ -14876,18 +14876,18 @@ var require_index_001 = __commonJS({
         this.array[index + 2] = z;
         return this;
       }
-      setXYZW(index, x, y, z, w2) {
+      setXYZW(index, x, y, z, w) {
         index *= this.itemSize;
         if (this.normalized) {
           x = normalize(x, this.array);
           y = normalize(y, this.array);
           z = normalize(z, this.array);
-          w2 = normalize(w2, this.array);
+          w = normalize(w, this.array);
         }
         this.array[index + 0] = x;
         this.array[index + 1] = y;
         this.array[index + 2] = z;
-        this.array[index + 3] = w2;
+        this.array[index + 3] = w;
         return this;
       }
       onUpload(callback) {
@@ -15235,11 +15235,11 @@ var require_index_001 = __commonJS({
           tmp.sub(n.multiplyScalar(n.dot(t))).normalize();
           tmp2.crossVectors(n2, t);
           const test = tmp2.dot(tan2[v]);
-          const w2 = test < 0 ? -1 : 1;
+          const w = test < 0 ? -1 : 1;
           tangents[v * 4] = tmp.x;
           tangents[v * 4 + 1] = tmp.y;
           tangents[v * 4 + 2] = tmp.z;
-          tangents[v * 4 + 3] = w2;
+          tangents[v * 4 + 3] = w;
         }
         for (let i = 0, il = groups.length; i < il; ++i) {
           const group = groups[i];
@@ -15760,7 +15760,7 @@ var require_index_001 = __commonJS({
         this.setAttribute("position", new Float32BufferAttribute(vertices, 3));
         this.setAttribute("normal", new Float32BufferAttribute(normals, 3));
         this.setAttribute("uv", new Float32BufferAttribute(uvs, 2));
-        function buildPlane(u, v, w2, udir, vdir, width2, height2, depth2, gridX, gridY, materialIndex) {
+        function buildPlane(u, v, w, udir, vdir, width2, height2, depth2, gridX, gridY, materialIndex) {
           const segmentWidth = width2 / gridX;
           const segmentHeight = height2 / gridY;
           const widthHalf = width2 / 2;
@@ -15777,11 +15777,11 @@ var require_index_001 = __commonJS({
               const x = ix * segmentWidth - widthHalf;
               vector[u] = x * udir;
               vector[v] = y * vdir;
-              vector[w2] = depthHalf;
+              vector[w] = depthHalf;
               vertices.push(vector.x, vector.y, vector.z);
               vector[u] = 0;
               vector[v] = 0;
-              vector[w2] = depth2 > 0 ? 1 : -1;
+              vector[w] = depth2 > 0 ? 1 : -1;
               normals.push(vector.x, vector.y, vector.z);
               uvs.push(ix / gridX);
               uvs.push(1 - iy / gridY);
@@ -16403,9 +16403,9 @@ var require_index_001 = __commonJS({
         this.constant = constant;
         return this;
       }
-      setComponents(x, y, z, w2) {
+      setComponents(x, y, z, w) {
         this.normal.set(x, y, z);
-        this.constant = w2;
+        this.constant = w;
         return this;
       }
       setFromNormalAndCoplanarPoint(normal, point) {
@@ -26707,10 +26707,10 @@ var require_index_001 = __commonJS({
         this.data.array[index * this.data.stride + this.offset + 2] = z;
         return this;
       }
-      setW(index, w2) {
+      setW(index, w) {
         if (this.normalized)
-          w2 = normalize(w2, this.array);
-        this.data.array[index * this.data.stride + this.offset + 3] = w2;
+          w = normalize(w, this.array);
+        this.data.array[index * this.data.stride + this.offset + 3] = w;
         return this;
       }
       getX(index) {
@@ -26732,10 +26732,10 @@ var require_index_001 = __commonJS({
         return z;
       }
       getW(index) {
-        let w2 = this.data.array[index * this.data.stride + this.offset + 3];
+        let w = this.data.array[index * this.data.stride + this.offset + 3];
         if (this.normalized)
-          w2 = denormalize(w2, this.array);
-        return w2;
+          w = denormalize(w, this.array);
+        return w;
       }
       setXY(index, x, y) {
         index = index * this.data.stride + this.offset;
@@ -26759,18 +26759,18 @@ var require_index_001 = __commonJS({
         this.data.array[index + 2] = z;
         return this;
       }
-      setXYZW(index, x, y, z, w2) {
+      setXYZW(index, x, y, z, w) {
         index = index * this.data.stride + this.offset;
         if (this.normalized) {
           x = normalize(x, this.array);
           y = normalize(y, this.array);
           z = normalize(z, this.array);
-          w2 = normalize(w2, this.array);
+          w = normalize(w, this.array);
         }
         this.data.array[index + 0] = x;
         this.data.array[index + 1] = y;
         this.data.array[index + 2] = z;
-        this.data.array[index + 3] = w2;
+        this.data.array[index + 3] = w;
         return this;
       }
       clone(data) {
@@ -28425,8 +28425,8 @@ var require_index_001 = __commonJS({
         const blendMode = animation.blendMode;
         let duration = animation.length || -1;
         const hierarchyTracks = animation.hierarchy || [];
-        for (let h2 = 0; h2 < hierarchyTracks.length; h2++) {
-          const animationKeys = hierarchyTracks[h2].keys;
+        for (let h = 0; h < hierarchyTracks.length; h++) {
+          const animationKeys = hierarchyTracks[h].keys;
           if (!animationKeys || animationKeys.length === 0)
             continue;
           if (animationKeys[0].morphTargets) {
@@ -28451,7 +28451,7 @@ var require_index_001 = __commonJS({
             }
             duration = morphTargetNames.length * fps;
           } else {
-            const boneName = ".bones[" + bones[h2].name + "]";
+            const boneName = ".bones[" + bones[h].name + "]";
             addNonemptyTrack(
               VectorKeyframeTrack,
               boneName + ".position",
@@ -33916,14 +33916,12 @@ var require_index_001 = __commonJS({
     });
     const scene = new Scene();
     const light = new AmbientLight(13421772);
-    const directionalLight = new DirectionalLight(16777215);
-    directionalLight.position.set(0, 1, 1).normalize();
     light.position.set(0, 5, 5);
     scene.add(light);
     const canvas = document.querySelector(".webgl");
     var container = document.getElementById("overlay-models");
-    var w = container.offsetWidth;
-    var h = container.offsetHeight;
+    container.offsetWidth;
+    container.offsetHeight;
     const camera = new OrthographicCamera(-0.3654, 0.3654, 0.27615, -0.27615, 0.01, 2e4);
     camera.zoom = 1;
     scene.add(camera);
@@ -33931,8 +33929,6 @@ var require_index_001 = __commonJS({
     const renderer = new WebGLRenderer({ canvas });
     renderer.setClearColor(255);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(w, h);
-    container.appendChild(renderer.domElement);
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true;
     controls.enablePan = false;
@@ -34006,12 +34002,6 @@ var require_index_001 = __commonJS({
       renderer.render(scene, camera);
     }
     renderLoop();
-    window.addEventListener("resize", () => {
-      w = container.offsetWidth;
-      h = container.offsetHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(w, h);
-    });
     $(function() {
       $("#back-to-list").on("click", function() {
         $("#overlay-loading").show();
@@ -34177,4 +34167,4 @@ var require_index_001 = __commonJS({
   }
 });
 export default require_index_001();
-//# sourceMappingURL=index-c57128b4.js.map
+//# sourceMappingURL=index-99e21f2c.js.map

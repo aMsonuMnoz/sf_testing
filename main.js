@@ -9,8 +9,6 @@ import { hideAll } from './jq';
 //scene
 const scene = new THREE.Scene();
 const light = new THREE.AmbientLight(0xcccccc);
-const directionalLight = new THREE.DirectionalLight( 0xffffff );
-directionalLight.position.set( 0, 1, 1 ).normalize();
 light.position.set(0,5,5);
 scene.add(light);
 
@@ -29,19 +27,12 @@ scene.add( camera );
 camera.position.set(1,1,1);
 
 
-//camera helper
-// const helper = new THREE.CameraHelper(camera);
-// scene.add(helper);
-
-
-
-
 //renderer
 const renderer = new THREE.WebGLRenderer({canvas}); //delete alpha: true if not transparent
 renderer.setClearColor(0x0000ff); // set transparent color if not transparent 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(w, h);
-container.appendChild(renderer.domElement);
+// renderer.setSize(w, h);
+// container.appendChild(renderer.domElement);
 
 //Controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -56,16 +47,6 @@ var modelScales = [1,0.23];
 var currentPathIndex = 0;
 var currentModel;
 
-// const hlp = new THREE.AxesHelper(1);
-// scene.add(hlp);
-
-//plane geometry
-// const geometry = new THREE.PlaneGeometry( 5, 5 );
-// const material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide} );
-// const plane = new THREE.Mesh( geometry, material );
-// plane.rotation.x=(Math.PI/180*90);
-// plane.position.y=-.1;
-// scene.add( plane );
 
 //GLTF Loader
 let clock = new THREE.Clock();
@@ -166,14 +147,14 @@ renderLoop();
 
 
 
-//responsiveness
-window.addEventListener('resize', () => {
-    //update sizes
-    w = container.offsetWidth;
-    h = container.offsetHeight;
-    //Update Camera
-    camera.updateProjectionMatrix();
-    //Update Renderer
-    renderer.setSize(w,h);
-})
+// //responsiveness
+// window.addEventListener('resize', () => {
+//     //update sizes
+//     w = container.offsetWidth;
+//     h = container.offsetHeight;
+//     //Update Camera
+//     camera.updateProjectionMatrix();
+//     //Update Renderer
+//     renderer.setSize(w,h);
+// });
 
