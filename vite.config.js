@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/j/',
+  base: '/public_html/',
 
   // build: {
   //   minify: false,
