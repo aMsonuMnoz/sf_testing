@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/sf_testing/',
+  base: '/j/',
 
   // build: {
   //   minify: false,
