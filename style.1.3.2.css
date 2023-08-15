@@ -45,11 +45,7 @@ body{
   }
 
 
-
-
-
 /*-----------------------OUTSIDE OF INTERFACE*/
-/*When aspect is less than 0.625 */
 #Title{
 	position: relative;
 	display: block;
@@ -60,7 +56,14 @@ body{
 	/* max-width:200px;	 */
 }
 
-
+#Navigation{
+	position: absolute;
+	z-index: 100;
+	bottom: 1.5vh;
+	width: 99%;
+	margin: auto;
+	left: -0.6%;
+}
 
 /* Marquee */
 .marquee {
@@ -107,8 +110,6 @@ body{
 
 
 
-
-
 /*-----------------------INTERFACE ITEMS*/
 
 /* When aspect is less than 0.625 */
@@ -120,6 +121,14 @@ body{
 	pointer-events: none;
 }
 
+#crt-overlay {
+	position:absolute;
+	top:18.4%; bottom:12%; left:10%; right:10%;
+	display:block;
+	z-index:6;
+	background:transparent;
+	pointer-events: none;
+}
 
 #overlay-links {
 	position:absolute;
@@ -131,14 +140,11 @@ body{
 	background: blue;
 }
 
-/*CRT Overlay*/
-#crt-overlay {
+#overlay-models{
 	position:absolute;
 	top:18.4%; bottom:12%; left:10%; right:10%;
-	display:block;
-	z-index:6;
+	display:inline-block;
 	background:transparent;
-	pointer-events: none;
 }
 
 #overlay-lyrics{
@@ -168,7 +174,6 @@ body{
 #overlay-email {
 	position:absolute;
 	background: url(gifs/sparklepinkbackground.webp);
-
 	top: 18.4%;
     bottom: 12.3%;
     left: 10%;
@@ -342,26 +347,6 @@ body{
 		border-width: thick;
 	}
 }
-
-
-#overlay-models{
-	position:absolute;
-	top:18.4%; bottom:12%; left:10%; right:10%;
-	display:inline-block;
-	background:transparent;
-}
-
-#Navigation{
-	position: absolute;
-	z-index: 100;
-	bottom: 1.5vh;
-	width: 99%;
-	margin: auto;
-	left: -0.6%;
-
-}
-
-
 
 @media only screen and (min-aspect-ratio: 5/8) {
 
