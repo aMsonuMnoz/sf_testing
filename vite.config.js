@@ -3,10 +3,11 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: '',
 
-  // build: {
-  //   minify: false,
-  //   sourcemap: true
-  // }
+  build: {
+    minify: true,
+    sourcemap: true,
+    assetsInlineLimit: 0
+  }
 
   
 });
