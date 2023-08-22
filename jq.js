@@ -54,7 +54,7 @@ $(function(){
         $("#overlay-loading").show();
 
         setTimeout(() => {
-            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'images/Scene1-off.webp'}));
+            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'public/Scene1-off.webp'}));
             $("#crt-overlay").hide();
         }, "1800");
     });
