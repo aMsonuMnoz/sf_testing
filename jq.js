@@ -94,6 +94,16 @@ $(function(){
         
     });
 
+    $("#Radio").on("click", function() {
+        hideAll();
+        $("#overlay-loading").show();
+        $("#overlay-radio").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "200");
+        
+    });
+
     $("#Merch").on("click", function() {
         hideAll();
         $("#overlay-loading").show();

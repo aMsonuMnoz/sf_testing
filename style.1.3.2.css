@@ -171,6 +171,19 @@ body{
 	display: none;
 }
 
+#overlay-radio {
+	position:absolute;
+	top: 18.4%;
+    bottom: 12.3%;
+    left: 10%;
+    right: 10.2%;
+	z-index:5;
+	overflow: scroll;
+	display: none;
+	background: url(gifs/radio.webp);
+	background-size: cover;
+}
+
 #overlay-email {
 	position:absolute;
 	background: url(gifs/sparklepinkbackground.webp);
@@ -784,6 +797,14 @@ a:visited{
 	width: 5%
 }
 
+#Radio{
+	background: url(gifs/radiobutton.webp);
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	border: none;
+}
+
 #sucks{
 	position: absolute;
 	left: 0%;
@@ -820,6 +841,7 @@ a:visited{
 	top: 10%;
 	
 }
+
 
 #seeing{
 	position: absolute;
@@ -862,6 +884,11 @@ a:visited{
     top: 48%;
     width: 40%;
     display: none;
+}
+
+.musesStyleReset {
+	margin: 0px auto;
+	display: block;
 }
 
 
