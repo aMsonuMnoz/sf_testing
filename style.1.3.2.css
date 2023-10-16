@@ -416,52 +416,31 @@ body{
 	}
 
 	#crt-overlay {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:block;
-		z-index:6;
-		background:transparent;
-		pointer-events: none;  
 	}
 
 	#overlay-links {
-		position:absolute;
-		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:block;
-		z-index:2;
-		pointer-events: all;  
+		top:18.6%; bottom:11.1%; left:10%; right:10%; 
 	}
 
 	#overlay-models {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:inline-block;
-		z-index:5;
-		background:transparent;
 	}
 
 	#overlay-guest {
-		position:absolute;
-		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:none;
-		z-index:2;
-		pointer-events: all;  
+		top:18.6%; bottom:11.1%; left:10%; right:10%; 
+	}
+
+	#overlay-radio {
+		top:18.6%; bottom:11.1%; left:10%; right:10%; 
 	}
 
 	#overlay-email {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:none;
-		z-index:2;
-		pointer-events: all;  
 	}
 
 	#overlay-merch {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:none;
-		z-index:2;
-		pointer-events: all;  
 	}
 
 	.ComputerLoading{
@@ -886,9 +865,9 @@ a:visited{
     display: none;
 }
 
-.musesStyleReset {
-	margin: 0px auto;
-	display: block;
+#MusesRadioPlayer-HTML5-player-0{
+	left: 3%;
+	top: 39%;
 }
 
 
