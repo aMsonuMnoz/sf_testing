@@ -784,6 +784,17 @@ a:visited{
 	border: none;
 }
 
+#donate{
+	position: absolute;
+	background: url(gifs/dollar11.gif);
+	background-size: cover;
+	height:43.5px;
+	width:30px;
+	border: none;
+	top: 2%;
+	right: 2%;
+}
+
 #sucks{
 	position: absolute;
 	left: 0%;
