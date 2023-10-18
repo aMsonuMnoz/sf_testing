@@ -167,7 +167,6 @@ body{
     left: 10%;
     right: 10.2%;
 	z-index:5;
-	overflow: scroll;
 	display: none;
 }
 
@@ -178,7 +177,6 @@ body{
     left: 10%;
     right: 10.2%;
 	z-index:5;
-	overflow: scroll;
 	display: none;
 	background: url(gifs/radio.webp);
 	background-size: cover;
@@ -203,7 +201,6 @@ body{
     left: 10%;
     right: 10.2%;
 	z-index:5;
-	overflow: scroll;
 	display: none;
 	background: url(images/merchbackground.png);
 	background-size: cover;
@@ -469,6 +466,7 @@ body{
 		z-index:5;
 		background:url(gifs/AnimatedBackGroundSky.webp);
 		overflow: scroll;
+		overflow-x: hidden;
 		display: none;
 	}
 
@@ -483,6 +481,7 @@ body{
 		z-index:11;
 		pointer-events: all; 
 	}
+
 
 }
 
