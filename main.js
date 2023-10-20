@@ -1,14 +1,22 @@
 import $ from 'jquery';
 
 import { OrbitControls } from "/node_modules/three/examples/jsm/controls/OrbitControls.js";
-import * as THREE from '/node_modules/three';
+// import * as THREE from '/node_modules/three';
+import {
+    Scene,
+    AmbientLight,
+    WebGLRenderer,
+    OrthographicCamera,
+    Clock,
+    AnimationMixer
+  } from "/node_modules/three/build/three.module.min.js";
 import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 import { hideAll } from './jq';
 
 
 //scene
-const scene = new THREE.Scene();
-const light = new THREE.AmbientLight(0xcccccc);
+const scene = new Scene();
+const light = new AmbientLight(0xcccccc);
 light.position.set(0,5,5);
 scene.add(light);
 
@@ -21,14 +29,14 @@ var h = container.offsetHeight;
 let aspect = w/h;
 
 
-const camera = new THREE.OrthographicCamera(-0.3654, 0.3654, 0.27615, -0.27615, 0.01, 20000);
+const camera = new OrthographicCamera(-0.3654, 0.3654, 0.27615, -0.27615, 0.01, 20000);
 camera.zoom = 1;
 scene.add( camera );
 camera.position.set(1,1,1);
 
 
 //renderer
-const renderer = new THREE.WebGLRenderer({canvas}); //delete alpha: true if not transparent
+const renderer = new WebGLRenderer({canvas}); //delete alpha: true if not transparent
 renderer.setClearColor(0x0000ff); // set transparent color if not transparent 
 renderer.setPixelRatio(window.devicePixelRatio);
 // renderer.setSize(w, h);
@@ -49,7 +57,7 @@ var currentModel;
 
 
 //GLTF Loader
-let clock = new THREE.Clock();
+let clock = new Clock();
 let mixer;
 const loader = new GLTFLoader();
 
@@ -63,7 +71,7 @@ function loadModel(index, scale){
         modelPaths[index],
         // called when the resource is loaded
         function ( gltf ) {
-            mixer = new THREE.AnimationMixer( gltf.scene );
+            mixer = new AnimationMixer( gltf.scene );
             const object = gltf.scene;
             gltf.scene.scale.set(scale,scale,scale);
             gltf.scene.position.x = 0;

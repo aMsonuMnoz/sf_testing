@@ -21,9 +21,9 @@ function linksOff() {
 
 
 $(function(){
-    $("#Interface").hide();
+    // $("#Interface").hide();
     $("#Interface").css("visibility","visible");
-    $("#Interface").show("slow");
+    // $("#Interface").show("slow");
     $("#overlay-models").css("visibility","hidden");
     
 
