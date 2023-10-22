@@ -15,6 +15,10 @@
 		<script type="module" src="bg.js"></script>
 		<!-- JQuery -->
 		<script src="./jquery.min.js" type="module"></script>
+
+		<!--Swift Slider-->
+		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 		
 
 	</head>
@@ -22,7 +26,7 @@
 	<body>
 		<div id="Overlord">
 			<p id="Refresh">Refresh!</p>
-			<div id="header" class="marquee"><p>"Escape From Beautiful Mountain" is available to listen and watch today. Don't miss out! <img alt="sunglasses cool guy" id="OKAY" src = "./images/OKAY.webp"></p> </div>
+			<div id="header" class="marquee"><p id="tagline">"Escape From Beautiful Mountain ajsdflkasjdfl;kasjdfl;kasjdf;lkasjdf;laskjdf;laskdjf;alsdkfjal;sdkfj;l"<img alt="sunglasses cool guy" id="OKAY" src = "./images/OKAY.webp"></p> </div>
 			<img id="Title" alt="this shit took forever to make" src="./images/globe3.webp">
 			<button onclick="window.location.href='https://ko-fi.com/exitlayne';" class="Transparent" id="donate" type="button">Click Me</button>
 			
@@ -117,8 +121,23 @@
 				</div>
 
 				<div id="overlay-merch">
-					<button class = "cycle" id = "prevmodel"></button>
-					<button class = "cycle" id = "nextmodel"></button>
+					<img id="coming" src="gifs/comingsoon.gif">
+					<div class="swiffy-slider slider-item-nogap slider-nav-caretfill slider-nav-visible slider-nav-touch slider-indicators-square slider-indicators-highlight slider-indicators-sm" id="merch-slider" id="merch-slider">
+						<ul class="slider-container">
+							<li><img src="/gifs/testshirt.gif" style="max-width: 100%;height: auto;"></li>
+							<li><img src="/gifs/testshirt.gif" style="max-width: 100%;height: auto;"></li>
+							<li><img src="/gifs/testshirt.gif" style="max-width: 100%;height: auto;"></li>
+						</ul>
+					
+						<button type="button" class="slider-nav"></button>
+						<button type="button" class="slider-nav slider-nav-next"></button>
+					
+						<div class="slider-indicators">
+							<button class="active"></button>
+							<button></button>
+							<button></button>
+						</div>
+					</div>
 				</div>
 
 				<div id="overlay-radio">

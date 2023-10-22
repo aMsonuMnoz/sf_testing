@@ -63,6 +63,7 @@ body{
 	left: -0.6%;
 }
 
+
 /* Marquee */
 .marquee {
 	height: 20px;
@@ -83,8 +84,9 @@ body{
 .marquee p {
 	position: absolute;
 	font-size: 15px;
-	width: 28em;
+	width: auto;
 	height: 15px;
+	white-space: nowrap;
 	margin: 0;
 	line-height: 20px;
 	text-align: center;
@@ -100,7 +102,7 @@ body{
 #OKAY{
 	display: inline-block;
 	position: absolute;
-	width: 6%;
+	width: 4.6%;
 	left: 102%;
 	top: 0%;
 	z-index: 5;
@@ -200,7 +202,7 @@ body{
     right: 10.2%;
 	z-index:5;
 	display: none;
-	background: url(images/merchbackground.png);
+	background: url(gifs/merchbg.gif);
 	background-size: cover;
 	background-position: center 15%;
 }
@@ -213,6 +215,23 @@ body{
 	display: none;
 	background: url(images/CRT_off.webp);
 	background-size: cover;
+}
+
+#merch-slider{
+    height: 100%;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    z-index: -5;
+}
+
+#coming{
+	position: absolute;
+	height: 20%;
+	width: auto;
+	top: 40%;
+	left: 25%;
+
 }
 
 #guest{
@@ -468,6 +487,7 @@ body{
 		top: 38%;
 		width: 20%;
 	}
+	
 
     #overlay-lyrics {
 		position:absolute;
@@ -518,14 +538,14 @@ body{
 
 @keyframes scroll-left {
 	0% {
-		-moz-transform: translateX(200%);
-		-webkit-transform: translateX(200%);
-		transform: translateX(200%);
+		-moz-transform: translateX(100vw);
+		-webkit-transform: translateX(100vw);
+		transform: translateX(100vw);
 	}
 	100% {
-		-moz-transform: translateX(-100%);
-		-webkit-transform: translateX(-100%);
-		transform: translateX(-100%);
+		-moz-transform: translateX(-100vw);
+		-webkit-transform: translateX(-100vw);
+		transform: translateX(-100vw);
 	}
 }
 
