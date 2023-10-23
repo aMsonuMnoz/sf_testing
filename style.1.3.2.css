@@ -95,7 +95,7 @@ body{
 	transform: translateX(100%);
 	-moz-animation: scroll-left 2s linear infinite;
 	-webkit-animation: scroll-left 2s linear infinite;
-	animation: scroll-left 10s linear infinite;
+	animation: scroll-left-mobile 8s linear infinite;
 	font-family: myFirstFont;
 }
 
@@ -384,6 +384,10 @@ body{
 		top: 1%;
 		border-width: thick;
 	}
+
+	.marquee p{
+		animation: scroll-left 20s linear infinite;
+	}
 }
 
 @media only screen and (min-aspect-ratio: 5/8) {
@@ -511,6 +515,10 @@ body{
 		pointer-events: all; 
 	}
 
+	.marquee p{
+		animation: scroll-left 15s linear infinite;
+	}
+
 
 }
 
@@ -549,6 +557,14 @@ body{
 	}
 }
 
+@keyframes scroll-left-mobile {
+	0% {
+		transform: translateX(200vw);
+	}
+	100% {
+		transform: translateX(-200vw);
+	}
+}
 
 /*Temporary Refresh Fix*/
 #Refresh{
