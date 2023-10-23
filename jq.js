@@ -21,10 +21,31 @@ function linksOff() {
 
 
 $(function(){
+
     // $("#Interface").hide();
     $("#Interface").css("visibility","visible");
     // $("#Interface").show("slow");
     $("#overlay-models").css("visibility","hidden");
+
+
+// changes marquee text
+    const animated = document.querySelector(".marquee");
+    let i = 0;
+    let taglines = [
+        "Tagline2", 
+        "Tagline3",
+        "Tagline4",
+        "Tagline1"
+    ];
+
+    animated.addEventListener("animationiteration", () => {
+        $("#tagline").text(taglines[i]);
+        i++;
+        if (i%4==0) {
+            i=0;
+        }
+        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = './images/OKAY.webp'>");
+    });
     
 
     $("#LinksInterface").on("click", function() {
