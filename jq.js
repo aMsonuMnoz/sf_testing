@@ -44,7 +44,7 @@ $(function(){
         if (i%4==0) {
             i=0;
         }
-        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = './images/OKAY.webp'>");
+        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = './OKAY.webp'>");
     });
     
 

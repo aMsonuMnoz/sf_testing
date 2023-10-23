@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--Created by Mason Munoz-->
 	<head>
-		<!--Created by Mason Munoz-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1">
 		<meta name="author" content="Mason Müñoz">
@@ -16,21 +15,36 @@
 		
 		<!-- JQuery -->
 		
+
+		<!--Swift Slider-->
+		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 		
 
-		<script type="module" crossorigin src="./assets/index-3b9e1d60.js"></script>
-		<link rel="stylesheet" href="./assets/index-5bbbc9c4.css">
+		<script type="module" crossorigin src="./assets/index-c7d71adc.js"></script>
+		<link rel="stylesheet" href="./assets/index-396bf56b.css">
 	</head>
 
 	<body>
 		<div id="Overlord">
 			<p id="Refresh">Refresh!</p>
-			<div id="header" class="marquee"><p>Listen to Sewn on all platforms and watch our new video on instagram <img alt="sunglasses cool guy" id="OKAY" src = "./assets/OKAY-bc4104e0.webp"></p> </div>
-			<img id="Title" alt="this shit took forever to make" src="./assets/globe3-ce642040.webp">
+			<div id="header" class="marquee"><p id="tagline">"Escape From Beautiful Mountain"<img alt="sunglasses cool guy" id="OKAY" src = "./assets/OKAY-bc4104e0.webp"></p> </div>
+
+<!-- visitor counter -->
+			<div id="sfct9rg3rdrxg7excp86yqrl7s6bxru2w3g"></div>
+			<script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=t9rg3rdrxg7excp86yqrl7s6bxru2w3g&down=async" async></script>
+			<noscript>
+				<a href="https://www.freecounterstat.com" title="free hit counter">
+				<img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=w2kwq9mphhdp1luhpd7sey7xb8ubsk1y" border="0" title="free hit counter" alt="free hit counter"></a>
+			</noscript>
+
+
+			<img id="Title" alt="this shit took forever to make" src="./assets/globe3-a36d9da5.webp">
+			<button onclick="window.location.href='https://ko-fi.com/exitlayne';" class="Transparent" id="donate" type="button">Click Me</button>
 			
 			<div id="Interface">
 				<div id="crt-overlay" class="crt"></div>
-				<img id="Computer" src = "./assets/ComputerFrame-457efb0d.webp" alt = "What is this magic?" loading="eager">
+				<img id="Computer" src = "./assets/ComputerFrame-be77b747.webp" alt = "What is this magic?" loading="eager">
 				<img id="PowerButton" src="./assets/ColorButton-3d69aa02.webp" alt="power button">
 				<img id="LinksOff" src="./assets/eyebullet-7e5d5dcd.webp" alt="turns links off">
 				<div id="overlay-loading">
@@ -114,11 +128,49 @@
 				</div>
 
 				<div id="overlay-guest">
-					<object id="guest" type="text/html" data="https://sweetfighter.123guestbook.com/" style="overflow:auto;border:5px ridge blue">
-					</object>
+					<img src="./assets/signmy-61a924d8.webp" id="guest">
+					<button onclick="window.location.href='http://sweetfighter.123guestbook.com/';" class="Transparent" id="guestbutton" type="button">Click Me</button>
 				</div>
 
 				<div id="overlay-merch">
+					<img id="coming" src="./assets/comingsoon-00b7b197.gif">
+					<div class="swiffy-slider slider-item-nogap slider-nav-caretfill slider-nav-visible slider-nav-touch slider-indicators-square slider-indicators-highlight slider-indicators-sm" id="merch-slider" id="merch-slider">
+						<ul class="slider-container">
+							<li><img src="./assets/testshirt-f193764b.gif" style="max-width: 100%;height: auto;"></li>
+							<li><img src="./assets/testshirt-f193764b.gif" style="max-width: 100%;height: auto;"></li>
+							<li><img src="./assets/testshirt-f193764b.gif" style="max-width: 100%;height: auto;"></li>
+						</ul>
+					
+						<button type="button" class="slider-nav"></button>
+						<button type="button" class="slider-nav slider-nav-next"></button>
+					
+						<div class="slider-indicators">
+							<button class="active"></button>
+							<button></button>
+							<button></button>
+						</div>
+					</div>
+				</div>
+
+				<div id="overlay-radio">
+					<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+					<script type="text/javascript">
+					MRP.insert({
+					'url':'http://24.242.199.182/stream',
+					'codec':'mp3',
+					'volume':75,
+					'autoplay':false,
+					'forceHTML5':true,
+					'jsevents':true,
+					'buffering':0,
+					'title':'sweetfighter.net radio',
+					'welcome':'listen.......',
+					'wmode':'transparent',
+					'skin':'tiny',
+					'width':130,
+					'height':60
+					});
+					</script>
 				</div>
 
 
@@ -137,12 +189,13 @@
 
 			
 			<div id = "Navigation">
-				<button id = "LinksInterface" alt="cool links"></button>
-				<button id = "ThreeDimInterface" alt="3d world"></button>
-				<button id = 'Lyrics' alt="lyrics"></button>
-				<button id = 'Guestbook' alt="guestbook"></button>
-				<button id = 'Merch' alt="merch"></button>
-				<button id = 'Mail' alt="mail"></button>
+				<button id = "LinksInterface" aria-label="cool links"></button>
+				<button id = "ThreeDimInterface" aria-label="3d world"></button>
+				<button id = 'Lyrics' aria-label="lyrics"></button>
+				<button id = 'Radio' aria-label="radio"></button>
+				<button id = 'Guestbook' aria-label="guestbook"></button>
+				<button id = 'Merch' aria-label="merch"></button>
+				<button id = 'Mail' aria-label="email"></button>
 				
 			</div>
 
