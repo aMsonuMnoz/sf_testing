@@ -110,7 +110,7 @@ body{
 }
 
 #sfct9rg3rdrxg7excp86yqrl7s6bxru2w3g{
-	text-align: left;
+	text-align: right;
 	position: absolute;
 }
 
@@ -184,7 +184,7 @@ body{
     right: 10.2%;
 	z-index:5;
 	display: none;
-	background: url(gifs/radio.webp);
+	background: url(gifs/radio2.webp);
 	background-size: cover;
 }
 
@@ -387,7 +387,7 @@ body{
 		color: #ffff33;
 		border: 2px solid gray;
 		border-style: ridge;
-		top: 1%;
+		top: 0%;
 		border-width: thick;
 	}
 
@@ -839,14 +839,35 @@ a:visited{
 
 #donate{
 	position: absolute;
-	background: url(gifs/dollar11.gif);
+	background: url(gifs/dollar11.webp);
 	background-size: cover;
-	height:43.5px;
-	width:30px;
+	height:17.4%;
+	width:9%;
 	border: none;
-	top: 5%;
-	right: 2%;
+	top: 25%;
+	left: 5%;
+	padding: 0;
 }
+
+#donate:hover {
+	transform: scale(1.2);
+  }
+
+#movie{
+	position: absolute;
+	background: url(gifs/sjfweb.webp);
+	background-size: cover;
+	height:19%;
+	width:15%;
+	border: none;
+	top: 62%;
+	right: 11%;
+	z-index: 8;
+}
+
+#movie:hover {
+	transform: scale(1.2);
+  }
 
 #sucks{
 	position: absolute;
@@ -923,9 +944,9 @@ a:visited{
 #model-loading{
     position: absolute;
     z-index: 6;
-    left: 30%;
-    top: 48%;
-    width: 40%;
+    left: 45%;
+    top: 42%;
+    width: 10%;
     display: none;
 }
 

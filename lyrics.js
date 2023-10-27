@@ -177,4 +177,15 @@ $(function(){
         $("#back-to-list").show();
     });
 
+    $("#sjf").on("click", function(){
+        $("#overlay-loading").show();
+        $("#sub-songlist").hide();
+        $("#sub-song").load("songs/Strong_John_Fisher.html");
+        $("#sub-song").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+        }, "200");
+        $("#back-to-list").show();
+    });
+
 });

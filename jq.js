@@ -17,6 +17,8 @@ function linksOff() {
     $("#Cover").toggle();
     $("#Listen").toggle();
     $("#newSong").toggle();
+    $("#donate").toggle();
+    $("#movie").toggle();
 }
 
 
@@ -31,17 +33,23 @@ $(function(){
 // changes marquee text
     const animated = document.querySelector(".marquee");
     let i = 0;
-    let taglines = [
-        "Tagline2", 
-        "Tagline3",
-        "Tagline4",
-        "Tagline1"
+    let taglines = [ 
+        "Click every button",
+        "Escape from Beautiful Mountain coming soon...",
+        "Still here? Listen to our music NOW!",
+        "Look at my models please",
+        "We didn't pay anyone to make this website",
+        "Leave a comment in the guestbook",
+        "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
+        "Follow our Instagram for updates about us, we are not on Facebook",
+        "If you like our music, tell us",
+        "Strong John Fisher now streaming... click sjf.mp4 to watch the live video"
     ];
 
     animated.addEventListener("animationiteration", () => {
         $("#tagline").text(taglines[i]);
         i++;
-        if (i%4==0) {
+        if (i%10==0) {
             i=0;
         }
         $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = './OKAY.webp'>");
@@ -56,7 +64,7 @@ $(function(){
         $("#overlay-links").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
     });
 
     // $("#ThreeDimInterface").on("click", function() {
@@ -75,7 +83,7 @@ $(function(){
         $("#overlay-loading").show();
 
         setTimeout(() => {
-            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'public/Scene1-off.webp'}));
+            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'./Scene1-off.webp'}));
             $("#crt-overlay").hide();
         }, "1800");
     });
@@ -87,7 +95,7 @@ $(function(){
         linksOff();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "400");
     });
 
     $("#Lyrics").on("click", function() {
@@ -101,7 +109,7 @@ $(function(){
         $("#overlay-lyrics").css("display","inline-block");
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
         
     });
 
@@ -111,7 +119,7 @@ $(function(){
         $("#overlay-guest").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
         
     });
 
@@ -121,7 +129,7 @@ $(function(){
         $("#overlay-radio").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
         
     });
 
@@ -131,7 +139,7 @@ $(function(){
         $("#overlay-merch").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
         
     });
 
@@ -141,6 +149,6 @@ $(function(){
         $("#overlay-email").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
-          }, "200");
+          }, "800");
     })
   });
