@@ -12,6 +12,7 @@ body{
 #Overlord{
 	/* Set height to device height. */
 	height: 98%;
+	margin: auto;
 	background: url(gifs/magifondo.webp);
 	padding: 0%;
 	z-index: 0;
