@@ -42,7 +42,7 @@ import { hideAll } from './jq';
 
     //Array of models
     var modelPaths = ['models/trophy.glb','models/organelle.glb','models/globe2.glb'];
-    var modelScales = [1,0.23];
+    var modelScales = [1.2,1,0.23];
     var currentPathIndex = 0;
     var currentModel;
 
@@ -96,7 +96,7 @@ import { hideAll } from './jq';
 
     $("#ThreeDimInterface").on("click", function() {
         hideAll();
-        loadModel(0,1);
+        loadModel(0,1.2);
         $("#overlay-loading").show();
         $("#overlay-models").css("visibility","visible");
         setTimeout(() => {
