@@ -41,7 +41,7 @@ import { hideAll } from './jq';
 
 
     //Array of models
-    var modelPaths = ['models/organelle.glb','models/globe2.glb'];
+    var modelPaths = ['models/trophy.glb','models/organelle.glb','models/globe2.glb'];
     var modelScales = [1,0.23];
     var currentPathIndex = 0;
     var currentModel;
