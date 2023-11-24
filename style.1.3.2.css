@@ -25,7 +25,7 @@ body{
 	position: relative;
 	top: 9vh;
 	width: 94.5%;
-	display: inline-block;
+	display: none;
 	height: auto;
 	font-size: 100%;
 	visibility: hidden;
