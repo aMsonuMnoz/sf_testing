@@ -12,18 +12,21 @@ body{
 #Overlord{
 	/* Set height to device height. */
 	height: 98%;
+	width: 94vw;
 	margin: auto;
-	background: url(gifs/magifondo.webp);
+	background-color: white;
+	/* background: url(gifs/magifondo.webp); */
 	padding: 0%;
 	z-index: 0;
 	border-style:ridge;
 	border-color:darkgray;
 	border-width: 0.3em;
+	
 }
 
 #Interface{
 	position: relative;
-	top: 9vh;
+	top: 8vh;
 	width: 94.5%;
 	display: none;
 	height: auto;
@@ -46,14 +49,19 @@ body{
 
 /*-----------------------OUTSIDE OF INTERFACE*/
 #Title{
-	position: relative;
-	display: block;
-	top: 5vh;
-	margin-right: auto;
-	margin-left: auto;
-	width: 75%;
-	/* max-width:200px;	 */
+	width: 100%;
+	height: auto;
 }
+
+#titleLink{
+	display: none;
+	position: relative;
+	top: 5vh;
+	margin: auto;
+	width: 75%;
+	height: auto;
+}
+
 
 #Navigation{
 	position: absolute;
@@ -62,6 +70,8 @@ body{
 	width: 99%;
 	margin: auto;
 	left: -0.6%;
+	display: inline-block;
+	pointer-events: none;
 }
 
 
@@ -350,6 +360,24 @@ body{
 	
 }
 
+#enter{
+	position: absolute;
+	z-index: 50;
+	width: 245px;
+	height: 52px;
+	left: 38%;
+	top: 43%;
+	background-size: cover;
+	background: url("./gifs/clicktoenter.webp");
+	display: inline-block;
+	border: none;
+	box-shadow:#222222 3px 3px 5px;
+
+}
+#enter:hover {
+	transform: scale(1.2);
+  }
+
 
 
 
@@ -399,6 +427,10 @@ body{
 
 @media only screen and (min-aspect-ratio: 5/8) {
 
+	#Overlord{
+		width: auto;
+	}
+
 	body{
 		text-align: center;
 		background-color:crimson;
@@ -409,22 +441,24 @@ body{
 
 	#Interface{
 		position: relative;
-		top: 9vh;
+		top: 8vh;
 		height: 50%;
-		display: inline-block;
+		display: none;
 		width: auto;
-		visibility: hidden;
+		visibility: visible;
 
 	}
 
 
-	#Title{
-		position: relative;
-		display: block;
-		top: 5vh;
-		margin-right: auto;
-		margin-left: auto;
+	#titleLink{
 		height: 30%;
+		width: 42vh;
+		display: none;
+		
+	}
+
+	#Title{
+		height: 100%;
 		width: auto;
 	}
 
@@ -498,6 +532,8 @@ body{
 		top: 38%;
 		width: 20%;
 	}
+
+
 	
 
     #overlay-lyrics {
@@ -524,6 +560,14 @@ body{
 
 	.marquee p{
 		animation: scroll-left 15s linear infinite;
+	}
+
+	#Refresh{
+		
+		z-index: 500;
+		color: white;
+		left: 10%;
+
 	}
 
 
@@ -573,15 +617,6 @@ body{
 	}
 }
 
-/*Temporary Refresh Fix*/
-#Refresh{
-	position: absolute;
-	z-index: -50;
-	left: 50%;
-	right: 50%;
-	font-family: myFirstFont;
-	font-size: 5vh;
-}
 
 
 /*Listen links hover settings*/
@@ -656,6 +691,10 @@ a:visited{
 	border:none;
 }
 
+#prevmodel:hover {
+	transform: scale(1.4);
+  }
+
 #nextmodel{
 	background: url(gifs/nextred.webp);
 	position: absolute;
@@ -667,6 +706,10 @@ a:visited{
 	border:none;
 }
 
+#nextmodel:hover {
+	transform: scale(1.4);
+  }
+
 #ThreeDimInterface{
 	background: url(gifs/click.webp);
 	background-size: cover;
@@ -675,13 +718,10 @@ a:visited{
 	border: none;
 }
 
-#RedButton{
-	background: url(gifs/buttonclick.webp);
-	background-size: cover;
-	width: 39px;
-	height: 39px;
-	border: none;
-}
+#ThreeDimInterface:hover {
+	transform: scale(1.3);
+  }
+
 
 #LinksInterface{
 	background: url(gifs/coollinks.webp);
@@ -691,6 +731,10 @@ a:visited{
 	border: none;
 }
 
+#LinksInterface:hover {
+	transform: scale(1.4);
+  }
+
 #Lyrics{
 	background: url(gifs/cdrom.webp);
 	background-size: cover;
@@ -698,6 +742,10 @@ a:visited{
 	height: 38px;
 	border: none;
 }
+
+#Lyrics:hover {
+	transform: scale(1.4);
+  }
 
 #Mail{
 	background: url(gifs/eMailNew.webp);
@@ -707,6 +755,10 @@ a:visited{
 	border: none;
 }
 
+#Mail:hover {
+	transform: scale(1.4);
+  }
+
 #Guestbook{
 	background: url(gifs/sun_shine_Guestbook.webp);
 	background-size: cover;
@@ -715,8 +767,9 @@ a:visited{
 	border: none;
 }
 
-#guest{
-}
+#Guestbook:hover {
+	transform: scale(1.4);
+  }
 
 #Merch{
 	background: url(gifs/chinmerch.webp);
@@ -725,6 +778,10 @@ a:visited{
 	height: 40px;
 	border: none;
 }
+
+#Merch:hover {
+	transform: scale(1.4);
+  }
 
 #Flamebar{
 	width: 100%;
@@ -838,6 +895,10 @@ a:visited{
 	border: none;
 }
 
+#Radio:hover {
+	transform: scale(1.2);
+  }
+
 #donate{
 	position: absolute;
 	background: url(gifs/dollar11.webp);
@@ -933,6 +994,10 @@ a:visited{
 	border:none;
 	display: none;
 }
+
+#back-to-list:hover {
+	transform: scale(1.4);
+  }
 
 #song-lyrics{
 	margin: 1.6%;

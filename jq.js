@@ -25,10 +25,23 @@ function linksOff() {
 $(function(){
 
     // $("#Interface").hide();
-    $("#Interface").show("slow");
-    $("#Interface").css("display", "inline-block");
-    $("#Interface").css("visibility","visible");
+
+    // $("#Interface").show("slow");
+    // $("#Interface").css("display", "inline-block");
+    // $("#Interface").css("visibility","visible");
     $("#overlay-models").css("visibility","hidden");
+
+    $("#enter").on("click", function() {
+        $("#enter").css("display", "none");
+        $("#titleLink").show();
+        $("#titleLink").css("display","block");
+        $("#Interface").show("slow");
+        $("#overlay-models").css("visibility","hidden");
+        $("#Interface").css("display", "inline-block");
+        $("#Interface").css("visibility","visible");
+        $("#Overlord").css("background", "url('gifs/magifondo.webp')");
+        $("#Navigation").css("pointer-events", "all");
+    })
 
 
 // changes marquee text
