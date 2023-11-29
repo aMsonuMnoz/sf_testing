@@ -1,0 +1,13 @@
+{
+  "hash": "68e619f8",
+  "browserHash": "8fe9267f",
+  "optimized": {
+    "jquery": {
+      "src": "../../node_modules/jquery/dist/jquery.js",
+      "file": "jquery.js",
+      "fileHash": "0fcef027",
+      "needsInterop": true
+    }
+  },
+  "chunks": {}
+}

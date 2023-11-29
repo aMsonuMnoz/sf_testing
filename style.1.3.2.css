@@ -4,16 +4,19 @@ body{
 	text-align: center;
 	background-color:crimson;
 	overflow: hidden;
-	height: 97.3dvh;
+	height: 100dvh;
+	width: 100dvw;
 	position: fixed;
+	margin: 0;
 }
 
 /*grey*/
 #Overlord{
 	/* Set height to device height. */
-	height: 97.3dvh;
-	width: 94vw;
+	height: 97dvh;
+	width: 94.8vw;
 	margin: auto;
+	margin-top: .9dvh;
 	background-color: #B2BEB5;
 	/* background: url(gifs/magifondo.webp); */
 	padding: 0%;
@@ -429,13 +432,18 @@ body{
 
 	#Overlord{
 		width: auto;
+		height: 97dvh;
+		margin: .7dvw;
+		
 	}
 
 	body{
 		text-align: center;
 		background-color:crimson;
 		overflow: hidden;
-		height: 98vh;
+		height: 100dvh;
+		width: 100dvw;
+		margin: 0;
 		position: relative;
 	}
 
