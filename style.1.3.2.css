@@ -14,7 +14,7 @@ body{
 	height: 98%;
 	width: 94vw;
 	margin: auto;
-	background-color: white;
+	background-color: #B2BEB5;
 	/* background: url(gifs/magifondo.webp); */
 	padding: 0%;
 	z-index: 0;
@@ -365,9 +365,9 @@ body{
 	z-index: 50;
 	width: 245px;
 	height: 52px;
-	left: 38%;
+	left: 50%;
 	top: 43%;
-	background-size: cover;
+	margin-left: -122.5px;
 	background: url("./gifs/clicktoenter.webp");
 	display: inline-block;
 	border: none;
@@ -691,9 +691,6 @@ a:visited{
 	border:none;
 }
 
-#prevmodel:hover {
-	transform: scale(1.4);
-  }
 
 #nextmodel{
 	background: url(gifs/nextred.webp);
@@ -706,9 +703,6 @@ a:visited{
 	border:none;
 }
 
-#nextmodel:hover {
-	transform: scale(1.4);
-  }
 
 #ThreeDimInterface{
 	background: url(gifs/click.webp);

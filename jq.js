@@ -39,7 +39,7 @@ $(function(){
         $("#overlay-models").css("visibility","hidden");
         $("#Interface").css("display", "inline-block");
         $("#Interface").css("visibility","visible");
-        $("#Overlord").css("background", "url('gifs/magifondo.webp')");
+        $("#Overlord").css("background", "url('magifondo.webp')");
         $("#Navigation").css("pointer-events", "all");
     })
 
@@ -81,15 +81,6 @@ $(function(){
           }, "800");
     });
 
-    // $("#ThreeDimInterface").on("click", function() {
-    //     hideAll();
-    //     loadModel(0);
-    //     $("#overlay-loading").show();
-    //     $("#overlay-models").css("visibility","visible");
-    //     setTimeout(() => {
-    //         $("#overlay-loading").hide();
-    //       }, "200")
-    // });
 
     $("#PowerButton").on("click", function() {
         hideAll();
