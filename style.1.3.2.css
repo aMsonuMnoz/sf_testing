@@ -4,14 +4,14 @@ body{
 	text-align: center;
 	background-color:crimson;
 	overflow: hidden;
-	height: 98%;
+	height: 97.3dvh;
 	position: fixed;
 }
 
 /*grey*/
 #Overlord{
 	/* Set height to device height. */
-	height: 98%;
+	height: 97.3dvh;
 	width: 94vw;
 	margin: auto;
 	background-color: #B2BEB5;
