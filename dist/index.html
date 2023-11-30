@@ -22,17 +22,39 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
 		
-		<!-- umami analytics
-		<script async src="https://analytics.eu.umami.is/script.js" data-website-id="dbb0d41a-5658-4d36-b8bd-03e954431868"></script> -->
+		
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2F94ED113F"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		<script type="module" crossorigin src="./assets/index-04216e40.js"></script>
-		<link rel="stylesheet" href="./assets/index-718042db.css">
+			gtag('config', 'G-2F94ED113F');
+		</script>
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WVQSP4V7');</script>
+		<!-- End Google Tag Manager -->
+
+		<script type="module" crossorigin src="./assets/index-38c658a3.js"></script>
+		<link rel="stylesheet" href="./assets/index-e8c57136.css">
 	</head>
 
 	<body>
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVQSP4V7"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
 		<div id="Overlord">
 			<button id = "enter" aria-label="enter"></button>
-			<div id="header" class="marquee"><p id="tagline">Strong John Fisher now streaming... click sjf.mp4 to watch the live video<img alt="sunglasses cool guy" id="OKAY" src = "./OKAY.webp"></p> </div>
+			<div id="header" class="marquee"><p id="tagline">FARM ROUTE 6, MILE 75 now streaming... click FR6M75.mp4 to watch the live video<img alt="sunglasses cool guy" id="OKAY" src = "./OKAY.webp"></p> </div>
 
 			<a id="titleLink" href="https://amsonumnoz.github.io/Iteration3/">
 				<img id="Title" alt="this shit took forever to make" src="./assets/globe3-a36d9da5.webp">
@@ -51,15 +73,16 @@
 				<div id="overlay-links">
 					<img id="Buttons" alt="Listen to our music..." src="./assets/Buttons-d0c2b201.svg">
 					<img id="newSong" class="new" src="./assets/newSpin-9801ce73.webp" alt="new">
-					<img id="Cover" alt="the cover for our new single" src="./assets/sjf_art-50f2289a.webp">
+					<img id="Cover" alt="the cover for our new single" src="./assets/fr6cover-3bd05698.webp">
+					<img id="Cover" alt="the cover for our new single" src="./assets/sjf_art-50f2289a.webp" style="left: 50%; top: 70%; z-index: 6; width: 20%;">
 					<div id="Listen">
-						<a href="https://open.spotify.com/track/5wJTlErG6bPSXWVNWj1rbA?si=cCluHSZeRKe0F4Nbl1YiPA">
+						<a href="https://open.spotify.com/track/0YKIe8sOm0g2o9wxWmPFGD?si=fxiFxnbmQAeVRst-ZkaSbQ">
 							<button class="Transparent" id="Spotify" type="button">Click Me</button>
 						</a>
-						<a href="https://music.apple.com/us/album/strong-john-fisher/1713306238?i=1713306239">
+						<a href="https://music.apple.com/us/album/farm-route-6-mile-75/1718435388?i=1718435389">
 							<button class="Transparent" id="Apple" type="button">Click Me</button>
 						</a>
-						<a href="https://www.youtube.com/watch?v=Qf9zCPCX0jI&ab_channel=SweetFighter">
+						<a href="https://www.youtube.com/watch?v=gv-dWqrT-DQ&ab_channel=SweetFighter-Topic">
 							<button class="Transparent" id="Youtube" type="button">Click Me</button>
 						</a>
 						<a href="https://tidal.com/browse/track/323787767">
@@ -77,7 +100,8 @@
 						<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
 					</div>
 					<button onclick="window.location.href='https://ko-fi.com/exitlayne';" class="Transparent" id="donate" type="button">Click Me</button>
-					<button onclick="window.location.href='https://www.youtube.com/watch?v=Qf9zCPCX0jI&ab_channel=SweetFighter';" class="Transparent" id="movie" type="button">Click Me</button>
+					<button onclick="window.location.href='https://youtu.be/HLIpKFdXbhc?si=5IOP6Y9SCi75U-Wo';" class="Transparent" id="movie" type="button">Click Me</button>
+					<button onclick="window.location.href='https://www.youtube.com/watch?v=Qf9zCPCX0jI&ab_channel=SweetFighter';" class="Transparent" id="movie2" type="button">Click Me</button>
 				</div>
 
 				<div id="overlay-models">
@@ -98,6 +122,7 @@
 						<img id="poems" src="./assets/StoriesNPoems-dbc1a5b5.gif" alt="stories and poems" loading="lazy">
 						<img id="candle1" src="./assets/candlest-97be08be.webp" alt="a candle" loading="lazy">
 						<p id = "songlist">
+							<a id="fr6" class="songs">/Farm_Route_6_Mile_75.txt</a><br>
 							<a id="sjf" class="songs">/Strong_John_Fisher.txt</a><br>
 							<a id="sewn" class="songs">/Sewn.txt</a><br>
 							<a id="dia" class="songs">/Dialogue.txt</a><br>
