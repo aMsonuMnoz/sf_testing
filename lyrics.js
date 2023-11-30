@@ -1,5 +1,16 @@
 import $ from 'jquery';
 
+function songSelect(song) {
+    $("#overlay-loading").show();
+    $("#sub-songlist").hide();
+    $("#sub-song").load("songs/"+song);
+    $("#sub-song").show();
+    setTimeout(() => {
+        $("#overlay-loading").hide();
+    }, "200");
+    $("#back-to-list").show();
+}
+
 $(function(){   
     $("#back-to-list").on("click", function(){
         $("#overlay-loading").show();
@@ -13,179 +24,71 @@ $(function(){
     });
 
     $("#ohwell").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Oh_Well.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Oh_Well.html");
     });
 
     $("#roses").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Roses.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Roses.html");
     });
 
     $("#sleeping").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Sleeping_Outside.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Sleeping_Outside.html");
     });
 
     $("#about").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/About_Death.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("About_Death.html");
     });
 
     $("#toma").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Toma.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Toma.html");
     });
 
     $("#vasty").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Vastilios.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Vastilios.html");
     });
 
     $("#smn").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Say_My_Name.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Say_My_Name.html");
     });
 
     $("#dga").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Days_Go_Away.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Days_Go_Away.html");
     });
 
     $("#wftc").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Waiting_for_the_calf_to_die.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Waiting_for_the_calf_to_die.html");
     });
 
     $("#lms").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Let_me_sleep.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Let_me_sleep.html");
     });
 
     $("#gc").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Garden_City.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Garden_City.html");
     });
 
     $("#giar").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Give_it_a_rest.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Give_it_a_rest.html");
     });
 
     $("#lmk").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Let_me_know.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Let_me_know.html");
     });
 
     $("#dia").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Dialogue.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Dialogue.html");
     });
 
     $("#sewn").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Sewn.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Sewn.html");
     });
 
     $("#sjf").on("click", function(){
-        $("#overlay-loading").show();
-        $("#sub-songlist").hide();
-        $("#sub-song").load("songs/Strong_John_Fisher.html");
-        $("#sub-song").show();
-        setTimeout(() => {
-            $("#overlay-loading").hide();
-        }, "200");
-        $("#back-to-list").show();
+        songSelect("Strong_John_Fisher.html");
+    });
+
+    $("#fr6").on("click", function(){
+        songSelect("Farm_Route_6.html");
     });
 
 });

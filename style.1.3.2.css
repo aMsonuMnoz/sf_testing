@@ -18,8 +18,7 @@ body{
 	margin: auto;
 	margin-top: .9dvh;
 	background-color: #B2BEB5;
-	/* background: url(gifs/magifondo.webp); */
-	padding: 0%;
+	padding: 0;
 	z-index: 0;
 	border-style:ridge;
 	border-color:darkgray;
@@ -34,7 +33,7 @@ body{
 	display: none;
 	height: auto;
 	font-size: 100%;
-	visibility: hidden;
+	z-index: 0;
 }
 
 
@@ -385,41 +384,19 @@ body{
 
 
 
-
-
 /*-----------------------MEDIA QUERIES*/
 @media only screen and (min-width: 2000px){
 	body{
-		text-align: center;
-		background-color:crimson;
-		overflow: hidden;
 		height: 98vh;
 	}
 	#Overlord{
 		
-		/* Set height to device height. */
 		height: 97vh;
-		/* overflow: hidden; */
 		position: relative;
-		/* Background image (unblurred) centering and cropping */
-		background-color: mediumblue;
-		
-		/* Center div */
-		padding: 0%;
-		z-index: 0;
-		border-style:ridge;
-		border-color:lightgray;
 		border-width: thick;
 	}
 	.marquee {
-		height: 20px;
-		overflow: hidden;
-		position: relative;
-		background: #000000;
-		color: #ffff33;
 		border: 2px solid gray;
-		border-style: ridge;
-		top: 0%;
 		border-width: thick;
 	}
 
@@ -428,41 +405,33 @@ body{
 	}
 }
 
+
+
+
 @media only screen and (min-aspect-ratio: 5/8) {
 
 	#Overlord{
 		width: auto;
 		height: 97dvh;
-		margin: .7dvw;
+		margin: .7dvh;
 		
 	}
 
 	body{
-		text-align: center;
-		background-color:crimson;
-		overflow: hidden;
-		height: 100dvh;
-		width: 100dvw;
-		margin: 0;
 		position: relative;
 	}
 
 	#Interface{
-		position: relative;
-		top: 8vh;
 		height: 50%;
-		display: none;
+		display: inline-block;
 		width: auto;
-		visibility: visible;
-
+		z-index: -500;
 	}
 
 
 	#titleLink{
 		height: 30%;
 		width: 42vh;
-		display: none;
-		
 	}
 
 	#Title{
@@ -471,26 +440,16 @@ body{
 	}
 
 	#Socials{
-		position: absolute;
 		left: 2.6%;
-		top: 47%;
 		bottom: 4.5%;
 		width: 12vh;
-		display: block;
-		z-index: 8;
 		font-size:2.6vh; /*more than 0.625, font based on height*/
-		font-style: italic;
-		border-style:inset;
 		margin-left: 1%
 	}
 
 	#Computer{
-		position: relative;
-		margin: auto;
 		height: 100%;	
-		z-index: 12;
 		width: auto;
-		pointer-events: none;
 	}
 
 	#crt-overlay {
@@ -521,18 +480,8 @@ body{
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
 	}
 
-	.ComputerLoading{
-		position: absolute;
-		width:100%;
-		margin: auto;
-		z-index: 11;
-		width: auto;
-		left: 0%;
-		top: 0%;
-	}
 
 	#Navigation{
-		position: absolute;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -541,17 +490,10 @@ body{
 		width: 20%;
 	}
 
-
-	
-
     #overlay-lyrics {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10.2%;
 		z-index:5;
-		background:url(gifs/AnimatedBackGroundSky.webp);
-		overflow: scroll;
 		overflow-x: hidden;
-		display: none;
 	}
 
 	#sub-song {
@@ -559,10 +501,7 @@ body{
 	}
 
 	#overlay-loading {
-		position:absolute;
 		top:18.6%; bottom:11.1%; left:10%; right:10%;
-		display:none;
-		z-index:11;
 		pointer-events: all; 
 	}
 
@@ -666,16 +605,6 @@ a:visited{
 /* --------------------New Shit */
 
 
-.ComputerLoading{
-
-	position: absolute;
-	margin: auto;
-	width:100%;	
-	z-index: 11;
-	left: 0%;
-	top: 0%;
-}
-
 #modelTitle {
 	position: absolute;
 	left: 5%;
@@ -686,7 +615,6 @@ a:visited{
 	color: yellow;
 	z-index: 10;
 }
-
 
 #prevmodel{
 	background: url(gifs/backred.webp);
@@ -699,7 +627,6 @@ a:visited{
 	border:none;
 }
 
-
 #nextmodel{
 	background: url(gifs/nextred.webp);
 	position: absolute;
@@ -710,7 +637,6 @@ a:visited{
 	height: 24px;
 	border:none;
 }
-
 
 #ThreeDimInterface{
 	background: url(gifs/click.webp);
@@ -854,8 +780,8 @@ a:visited{
     position: absolute;
     width: 19%;
     height: auto;
-    top: 10%;
-    left: 67%;
+    top: 16%;
+    left: 70%;
 }
 
 #poems{
@@ -942,6 +868,10 @@ a:visited{
 }
 
 #movie:hover {
+	transform: scale(1.2);
+  }
+
+#movie2:hover {
 	transform: scale(1.2);
   }
 

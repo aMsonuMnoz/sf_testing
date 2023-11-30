@@ -24,21 +24,15 @@ function linksOff() {
 
 $(function(){
 
-    // $("#Interface").hide();
-
-    // $("#Interface").show("slow");
-    // $("#Interface").css("display", "inline-block");
-    // $("#Interface").css("visibility","visible");
+    $("#Interface").hide();
     $("#overlay-models").css("visibility","hidden");
 
     $("#enter").on("click", function() {
         $("#enter").css("display", "none");
         $("#titleLink").show();
         $("#titleLink").css("display","block");
-        $("#Interface").show("slow");
+        $("#Interface").css("z-index", "0").show("slow").css("display", "inline-block");
         $("#overlay-models").css("visibility","hidden");
-        $("#Interface").css("display", "inline-block");
-        $("#Interface").css("visibility","visible");
         $("#Overlord").css("background", "url('magifondo.webp')");
         $("#Navigation").css("pointer-events", "all");
     })
