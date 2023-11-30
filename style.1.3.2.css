@@ -919,14 +919,26 @@ a:visited{
 
 #movie{
 	position: absolute;
-	background: url(gifs/sjfweb.webp);
+	background: url(gifs/FR6M75.webp);
 	background-size: cover;
-	height:19%;
-	width:15%;
+	height:22%;
+	width:16%;
 	border: none;
 	top: 62%;
-	right: 11%;
+	right: 10%;
 	z-index: 8;
+}
+
+#movie2{
+    position: absolute;
+    background: url(/gifs/sjfweb.webp);
+    background-size: cover;
+    height: 14%;
+    width: 12%;
+    border: none;
+    top: 77%;
+    right: 34%;
+    z-index: 8;
 }
 
 #movie:hover {
