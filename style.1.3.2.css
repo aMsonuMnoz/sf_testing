@@ -604,6 +604,15 @@ a:visited{
 
 /* --------------------New Shit */
 
+.ComputerLoading{
+
+	position: absolute;
+	margin: auto;
+	width:100%;	
+	z-index: 11;
+	left: 0%;
+	top: 0%;
+}
 
 #modelTitle {
 	position: absolute;
