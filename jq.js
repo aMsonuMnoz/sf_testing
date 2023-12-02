@@ -14,11 +14,12 @@ export function hideAll() {
 function linksOff() {
     $("#Buttons").toggle();
     $("#Socials").toggle();
-    $("#Cover").toggle();
+    $(".Cover").toggle();
     $("#Listen").toggle();
     $("#newSong").toggle();
     $("#donate").toggle();
     $("#movie").toggle();
+    $("#movie2").toggle();
 }
 
 
