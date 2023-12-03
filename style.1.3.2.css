@@ -116,6 +116,7 @@ body{
 #presskit{
 	position: absolute;
 	left: 1%;
+	text-shadow: 1.2px 0.8px 1px gold;
 }
 
 #OKAY{
