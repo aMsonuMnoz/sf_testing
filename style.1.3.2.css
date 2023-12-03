@@ -13,6 +13,7 @@ body{
 /*grey*/
 #Overlord{
 	/* Set height to device height. */
+	position: relative;
 	height: 97dvh;
 	width: 94.8vw;
 	margin: auto;
@@ -68,10 +69,10 @@ body{
 #Navigation{
 	position: absolute;
 	z-index: 100;
-	bottom: 1.5vh;
+	bottom: 0;
 	width: 99%;
 	margin: auto;
-	left: -0.6%;
+	left: 0;
 	display: inline-block;
 	pointer-events: none;
 }
@@ -110,6 +111,11 @@ body{
 	-webkit-animation: scroll-left 2s linear infinite;
 	animation: scroll-left-mobile 15s linear infinite;
 	font-family: myFirstFont;
+}
+
+#presskit{
+	position: absolute;
+	left: 1%;
 }
 
 #OKAY{
@@ -172,7 +178,7 @@ body{
     bottom: 12.3%;
     left: 10%;
     right: 10.2%;
-	background-image: url(gifs/AnimatedBackGroundSky.webp);
+	background-image: url(public/images/AnimatedBackGroundSky.webp);
     overflow: scroll;
     background-size: cover;
 	pointer-events: all;

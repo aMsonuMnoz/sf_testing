@@ -34,7 +34,7 @@ $(function(){
         $("#titleLink").css("display","block");
         $("#Interface").css("z-index", "0").show("slow").css("display", "inline-block");
         $("#overlay-models").css("visibility","hidden");
-        $("#Overlord").css("background", "url('magifondo.webp')");
+        $("#Overlord").css("background", "url('images/magifondo.webp')");
         $("#Navigation").css("pointer-events", "all");
     })
 
@@ -61,7 +61,7 @@ $(function(){
         if (i%10==0) {
             i=0;
         }
-        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = './OKAY.webp'>");
+        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = 'images/OKAY.webp'>");
     });
     
 
@@ -83,7 +83,7 @@ $(function(){
         $("#overlay-loading").show();
 
         setTimeout(() => {
-            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'./Scene1-off.webp'}));
+            $('#overlay-loading').prepend($('<img>',{class:'ComputerLoading',src:'images/Scene1-off.webp'}));
             $("#crt-overlay").hide();
         }, "1800");
     });
