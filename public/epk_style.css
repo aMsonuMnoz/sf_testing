@@ -13,8 +13,22 @@ h1 {
 
 p {
     max-width: 1000px;
+    text-shadow: 0.8px 0px 0.8px black;
+    font-size: 1.07em;
 }
 
+a {
+    text-shadow: 0.8px 0px 0.8px gold;
+    font-size: 1.07em;
+}
+
+ul {
+    text-shadow: 0.8px 0px 0px gold;
+}
+
+blockquote {
+    text-shadow: 0.8px 0px 0px gold;
+}
 *{
     -webkit-overflow-scrolling: touch;
 }
