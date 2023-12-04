@@ -34,7 +34,7 @@ $(function(){
         $("#titleLink").css("display","block");
         $("#Interface").css("z-index", "0").show("slow").css("display", "inline-block");
         $("#overlay-models").css("visibility","hidden");
-        $("#Overlord").css("background", "url('images/magifondo.webp')");
+        // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all");
     })
 
