@@ -36,6 +36,8 @@ $(function(){
         $("#overlay-models").css("visibility","hidden");
         // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all");
+        $("#shfl").hide();
+        $("#nextshow").hide();
     })
 
 
