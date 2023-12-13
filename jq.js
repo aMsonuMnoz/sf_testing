@@ -36,8 +36,7 @@ $(function(){
         $("#overlay-models").css("visibility","hidden");
         // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all");
-        $("#shfl").hide();
-        $("#nextshow").hide();
+        $("#messages").hide();
     })
 
 
@@ -47,13 +46,13 @@ $(function(){
     let taglines = [ 
         "Click every button",
         "Escape from Beautiful Mountain coming soon...",
-        "Still here? Listen to our music NOW!",
-        "Look at my models please",
-        "We didn't pay anyone to make this website",
+        "Person reading this, hello from across the internet. Thank you for visiting",
+        "Merch coming soon",
+        "Happy Holidays from Sweet Fighter",
         "Leave a comment in the guestbook",
         "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
-        "Follow our Instagram for updates about us, we are not on Facebook",
-        "If you like our music, tell us",
+        "Follow our Instagram for updates about us",
+        "Join our discord and show us some art",
         "Strong John Fisher now streaming... click sjf.mp4 to watch the live video"
     ];
 

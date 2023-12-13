@@ -18,7 +18,7 @@ body{
 	width: 94.8vw;
 	margin: auto;
 	margin-top: .9dvh;
-	background: url("gifs/snow.webp");
+	background: url("gifs/BG_blacksnow.gif");
 	background-size: 15vh;
 	background-color: #B2BEB5;
 	padding: 0;
@@ -37,6 +37,19 @@ body{
 	height: auto;
 	font-size: 100%;
 	z-index: 0;
+}
+
+#messages{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: auto;
+	max-width: 400px;
+	height: 85vh;
+	top: 10vh;
 }
 
 
@@ -372,18 +385,11 @@ body{
 }
 
 #enter{
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-
-	position: absolute;
 	z-index: 50;
-	width: 83px;
-	height: 46px;
-	top: 20%;
+	width: 200px;
+	height: 100px;
 	background: url("./gifs/enter.webp");
+	background-size: cover;
 	display: inline-block;
 	border: none;
 	/* box-shadow:#222222 3px 3px 5px; */
@@ -436,7 +442,7 @@ body{
 
 	#Interface{
 		height: 50%;
-		display: inline-block;
+		display: inline-block;  /*needs to be this way...*/
 		width: auto;
 		z-index: -500;
 	}
@@ -1012,15 +1018,15 @@ a:visited{
 }
 
 @keyframes santa {
-	0% {top: 10%; right: -7%; scale: 1;}
+	0% {top: 12%; right: -30%; scale: 1;}
 	20% {top: 80%; right: 120%; scale: 1.8;}
 	100% {top: 80%; right: 120%; scale: 1.8;}
 }
 
 #santasled{
 	position: absolute;
-	top: -10%;
-	right: -7%;
+	top: 12%;
+	right: -30%;
 	overflow: hidden;
 	animation-name: santa;
 	animation-duration:20s;
@@ -1031,19 +1037,12 @@ a:visited{
 }
 
 #shfl{
-	position: absolute;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
 	width: 38vh;
-	top: 40%;
 	border: 5px ridge forestgreen;
+	box-shadow: 2px 2px 2px black;
 }
 
 h1{
-	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -1052,8 +1051,8 @@ h1{
 	width: 38vh;
 	top: 32%;
 	color: white;
-	font-size: 1.5em;
-	text-shadow: 2px 2px 1px black;
+	font-size: 1.2em;
+	text-shadow: 2px 2px 4px forestgreen;
 }
 
 
