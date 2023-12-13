@@ -860,16 +860,21 @@ a:visited{
 	background: url(gifs/dollar11.webp);
 	background-size: cover;
 	height:17.4%;
-	width:9%;
+	width:11%;
 	border: none;
 	top: 25%;
 	left: 5%;
 	padding: 0;
+	z-index: 11;
 }
 
 #donate:hover {
 	transform: scale(1.2);
   }
+
+button{
+	transition-duration: .8s;
+}
 
 #movie{
 	position: absolute;
