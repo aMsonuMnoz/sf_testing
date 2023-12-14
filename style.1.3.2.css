@@ -134,6 +134,21 @@ body{
 	text-shadow: 1.2px 0.8px 1px gold;
 }
 
+#calendar{
+	position: absolute;
+	width: 100px;
+	height: 32px;
+	left: 1%;
+	top: 11vh;
+	background: url("gifs/calendar.webp");
+	background-size: cover;
+	z-index: 11;
+}
+
+#calendar:hover{
+	transform: scale(1.4);
+}
+
 #OKAY{
 	display: inline-block;
 	position: absolute;
@@ -1041,7 +1056,6 @@ button{
 #shfl{
 	width: 38vh;
 	border: 5px ridge forestgreen;
-	box-shadow: 2px 2px 2px black;
 	background: url("gifs/SHFL_Promo_small.gif");
 	background-size: cover;
 }
