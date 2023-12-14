@@ -396,11 +396,8 @@ body{
 
 }
 #enter:hover {
-	transform: scale(1.2);
+	transform: scale(1.6);
   }
-
-
-
 
 
 /*-----------------------MEDIA QUERIES*/
@@ -1045,6 +1042,12 @@ button{
 	width: 38vh;
 	border: 5px ridge forestgreen;
 	box-shadow: 2px 2px 2px black;
+	background: url("gifs/SHFL_Promo_small.gif");
+	background-size: cover;
+}
+
+#shfl:hover{
+	transform: scale(1.2);
 }
 
 h1{
