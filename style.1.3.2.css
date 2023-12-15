@@ -1057,7 +1057,7 @@ button{
 #shfl{
 	width: 38vh;
 	border: 5px ridge forestgreen;
-	background: url("gifs/SHFL_Promo_small.gif");
+	background: url("gifs/shfl.gif");
 	background-size: cover;
 }
 
