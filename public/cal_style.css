@@ -16,3 +16,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.Transparent{
+	background: transparent;
+    border: none;
+    color: transparent;
+	cursor: pointer;
+}
+
+#back{
+    position: absolute;
+	width: 76px;
+	height: 27px;
+	left: 4vw;
+    bottom: 9vh;
+	background: url("images/back.webp");
+	background-size: cover;
+}
+
+#back:hover{
+    transform: scale(1.3);
+    transition-duration: 1.4s;
+}

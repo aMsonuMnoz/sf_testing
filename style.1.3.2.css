@@ -136,10 +136,10 @@ body{
 
 #calendar{
 	position: absolute;
-	width: 100px;
-	height: 32px;
+	width: 75px;
+	height: 24px;
 	left: 1%;
-	top: 11vh;
+	top: 84px;
 	background: url("gifs/calendar.webp");
 	background-size: cover;
 	z-index: 11;
@@ -407,6 +407,7 @@ body{
 	background-size: cover;
 	display: inline-block;
 	border: none;
+	cursor:grab;
 	/* box-shadow:#222222 3px 3px 5px; */
 
 }
