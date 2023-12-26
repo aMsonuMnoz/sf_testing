@@ -49,7 +49,7 @@ $(function(){
         "Person reading this, hello from across the internet. Thank you for visiting",
         "Merch coming soon",
         "Happy Holidays from Sweet Fighter",
-        "Leave a comment in the guestbook",
+        "Make sure you sign the guestbook before you leave or you can send me an IM on AOL",
         "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
         "Follow our Instagram for updates about us",
         "Join our discord and show us some art",
