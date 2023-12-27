@@ -936,28 +936,29 @@ button{
 }
 
 #movie{
-	position: absolute;
-    right: 5%;
-    z-index: 13;
-    top: -5.5%;
-	background: url(gifs/FR6M75.webp);
-	background-size: cover;
-	height:14%;
-	width:12%;
-	border: none;
+    position: absolute;
+    background: url(gifs/FR6M75.webp);
+    background-size: cover;
+    height:22%;
+    width:16%;
+    border: none;
+    top: 62%;
+    right: 10%;
+    z-index: 8;
 }
 
 #movie2{
-	position: absolute;
-    right: 20%;
-    z-index: 13;
-    top: -5.5%;
-	background: url(gifs/sjfweb.webp);
-	background-size: cover;
-	height:14.3%;
-	width:13%;
-	border: none;
+    position: absolute;
+    background: url(/gifs/sjfweb.webp);
+    background-size: cover;
+    height: 14%;
+    width: 12%;
+    border: none;
+    top: 77%;
+    right: 34%;
+    z-index: 8;
 }
+
 
 #movie:hover {
 	transform: scale(1.2);
