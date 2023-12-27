@@ -32,10 +32,11 @@ $(function(){
         $("#enter").css("display", "none");
         $("#titleLink").show();
         $("#titleLink").css("display","block");
+        $("#Interface").css("opacity", "100%");
         $("#Interface").css("z-index", "0").show("slow").css("display", "inline-block");
         $("#overlay-models").css("visibility","hidden");
         // $("#Overlord").css("background", "url('images/snow.webp')");
-        $("#Navigation").css("pointer-events", "all");
+        $("#Navigation").css("pointer-events", "all").css("opacity", "100%");
         $("#messages").hide();
     })
 

@@ -37,6 +37,7 @@ body{
 	height: auto;
 	font-size: 100%;
 	z-index: 0;
+	opacity: 20%;
 }
 
 #messages{
@@ -46,10 +47,31 @@ body{
 	left: 0;
 	right: 0;
 	text-align: center;
-	width: auto;
-	max-width: 400px;
-	height: 85vh;
-	top: 10vh;
+	width: 94%;
+	max-width: 600px;
+	height: auto;
+	top: 30vh;
+	border: 3px white solid;
+	background-color: white;
+	animation: bounce linear 2s infinite;
+}
+
+@keyframes bounce {
+	0%{
+		transform: translatey(-6px);
+	}
+	50%{
+		transform: translatey(6px);
+	}
+	100%{
+		transform: translatey(-6px);
+	}
+	
+}
+
+#msgboard{
+	position: relative;
+	display: block;
 }
 
 
@@ -90,7 +112,19 @@ body{
 	left: 0;
 	display: inline-block;
 	pointer-events: none;
+	opacity: 20%;
 }
+
+table, th, td {
+	border:3px inset slategrey;
+	color: black;
+	background-image: url("gifs/bi.gif");
+	background-size: 60px;
+	border-collapse: collapse;
+	font-family: math;
+	font-size: min(5vw, 3.125vh);
+	text-align: left;
+  }
 
 
 /* Marquee */
@@ -99,7 +133,7 @@ body{
 	overflow: hidden;
 	position: relative;
 	background: #000000;
-	color: #ffff33;
+	color: yellowgreen;
 	border: .2em solid darkgray;
 	border-style: ridge;
 	top: 0%;
@@ -401,6 +435,8 @@ body{
 
 #enter{
 	z-index: 50;
+	position: relative;
+	top: 20vh;
 	width: 200px;
 	height: 100px;
 	background: url("./gifs/enter.webp");
@@ -1054,16 +1090,6 @@ button{
 	animation-delay: 20s;
 }
 
-#shfl{
-	width: 38vh;
-	border: 5px ridge forestgreen;
-	background: url("gifs/shfl.gif");
-	background-size: cover;
-}
-
-#shfl:hover{
-	transform: scale(1.2);
-}
 
 h1{
 	margin-left: auto;
