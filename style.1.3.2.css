@@ -18,7 +18,7 @@ body{
 	width: 94.8vw;
 	margin: auto;
 	margin-top: .9dvh;
-	background: url("gifs/BG_blacksnow.gif");
+	background: url("gifs/BG_blacksnow.webp");
 	background-size: 15vh;
 	background-color: #B2BEB5;
 	padding: 0;
@@ -124,6 +124,15 @@ table, th, td {
 	font-family: math;
 	font-size: min(5vw, 3.125vh);
 	text-align: left;
+  }
+
+  .youtube{
+	position: absolute;
+	z-index: 100;
+	left: 0; top: 0; bottom: 0; right: 0;
+	height: 100%;
+	width: 100%;
+	display: none;
   }
 
 
@@ -273,6 +282,7 @@ table, th, td {
 }
 
 #overlay-email {
+	/* This segment is shared by the youtube embeds */
 	position:absolute;
 	background: url(gifs/sparklepinkbackground.webp);
 	top: 18.4%;
@@ -911,8 +921,8 @@ a:visited{
 	height:17.4%;
 	width:11%;
 	border: none;
-	top: 25%;
-	left: 5%;
+	top: 28%;
+	right: 5%;
 	padding: 0;
 	z-index: 11;
 }
@@ -927,26 +937,26 @@ button{
 
 #movie{
 	position: absolute;
+    right: 5%;
+    z-index: 13;
+    top: -5.5%;
 	background: url(gifs/FR6M75.webp);
 	background-size: cover;
-	height:22%;
-	width:16%;
+	height:14%;
+	width:12%;
 	border: none;
-	top: 62%;
-	right: 10%;
-	z-index: 8;
 }
 
 #movie2{
-    position: absolute;
-    background: url(/gifs/sjfweb.webp);
-    background-size: cover;
-    height: 14%;
-    width: 12%;
-    border: none;
-    top: 77%;
-    right: 34%;
-    z-index: 8;
+	position: absolute;
+    right: 20%;
+    z-index: 13;
+    top: -5.5%;
+	background: url(gifs/sjfweb.webp);
+	background-size: cover;
+	height:14.3%;
+	width:13%;
+	border: none;
 }
 
 #movie:hover {

@@ -147,7 +147,31 @@ $(function(){
 
     $("#Mail").on("click", function(){
         hideAll();
+        $("#sjf_video").hide();
+        $("#fr6m75_video").hide();
         $("#overlay-loading").show();
+        $("#overlay-email").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "800");
+    })
+
+    $("#movie").on("click", function(){
+        hideAll();
+        $("#sjf_video").hide();
+        $("#overlay-loading").show();
+        $("#fr6m75_video").show();
+        $("#overlay-email").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "800");
+    })
+
+    $("#movie2").on("click", function(){
+        hideAll();
+        $("#fr6m75_video").hide();
+        $("#overlay-loading").show();
+        $("#sjf_video").show();
         $("#overlay-email").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
