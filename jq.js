@@ -38,6 +38,8 @@ $(function(){
         // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all").css("opacity", "100%");
         $("#messages").hide();
+        $('.pretitleLink').toggleClass('pretitleLink titleLink', '800');
+
     })
 
 
