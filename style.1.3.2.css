@@ -169,7 +169,7 @@ table, th, td {
 
 @font-face {
 	font-family: myFirstFont;
-	src: url(fonts/W95FA.otf);
+	src: url(fonts/PMingLiU_Regular.ttf);
   }
 
 .marquee p {
