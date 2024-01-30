@@ -169,7 +169,7 @@ table, th, td {
 
 @font-face {
 	font-family: myFirstFont;
-	src: url(https://cdn.shopify.com/s/files/1/0596/6135/3007/files/Comic_Sans_MS_400.ttf?v=1706644556);
+	src: url(fonts/W95FA.otf);
   }
 
 .marquee p {
