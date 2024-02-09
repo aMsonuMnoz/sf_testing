@@ -19,8 +19,8 @@ body{
 	margin: auto;
 	margin-top: .9dvh;
 	background: url("gifs/hearts.gif");
-	background-size: 15vh;
-	background-color: #B2BEB5;
+	background-size: 10vh;
+	background-color: pink;
 	padding: 0;
 	z-index: 0;
 	border-style:ridge;
