@@ -2,7 +2,7 @@
 /*crimson*/
 body{
 	text-align: center;
-	background-color:grey;
+	background-color:pink;
 	overflow: hidden;
 	height: 100dvh;
 	width: 100dvw;
@@ -18,7 +18,7 @@ body{
 	width: 94.8vw;
 	margin: auto;
 	margin-top: .9dvh;
-	background: url("gifs/BG_blacksnow.webp");
+	background: url("gifs/hearts.gif");
 	background-size: 15vh;
 	background-color: #B2BEB5;
 	padding: 0;
@@ -1085,44 +1085,10 @@ button{
 /* Temporary */
 
 #lights{
-	background: url("gifs/lights.webp");
+	background: url("gifs/dancinghearts.gif");
 	background-repeat: repeat-x;
 	height: 29px;
 	width: 100%;
-}
-
-#tree{
-	position: absolute;
-	z-index: 100;
-	width: 30%;
-	top: -26%;
-	left: 3%;
-}
-#present{
-	position: absolute;
-	z-index: 100;
-	width: 20%;
-	top: -26%;
-	left: 60%;
-}
-
-@keyframes santa {
-	0% {top: 12%; right: -30%; scale: 1;}
-	20% {top: 80%; right: 120%; scale: 1.8;}
-	100% {top: 80%; right: 120%; scale: 1.8;}
-}
-
-#santasled{
-	position: absolute;
-	top: 12%;
-	right: -30%;
-	overflow: hidden;
-	animation-name: santa;
-	animation-duration:20s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	z-index: 100;
-	animation-delay: 20s;
 }
 
 
