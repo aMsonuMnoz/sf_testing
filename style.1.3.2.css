@@ -2,7 +2,7 @@
 /*crimson*/
 body{
 	text-align: center;
-	background-color:pink;
+	background-color:white;
 	overflow: hidden;
 	height: 100dvh;
 	width: 100dvw;
@@ -18,15 +18,23 @@ body{
 	width: 94.8vw;
 	margin: auto;
 	margin-top: .9dvh;
-	background: url("gifs/hearts.gif");
+	background-color: grey;
+	/* background: url("gifs/hearts.gif"); */
 	background-size: 10vh;
-	background-color: pink;
 	padding: 0;
 	z-index: 0;
 	border-style:ridge;
 	border-color:darkgray;
 	border-width: 0.3em;
 	
+}
+
+.Underlord{
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
 }
 
 #Interface{
@@ -192,7 +200,8 @@ table, th, td {
 
 #presskit{
 	position: absolute;
-	left: 1%;
+    left: 0.2rem;
+    top: 3rem;
 	text-shadow: 1.2px 0.8px 1px gold;
 }
 
@@ -200,11 +209,20 @@ table, th, td {
 	position: absolute;
 	width: 75px;
 	height: 24px;
-	left: 1%;
-	top: 84px;
+    left: 0.2rem;
+    top: 4.7rem;
 	background: url("gifs/calendar.webp");
 	background-size: cover;
 	z-index: 11;
+	
+}
+
+.Left-Interface{
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+
 }
 
 #calendar:hover{
@@ -254,7 +272,7 @@ table, th, td {
 	display:block;
 	z-index:2;
 	pointer-events: all;
-	background: url('gifs/snowbackground.gif');
+	background: blue;
 	background-size: cover;
 }
 
@@ -514,6 +532,12 @@ table, th, td {
 		
 	}
 
+	.Underlord{
+		position: absolute;
+		max-width: 800px;
+    	margin: auto;
+	}
+
 	body{
 		position: relative;
 	}
@@ -523,6 +547,13 @@ table, th, td {
 		display: inline-block;  /*needs to be this way...*/
 		width: auto;
 		z-index: -500;
+	}
+
+	.Left-Interface{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 10rem;
 	}
 
 
@@ -587,8 +618,8 @@ table, th, td {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		left: 1%;
-		top: 38%;
+		left: .2rem;
+		top: 21.6rem;
 		width: 20%;
 	}
 
