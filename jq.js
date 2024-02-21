@@ -22,7 +22,6 @@ function linksOff() {
     $("#movie2").toggle();
 }
 
-
 $(function(){
 
     $("#Interface").hide();
