@@ -44,7 +44,7 @@
 	</head>
 
 	<body>
-
+		<script src="./jq.js" type="module"></script>
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVQSP4V7"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -54,14 +54,24 @@
 			<div id="lights"></div>
 
 			<div class="Middlelord">
-				<div class="Underlord">
-
-					<div class="Left-Interface">
 
 						<a class="pretitleLink" href="https://amsonumnoz.github.io/Iteration3/">
 							<img id="Title" alt="this shit took forever to make" src="./images/globe3.webp">
 						</a>
 						<div id="Interface">
+							<div id="user-interface">
+								<a id="presskit" href="epk.html">Press Kit</a>
+								<button onclick="window.location.href='calendar.html';" class="Transparent" id="calendar" type="button"></button>
+								<div id = "Navigation">
+									<button id="LinksInterface" class = "NavButton" aria-label="cool links"><img class="NavButton" src="gifs/coollinks.webp"></button>
+									<button id="ThreeDimInterface" class = "NavButton" aria-label="3d world"><img class="NavButton" src="gifs/click.webp"></button>
+									<button id="Lyrics" class = "NavButton" aria-label="lyrics"><img class="NavButton" src="gifs/cdrom.webp"></button>
+									<button id="class = "NavButton" aria-label="radio"><img class="NavButton" src="gifs/radiobutton.webp"></button>
+									<button class = "NavButton" aria-label="guestbook"><img class="NavButton" src="gifs/sun_shine_Guestbook.webp"></button>
+									<button class = "NavButton" aria-label="merch"><img class="NavButton" src="gifs/chinmerch.webp"></button>
+									<button class = "NavButton" aria-label="email"><img class="NavButton" src="gifs/eMailNew.webp"></button> 
+								</div>
+							</div>
 							<div id="crt-overlay" class="crt"></div>
 							<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?" loading="eager">
 							<img id="PowerButton" src="gifs/ColorButton.webp" alt="power button">
@@ -76,38 +86,24 @@
 								<img id="newSong" class="new" src="gifs/newSpin.webp" alt="new">
 								<img class="Cover" alt="the cover for our new single" src="./images/fr6cover.webp">
 								<img class="Cover" alt="the cover for our new single" src="./gifs/sjf_art.webp" style="left: 50%; top: 70%; z-index: 6; width: 20%;">
-								<!-- <div id="Listen">
-									<a href="https://open.spotify.com/track/0YKIe8sOm0g2o9wxWmPFGD?si=fxiFxnbmQAeVRst-ZkaSbQ">
-										<button class="Transparent" id="Spotify" type="button">Click Me</button>
-									</a>
-									<a href="https://music.apple.com/us/album/farm-route-6-mile-75/1718435388?i=1718435389">
-										<button class="Transparent" id="Apple" type="button">Click Me</button>
-									</a>
-									<a href="https://www.youtube.com/watch?v=gv-dWqrT-DQ&ab_channel=SweetFighter-Topic">
-										<button class="Transparent" id="Youtube" type="button">Click Me</button>
-									</a>
-									<a href="https://tidal.com/browse/track/323787767">
-										<button class="Transparent" id="Tidal" type="button">Click Me</button>
-									</a>
-									<a href="https://sweetfighter.bandcamp.com/releases">
-										<button class="Transparent" id="Bandcamp" type="button">Click Me</button>
-									</a>
-								</div> -->
+
 								<div id="Socials">
 
 									<img src="gifs/links.gif" class="links">
-									<a href="https://sweetfighter.bandcamp.com/releases">
-										<button class="Streaming" type="button"><img src="images/youtube.png"></button>
+
+									<a href="https://sweetfighter.bandcamp.com/releases" class="anchor" style="margin-top: -.3rem">
+										<button class="Streaming" type="button"><img id="Spotify" src="images/spotify.png"></button>
 									</a>
-									<a href="https://sweetfighter.bandcamp.com/releases">
-										<button class="Streaming" type="button">Click Me</button>
+									<a href="https://sweetfighter.bandcamp.com/releases" class="anchor">
+										<button class="Streaming" type="button"><img id="Apple" src="images/applemusic.png"></button>
 									</a>
-									<a href="https://sweetfighter.bandcamp.com/releases">
-										<button class="Streaming" type="button">Click Me</button>
+									<a href="https://sweetfighter.bandcamp.com/releases" class="anchor">
+										<button class="Streaming" type="button"><img id="Youtube" src="images/youtube.png"></button>
 									</a>
-									<a href="https://sweetfighter.bandcamp.com/releases">
-										<button class="Streaming" type="button">Click Me</button>
+									<a href="https://sweetfighter.bandcamp.com/releases" class="anchor">
+										<button class="Streaming" type="button"><img id="Bandcamp" src="images/bandcamp.png"></button>
 									</a>
+
 									<a id="sociallink" href="https://www.instagram.com/sweetfightertx/">Instagram</a><br>
 									<a id="sociallink" href="https://www.tiktok.com/@sweetfightertx?_t=8k5S4nXVcN9&_r=1">TikTok</a><br>
 									<a id="sociallink" href="https://www.facebook.com/sweetfightertx/">Facebook</a><br>
@@ -233,27 +229,9 @@
 								<img src = "gifs/alot468x60a3.webp" id="ad2" alt="fucking ad" loading="lazy">
 							</div>
 			
-			
+
 			
 						</div>
-
-
-						<a id="presskit" href="epk.html">Press Kit</a>
-						<button onclick="window.location.href='calendar.html';" class="Transparent" id="calendar" type="button"></button>
-						<div id = "Navigation">
-							<button id = "LinksInterface" aria-label="cool links"></button>
-							<button id = "ThreeDimInterface" aria-label="3d world"></button>
-							<button id = 'Lyrics' aria-label="lyrics"></button>
-							<button id = 'Radio' aria-label="radio"></button>
-							<button id = 'Guestbook' aria-label="guestbook"></button>
-							<button id = 'Merch' aria-label="merch"></button>
-							<button id = 'Mail' aria-label="email"></button> 
-						</div>
-					</div>
-
-					<script src="./jq.js" type="module"></script>
-				
-				</div>
 			</div>
 
 

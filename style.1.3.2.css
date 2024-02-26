@@ -36,10 +36,17 @@ body{
 	bottom:0;
 	top:0;
 	margin-top: 2.7rem;
-    background: url(gifs/background.gif);
+    background: white;
 	border: black inset .3rem;
 }
 
+#user-interface{
+	position: absolute;
+	left: -20%;
+	right: -20%;
+	bottom: 0;
+	top: 0;
+}
 
 .Underlord{
 	position: absolute;
@@ -48,14 +55,7 @@ body{
 	bottom:0;
 	top:0;
     margin-top: 2.7rem;
-}
-
-.Underlord{
-	position: absolute;
-	left:0;
-	right:0;
-	bottom:0;
-	top:0;
+	z-index: 13;
 }
 
 #Interface{
@@ -148,18 +148,6 @@ em{
 
 
 
-#Navigation{
-	position: absolute;
-	z-index: 100;
-	bottom: 0;
-	width: 99%;
-	margin: auto;
-	left: 0;
-	display: inline-block;
-	pointer-events: none;
-	opacity: 20%;
-}
-
 table, th, td {
 	border:3px inset grey;
 	color: black;
@@ -221,7 +209,7 @@ table, th, td {
 #presskit{
 	position: absolute;
     left: 0.2rem;
-    top: -4%;
+    top: 1%;
 	text-shadow: 1.2px 0.8px 1px gold;
 }
 
@@ -230,20 +218,13 @@ table, th, td {
 	width: 75px;
 	height: 24px;
     left: 0.2rem;
-    top: 0%;
+    top: 5%;
 	background: url("gifs/calendar.webp");
 	background-size: cover;
 	z-index: 11;
 	
 }
 
-.Left-Interface{
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	z-index: 13;
-}
 
 #calendar:hover{
 	transform: scale(1.4);
@@ -432,24 +413,52 @@ table, th, td {
 }
 
 #Socials{
+
 	position: absolute;
-	left: 3.7%;
-	top: 47%;
-	bottom: 6%;
-	width: 27%;
+	left: 2%;
+	top: 0%;
+	bottom: -1%;
+	width: 32%;
 	display: block;
 	z-index: 8;
 	font-size:3.7vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
-	text-shadow: 2px 1.8px black;
-	background-color:crimson;
+	text-shadow: 0.09rem 0.09rem 0.05rem black;
+	background-color:wheat;
 	text-align: left;
 	border-style:inset;
 	border-color: black;
 	border-width: medium;
-	overflow: hidden;
-
+	overflow-y:scroll;
+	padding: .2rem;
+	padding-bottom: 3rem;
 }
+
+a{
+	display: inline-block;
+}
+
+.links{
+	width: 70%;
+}
+
+.Streaming{
+    width: 100%;
+	height: 100%;
+    background: white;
+    border: lightgrey outset .2rem;
+	margin-bottom: 5%;
+	box-shadow: black .13rem .13rem;
+}
+
+.anchor{
+	margin-bottom: 3%;
+    width: 90%;
+    height: 14%;
+}
+
+
+
 
 /*Buttons svg */
 #Buttons{
@@ -485,11 +494,11 @@ table, th, td {
 }
 
 /* The following id's affect the position of each button */
-#Spotify{position: absolute; top: 0%; left: 0%;}
-#Apple{position: absolute; top: 0%; left: 33.6%;}
-#Youtube{position: absolute; top: 0%; left: 68%;}
-#Tidal{position: absolute; top: 55%; left: 16.1%;}
-#Bandcamp{position: absolute; top: 55%; left: 49.9%;}
+#Spotify{display: block;width: 100%; margin: auto;}
+#Apple{display: block;width: 100%; margin: auto;}
+#Youtube{display: block; height: 85%;margin: auto;}
+#Bandcamp{display: block;width: 100%;margin:auto;}
+
 
 
 #sociallink{
@@ -564,8 +573,7 @@ table, th, td {
 
 
 
-
-@media only screen and (min-aspect-ratio: 5/8) {
+@media only screen and (min-aspect-ratio: 7/10) {
 
 	#Overlord{
 		width: auto;
@@ -618,9 +626,7 @@ table, th, td {
 	}
 
 	#Socials{
-		left: 2.6%;
-		bottom: 4.5%;
-		width: 12vh;
+
 		font-size:2.6vh; /*more than 0.625, font based on height*/
 		margin-left: 1%
 	}
@@ -660,13 +666,22 @@ table, th, td {
 
 
 	#Navigation{
+		position: absolute;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		left: .2rem;
-		top: 50.5%;
-		width: 20%;
+		bottom: 5%;
+		top: 15%;
+		width:10%;
 		z-index: 13;
+	}
+
+	.NavButton{
+		width: 100%;
+		height: auto;
+		border: none;
+		background: transparent;
 	}
 
     #overlay-lyrics {
@@ -704,8 +719,34 @@ table, th, td {
 	}
 
 
+	#Spotify{display: block;height: 100%; margin: auto;}
+	#Apple{display: block;height: 100%; margin: auto;}
+	#Youtube{display: block; height: 85%;margin: auto;}
+	#Bandcamp{display: block;width: 100%;margin:auto;}
+
+
 }
 
+
+@media only screen and (max-aspect-ratio: 1){
+	#user-interface{
+		left: 0;
+		right: 0;
+	}
+
+	#Navigation{
+		position: absolute;
+		z-index: 100;
+		bottom: 0;
+		top: 100%;
+		width: 99%;
+		margin: auto;
+		left: 0;
+		display: inline-block;
+		pointer-events: none;
+		opacity: 20%;
+	}
+}
 
 
 
@@ -832,79 +873,6 @@ a:visited{
 	height: 24px;
 	border:none;
 }
-
-#ThreeDimInterface{
-	background: url(gifs/click.webp);
-	background-size: cover;
-	width: 60px;
-	height: 26.5px;
-	border: none;
-}
-
-#ThreeDimInterface:hover {
-	transform: scale(1.3);
-  }
-
-
-#LinksInterface{
-	background: url(gifs/coollinks.webp);
-	background-size: cover;
-	width: 54px;
-	height: 35px;
-	border: none;
-}
-
-#LinksInterface:hover {
-	transform: scale(1.4);
-  }
-
-#Lyrics{
-	background: url(gifs/cdrom.webp);
-	background-size: cover;
-	width: 38px;
-	height: 38px;
-	border: none;
-}
-
-#Lyrics:hover {
-	transform: scale(1.4);
-  }
-
-#Mail{
-	background: url(gifs/eMailNew.webp);
-	background-size: cover;
-	width: 44px;
-	height: 44px;
-	border: none;
-}
-
-#Mail:hover {
-	transform: scale(1.4);
-  }
-
-#Guestbook{
-	background: url(gifs/sun_shine_Guestbook.webp);
-	background-size: cover;
-	width: 45px;
-	height: 45px;
-	border: none;
-}
-
-#Guestbook:hover {
-	transform: scale(1.4);
-  }
-
-#Merch{
-	background: url(gifs/chinmerch.webp);
-	background-size: cover;
-	width: 40px;
-	height: 40px;
-	border: none;
-}
-
-#Merch:hover {
-	transform: scale(1.4);
-  }
 
 #Flamebar{
 	width: 100%;
@@ -1169,7 +1137,7 @@ button{
 /* Temporary */
 
 #lights{
-	background: url("gifs/dancinghearts.gif");
+	background: red;
 	background-repeat: repeat-x;
 	height: 29px;
 	width: 100%;
