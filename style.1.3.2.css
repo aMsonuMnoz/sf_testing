@@ -40,13 +40,7 @@ body{
 	border: black inset .3rem;
 }
 
-#user-interface{
-	position: absolute;
-	left: -20%;
-	right: -20%;
-	bottom: 0;
-	top: 0;
-}
+
 
 .Underlord{
 	position: absolute;
@@ -144,6 +138,7 @@ em{
 	margin: auto;
 	width: 75%;
 	height: auto;
+	margin-top: 2%;
 }
 
 
@@ -206,19 +201,50 @@ table, th, td {
 	font-family: myFirstFont;
 }
 
+#user-interface{
+	left: 0;
+	right: 0;
+}
+
+#Navigation{
+	position: absolute;
+	z-index: 100;
+	bottom: 0;
+	top: 100%;
+	width: 99%;
+	height: 10%;
+	margin: auto;
+	left: 0;
+	display: inline-block;
+	pointer-events: none;
+	opacity: 20%;
+}
+
+.NavButton{
+	height: 100%;
+	width: auto;
+}
+
+#Lyrics{height: 70%; width: auto}
+#Guestbook{height: 80%; width: auto}
+#Merch{height: 70%; width: auto}
+#Mail{height: 74%; width: auto}
+#Radio{height: 75%; width: auto}
+
 #presskit{
 	position: absolute;
     left: 0.2rem;
-    top: 1%;
+    top: 0%;
 	text-shadow: 1.2px 0.8px 1px gold;
+	font-size: 90%;
 }
 
 #calendar{
 	position: absolute;
-	width: 75px;
-	height: 24px;
+    width: 10.9%;
+    height: 5.7%;
     left: 0.2rem;
-    top: 5%;
+    top: 5.5%;
 	background: url("gifs/calendar.webp");
 	background-size: cover;
 	z-index: 11;
@@ -499,7 +525,9 @@ a{
 #Youtube{display: block; height: 85%;margin: auto;}
 #Bandcamp{display: block;width: 100%;margin:auto;}
 
-
+.NavButton:hover {
+	transform: scale(1.2);
+  }
 
 #sociallink{
 	position: relative;
@@ -665,25 +693,6 @@ a{
 	}
 
 
-	#Navigation{
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		left: .2rem;
-		bottom: 5%;
-		top: 15%;
-		width:10%;
-		z-index: 13;
-	}
-
-	.NavButton{
-		width: 100%;
-		height: auto;
-		border: none;
-		background: transparent;
-	}
-
     #overlay-lyrics {
 		top:18.6%; bottom:11.1%; left:10%; right:10.2%;
 		z-index:5;
@@ -711,13 +720,6 @@ a{
 
 	}
 
-	#presskit{
-		top: 36%;
-	}
-	#calendar{
-		top: 40%;
-	}
-
 
 	#Spotify{display: block;height: 100%; margin: auto;}
 	#Apple{display: block;height: 100%; margin: auto;}
@@ -725,30 +727,45 @@ a{
 	#Bandcamp{display: block;width: 100%;margin:auto;}
 
 
+
 }
 
 
-@media only screen and (max-aspect-ratio: 1){
-	#user-interface{
-		left: 0;
-		right: 0;
+@media only screen and (min-aspect-ratio: 1){
+
+	#Lyrics{width: 70%; height: auto}
+	#Guestbook{width: 80%; height: auto}
+	#Merch{width: 70%; height: auto;}
+	#Mail{width: 74%; height: auto;}
+	#Radio{width: 75%; height: auto;}
+
+	.NavButton{
+		width: 100%;
+		height: auto;
 	}
 
 	#Navigation{
 		position: absolute;
-		z-index: 100;
-		bottom: 0;
-		top: 100%;
-		width: 99%;
-		margin: auto;
-		left: 0;
-		display: inline-block;
-		pointer-events: none;
-		opacity: 20%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		left: .2rem;
+		bottom: 20%;
+		top: 40%;
+		width:9%;
+		height: auto;
+		z-index: 13;
 	}
+
+	#user-interface{
+		position: absolute;
+		left: -25%;
+		right: -25%;
+		bottom: 0;
+		top: 0;
+	}
+
 }
-
-
 
 /* Marquee Animation */
 @-moz-keyframes scroll-left {
@@ -978,17 +995,6 @@ a:visited{
 	width: 5%
 }
 
-#Radio{
-	background: url(gifs/radiobutton.webp);
-	background-size: cover;
-	width: 40px;
-	height: 40px;
-	border: none;
-}
-
-#Radio:hover {
-	transform: scale(1.2);
-  }
 
 #donate{
 	position: absolute;
