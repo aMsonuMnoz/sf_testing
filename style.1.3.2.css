@@ -61,7 +61,6 @@ body{
 	font-size: 100%;
 	z-index: 0;
 	opacity: 0%;
-	max-width: 370px;
 }
 
 #messages{
@@ -74,11 +73,15 @@ body{
 	width: 94%;
 	max-width: 600px;
 	height: auto;
-	top: 30vh;
+	top: 8vh;
 	border: 2.5px white solid;
 	border-radius: 5px;
 	background-color: white;
 	animation: bounce linear 2s infinite;
+}
+
+.message-image{
+	width: 100%;
 }
 
 em{
@@ -128,7 +131,7 @@ em{
 	position: absolute;
 	width: 23%;
 	height: auto;
-	right: 2%;
+	right: 0
 }
 
 
@@ -248,7 +251,7 @@ table, th, td {
 
 #calendar{
     position: absolute;
-    width: 25%;
+    width: 18%;
     height: auto;
     left: 0.2rem;
     top: -10.5%;
@@ -574,7 +577,7 @@ a{
 #enter{
 	z-index: 50;
 	position: relative;
-	top: 20vh;
+	top: 10vh;
 	width: 30%;
     height: 12%;
 	display: inline-block;
@@ -637,7 +640,6 @@ a{
 		display: inline-block;  /*needs to be this way...*/
 		width: auto;
 		z-index: -500;
-		max-width: 1000px;
 	}
 
 	.Left-Interface{
@@ -752,6 +754,7 @@ a{
 	#Merch{width: 70%; height: auto;}
 	#Mail{width: 74%; height: auto; position: absolute; top: -30%; right: -75%;}
 	#Radio{width: 75%; height: auto;}
+	#calendar{width:60%;}
 
 	.NavButton{
 		width: 100%;
@@ -784,6 +787,43 @@ a{
 @media only screen and (max-aspect-ratio: 3/5){
 	.titleLink{
 		margin-top: 4%;
+	}
+}
+
+@media only screen and (min-width:900px){
+	#ThreeDimInterface{width: 100%; height: auto;}
+	#LinksInterface{width: 100%; height: auto;}
+	#Lyrics{width: 70%; height: auto}
+	#Guestbook{width: 80%; height: auto}
+	#Merch{width: 70%; height: auto;}
+	#Mail{width: 74%; height: auto; position: absolute; top: -30%; right: -75%;}
+	#Radio{width: 75%; height: auto;}
+	#calendar{width:60%;}
+
+	.NavButton{
+		width: 100%;
+		height: auto;
+	}
+
+	#Navigation{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		left: .2rem;
+		bottom: 20%;
+		top: 40%;
+		width:55%;
+		height: auto;
+		z-index: 13;
+	}
+
+	#user-interface{
+		position: absolute;
+		left: -25%;
+		right: 100%;
+		bottom: 0;
+		top: 0;
 	}
 }
 

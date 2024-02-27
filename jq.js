@@ -46,16 +46,17 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
-        "Click every button",
+        "Show March 9th Acadia Bar and Grill Houston",
+        "Farm Route 6, Mile 75 now streaming... click FR6M75.mp4 to watch the live video",
+        "Click every button!",
         "Escape from Beautiful Mountain coming soon...",
-        "Person reading this, hello from across the internet. Thank you for visiting",
-        "Merch coming soon",
-        "Happy Holidays from Sweet Fighter",
-        "Make sure you sign the guestbook before you leave or you can send me an IM on AOL",
+        "Rest here before continuing to your next web site.",
+        "e-Merch e-Store on the way",
+        "View our press kit, book us for a show",
+        "Make sure you sign the guestbook before you leave to let me know exactly what you think about things",
         "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
         "Follow our Instagram for updates about us",
-        "Join our discord and show us some art",
-        "Strong John Fisher now streaming... click sjf.mp4 to watch the live video"
+        "Join our discord and show us some art"
     ];
 
     animated.addEventListener("animationiteration", () => {
