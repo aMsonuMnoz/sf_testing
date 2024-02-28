@@ -12,14 +12,17 @@ export function hideAll() {
 }
 
 function linksOff() {
-    $("#Buttons").toggle();
+    // $("#Buttons").toggle();
+    // $("#Socials").toggle();
+    // $(".Cover").toggle();
+    // $("#Listen").toggle();
+    // $("#newSong").toggle();
+    // $("#donate").toggle();
+    // $("#movie").toggle();
+    // $("#movie2").toggle();
+
     $("#Socials").toggle();
-    $(".Cover").toggle();
-    $("#Listen").toggle();
-    $("#newSong").toggle();
-    $("#donate").toggle();
-    $("#movie").toggle();
-    $("#movie2").toggle();
+    $("#messages2").toggle();
 }
 
 $(function(){

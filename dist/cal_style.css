@@ -4,7 +4,7 @@ body {
     height: 100dvh;
     width: 100dvw;
     text-align: center;
-    background: url("images/snow.webp");
+    background: url("images/animated_background.gif");
 }
 
 #cal{
