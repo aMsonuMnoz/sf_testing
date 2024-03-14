@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    width: 100dvw;
+    text-align: center;
+    background: url("images/animated_background.gif");
+}
+
+#cal{
+    margin: 0;
+    width: 96dvw;
+    height: 96dvh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Transparent{
+	background: transparent;
+    border: none;
+    color: transparent;
+	cursor: pointer;
+}
+
+#back{
+    position: absolute;
+	width: 76px;
+	height: 27px;
+	left: 4vw;
+    bottom: 9vh;
+	background: url("images/back.webp");
+	background-size: cover;
+}
+
+#back:hover{
+    transform: scale(1.3);
+    transition-duration: 1.4s;
+}
