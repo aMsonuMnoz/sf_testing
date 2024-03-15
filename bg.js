@@ -18,5 +18,5 @@ export function getImageTag() {
     return img;
 }
 
-// $("#overlay-links").css("background",getImageTag());
-// $("#overlay-links").css("background-size","cover");
+$("#overlay-links").css("background",getImageTag());
+$("#overlay-links").css("background-size","cover");

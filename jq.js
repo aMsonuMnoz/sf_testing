@@ -23,6 +23,9 @@ function linksOff() {
 
     $("#Socials").toggle();
     $("#messages2").toggle();
+    $("#nextimg").toggle();
+    $("#movie").toggle();
+    $("#movie2").toggle();
 }
 
 $(function(){
@@ -40,7 +43,6 @@ $(function(){
         // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all").css("opacity", "100%");
         $("#messages").hide();
-        $('.pretitleLink').toggleClass('pretitleLink titleLink', '800');
 
     })
 
@@ -49,7 +51,7 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
-        "Show March 9th Acadia Bar and Grill Houston",
+        "Show April 27th @ White Swan Live Houston",
         "Farm Route 6, Mile 75 now streaming... click FR6M75.mp4 to watch the live video",
         "Click every button!",
         "Escape from Beautiful Mountain coming soon...",
@@ -105,6 +107,17 @@ $(function(){
           }, "400");
     });
 
+    $("#nextimg").on("click", function() {
+        hideAll();
+        $("#overlay-loading").show();
+        $("#overlay-links").css("background",getImageTag());
+        $("#overlay-links").css("background-size","cover");
+        $("#overlay-links").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "400");
+    });
+
     $("#Lyrics").on("click", function() {
         hideAll();
         $("#overlay-loading").show();
@@ -120,10 +133,10 @@ $(function(){
         
     });
 
-    $("#Guestbook").on("click", function() {
+    $("#Sitemap").on("click", function() {
         hideAll();
         $("#overlay-loading").show();
-        $("#overlay-guest").show();
+        $("#overlay-sitemap").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");

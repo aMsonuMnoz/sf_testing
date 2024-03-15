@@ -52,14 +52,16 @@
 		<div id="Overlord">
 			<div id="header" class="marquee"><p id="tagline">FARM ROUTE 6, MILE 75 now streaming... click FR6M75.mp4 to watch the live video<img alt="sunglasses cool guy" id="OKAY" src = "images/OKAY.webp"></p> </div>
 			<div id="lights"></div>
+			<button onclick="window.location.href='https://ko-fi.com/sweetfighter';" class="Transparent" id="donate" type="button">Click Me</button>
 
 			<div class="Middlelord">
 
-						<a class="pretitleLink" href="https://amsonumnoz.github.io/Iteration3/">
+						<a class="titleLink" href="https://amsonumnoz.github.io/Iteration3/">
 							<img id="Title" alt="this shit took forever to make" src="./images/globe3.webp">
 						</a>
 						<div id="Interface">
 							<div id="user-interface">
+								<img id="Guestbook2" class="NavButton" src="gifs/sun_shine_Guestbook.webp">
 								<a id="presskit" href="epk.html">Press Kit</a>
 								<a id="calendar" href="calendar.html"><img style="width: 100%; height: auto" src="gifs/calendar.webp"></a>
 								<div id = "Navigation">
@@ -67,15 +69,15 @@
 									<img id="ThreeDimInterface" class="NavButton" src="gifs/click.webp">
 									<img id="Lyrics" class="NavButton" src="gifs/cdrom.webp">
 									<img id="Radio" class="NavButton" src="gifs/radiobutton.webp">
-									<img id="Guestbook" class="NavButton" src="gifs/sun_shine_Guestbook.webp">
+									<img id="Sitemap" class="NavButton" src="gifs/sitemapclr.gif">
 									<img id="Merch" class="NavButton" src="gifs/chinmerch.webp">
 									<img id="Mail" class="NavButton" src="gifs/eMailNew.webp">
 								</div>
 							</div>
 							<div id="crt-overlay" class="crt"></div>
 							<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?" loading="eager">
-							<img id="PowerButton" src="gifs/ColorButton.webp" alt="power button">
-							<img id="LinksOff" src="gifs/eyebullet.webp" alt="turns links off">
+							<img class="hov" id="PowerButton" src="gifs/ColorButton.webp" alt="power button">
+							<img class="hov" id="LinksOff" src="gifs/eyebullet.webp" alt="turns links off">
 							<div id="overlay-loading">
 							</div>
 							<button id = "back-to-list"></button>
@@ -86,6 +88,10 @@
 								<!-- <img id="newSong" class="new" src="gifs/newSpin.webp" alt="new">
 								<img class="Cover" alt="the cover for our new single" src="./images/fr6cover.webp">
 								<img class="Cover" alt="the cover for our new single" src="./gifs/sjf_art.webp" style="left: 50%; top: 70%; z-index: 6; width: 20%;"> -->
+
+								<img src="gifs/FR6M75.webp" id="movie">
+								<img src="gifs/sjfweb.webp" id="movie2">
+
 
 								<div id="Socials">
 
@@ -111,21 +117,18 @@
 									<a id="sociallink" href="https://tinyurl.com/2qnx4oba">Bopdrop</a><br>
 									<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
 									<img src="gifs/scroll.webp" style="position: absolute; right: 2%; bottom: 2%; width: 15%">
-
-									<img src="gifs/FR6M75.webp" id="movie">
-									<img src="gifs/sjfweb.webp" id="movie">
-									<button onclick="window.location.href='https://ko-fi.com/sweetfighter';" class="Transparent" id="donate" type="button">Click Me</button>
 								</div>
 
 								<div id="messages2">
+									<img id="pin" src="gifs/bulletpin.gif">
 									<img id="msgboard" src="gifs/messagelogo.gif">
 									<table style="width:100%">
 										<tr>
 										  <td>From: <em>Sweet Fighter</em></td>
-										  <td>2/9/23</td>
+										  <td>3/15/24</td>
 										</tr>
 										<tr>
-											<td colspan="2"><img class="message-image" src="images/flyer.PNG"> </td>
+											<td colspan="2">On-line merch store opening <u>soon</u>. Follow our instagram for information about upcoming shows. "Escape from Beautiful Mountain" is imminent.</td>
 										  </tr>
 					
 									  </table>
@@ -134,6 +137,8 @@
 									  <button class="Transparent" id="movie2" type="button">Click Me</button> -->
 					
 								</div>
+
+								<img id="nextimg" src="gifs/nextred.webp">
 							</div>
 			
 							<div id="overlay-models">
@@ -183,9 +188,12 @@
 			
 							</div>
 			
-							<div id="overlay-guest">
-								<img src="gifs/guestbookspinning.webp" id="guest">
-								<button onclick="window.location.href='http://sweetfighter.123guestbook.com/';" class="Transparent" id="guestbutton" type="button">Click Me</button>
+							<div id="overlay-sitemap">
+								<a class="hov" id="magnify" href="sitemap.html"><img style="width: 100%; height: auto" src="gifs/MagnifyGlassOnEarthAniRoger.gif"></a>
+								<embed src="sitemap.html" class="sitemap">
+									<iframe id="sjf_video" class="youtube" title="Strong John Fisher"
+									src="https://www.youtube.com/embed/Qf9zCPCX0jI?si=X6ZuhjWuh6lXUpZt">
+									</iframe>
 							</div>
 			
 							<div id="overlay-merch">
@@ -231,11 +239,6 @@
 			
 			
 							<div id="overlay-email">
-
-								<embed src="sitemap.html" class="sitemap">
-								<iframe id="sjf_video" class="youtube" title="Strong John Fisher"
-								src="https://www.youtube.com/embed/Qf9zCPCX0jI?si=X6ZuhjWuh6lXUpZt">
-								</iframe>
 			
 								<iframe id="fr6m75_video" class="youtube" title="Farm Route 6, Mile 75"
 								src="https://www.youtube.com/embed/HLIpKFdXbhc?si=2XltZo847iJDZHP0">
@@ -255,7 +258,7 @@
 			</div>
 
 
-			<div id="messages">
+			<!-- <div id="messages">
 				<img id="msgboard" src="gifs/messagelogo.gif">
 				<table style="width:100%">
 					<tr>
@@ -263,12 +266,12 @@
 					  <td>2/27/24</td>
 					</tr>
 					<tr>
-						<td colspan="2"><img class="message-image" src="images/flyer.PNG"> </td>
+						<td colspan="2">On-line merch store opening <u>soon</u>. Follow our instagram for information about upcoming shows. "Escape from Beautiful Mountain" is imminent.</td>
 					  </tr>
 
 				  </table>
 
-			</div>
+			</div> -->
 			<img id="enter" src="gifs/enter.webp">
 
 
