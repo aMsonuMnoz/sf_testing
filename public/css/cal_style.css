@@ -4,7 +4,7 @@ body {
     height: 100dvh;
     width: 100dvw;
     text-align: center;
-    background: url("images/animated_background.gif");
+    background: url("../images/animated_background.gif");
 }
 
 #cal{
@@ -30,7 +30,7 @@ body {
 	height: 27px;
 	left: 4vw;
     bottom: 9vh;
-	background: url("images/back.webp");
+	background: url("../images/back.webp");
 	background-size: cover;
 }
 
