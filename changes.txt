@@ -1,0 +1,7 @@
+2.0.2 
+Merch Store Grand Opening Update
+
+-Added latest garments to the merch page + buy now button
+-Homepage now links to store.sweetfighter.net
+-Moved merch button to 2nd place
+-New gifs and anchors to epk
