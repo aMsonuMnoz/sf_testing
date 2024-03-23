@@ -51,8 +51,8 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
+        "Visit our merch store, now on store.sweetfighter.net",
         "Show April 27th @ White Swan Live Houston",
-        "Farm Route 6, Mile 75 now streaming... click FR6M75.mp4 to watch the live video",
         "Click every button!",
         "Escape from Beautiful Mountain coming soon...",
         "Rest here before continuing to your next web site.",
