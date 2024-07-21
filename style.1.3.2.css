@@ -19,7 +19,6 @@ body{
 	margin: auto;
 	margin-top: .9dvh;
 	background: grey;
-	/* background: url("gifs/hearts.gif"); */
 	background-size: 10vh;
 	padding: 0;
 	z-index: 0;
@@ -36,7 +35,9 @@ body{
 	bottom:0;
 	top:0;
 	margin-top: 2.7rem;
-    background: url(gifs/orange.webp);
+    background: url(gifs/carGif16-9.gif);
+	background-size: cover;
+	background-position: center;
 	border: black inset .3rem;
 }
 
@@ -552,8 +553,8 @@ a{
 }
 
 /* The following id's affect the position of each button */
-#Spotify{display: block;width: 100%; margin: auto;}
-#Apple{display: block;width: 100%; margin: auto;}
+#Spotify{display: block;height: 100%;margin: auto;}
+#Apple{display: block;height: 100%; margin: auto;}
 #Youtube{display: block; height: 85%;margin: auto;}
 #Bandcamp{display: block;width: 100%;margin:auto;}
 
@@ -602,13 +603,11 @@ a{
 #enter{
 	z-index: 50;
 	position: relative;
-	top: 45vh;
-
+	top: 75dvh;
 	display: inline-block;
 	border: none;
 	cursor:grab;
 	animation: bounce linear 2s infinite;
-	/* box-shadow:#222222 3px 3px 5px; */
 
 }
 #enter:hover {
@@ -809,6 +808,10 @@ a{
 		right: 100%;
 		bottom: 0;
 		top: 0;
+	}
+
+	.Middlelord{
+		background-image: url(gifs/carGif.gif);
 	}
 
 }
@@ -1264,6 +1267,7 @@ h1{
 	font-size: 1.2em;
 	text-shadow: 2px 2px 4px forestgreen;
 }
+
 
 
 

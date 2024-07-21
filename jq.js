@@ -51,14 +51,13 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
-        "Visit our merch store, now on store.sweetfighter.net",
-        "Show April 27th @ White Swan Live Houston",
+        "8 tracks, 3 live videos, 1 album",
+        "Album release tour 7/26 Galveston, 7/27 Beaumont, 7/28 Tyler",
         "Click every button!",
         "Escape from Beautiful Mountain coming soon...",
         "Rest here before continuing to your next web site.",
-        "e-Merch e-Store on the way",
         "View our press kit, book us for a show",
-        "Make sure you sign the guestbook before you leave to let me know exactly what you think about things",
+        "The guestbook I was using shut down, so now I have to build my own",
         "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
         "Follow our Instagram for updates about us",
         "Join our discord and show us some art"
