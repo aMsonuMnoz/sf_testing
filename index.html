@@ -76,24 +76,18 @@
 									<img id="Mail" class="NavButton" src="gifs/eMailNew.webp">
 								</div>
 							</div>
-							<div id="crt-overlay" class="crt"></div>
+							<div id="crt-overlay" class="crt overlay"></div>
 							<img id="Computer" src = "./images/ComputerFrame.webp" alt = "What is this magic?" loading="eager">
 							<img class="hov" id="PowerButton" src="gifs/ColorButton.webp" alt="power button">
 							<img class="hov" id="LinksOff" src="gifs/eyebullet.webp" alt="turns links off">
-							<div id="overlay-loading">
+							<img class="hov" id="Movies" src="gifs/film.webp" alt="Movies">
+							<div class="overlay" id="overlay-loading">
 							</div>
 							<button id = "back-to-list"></button>
 							<img id="scroll" src="/gifs/scroll.webp" alt="scroll down">
 							
-							<div id="overlay-links">
-								<!-- <img id="Buttons" alt="Listen to our music..." src="./images/Buttons.svg"> -->
-								<!-- <img id="newSong" class="new" src="gifs/newSpin.webp" alt="new">
-								<img class="Cover" alt="the cover for our new single" src="./images/fr6cover.webp">
-								<img class="Cover" alt="the cover for our new single" src="./gifs/sjf_art.webp" style="left: 50%; top: 70%; z-index: 6; width: 20%;"> -->
-								<!-- <img src="gifs/ourshop.gif" id="ourshop"> -->
-								<a id="ourshop" href="https://store.sweetfighter.net"><img style="width: 100%; height: 100%;" class="hov" src="gifs/ourshop.gif"></a>
-								<img src="gifs/FR6M75.webp" id="movie">
-								<img src="gifs/sjfweb.webp" id="movie2">
+							<div class="overlay" id="overlay-links">
+								<!-- <a id="ourshop" href="https://store.sweetfighter.net"><img style="width: 100%; height: 100%;" class="hov" src="gifs/ourshop.gif"></a> -->
 
 
 								<div id="Socials">
@@ -122,29 +116,25 @@
 									<img src="gifs/scroll.webp" style="position: absolute; right: 2%; bottom: 2%; width: 15%">
 								</div>
 
-								<div id="messages2">
+								<div id="messages">
 									<img id="pin" src="gifs/bulletpin.gif">
 									<img id="msgboard" src="gifs/messagelogo.gif">
 									<table style="width:100%">
 										<tr>
 										  <td>From: <em>Sweet Fighter</em></td>
-										  <td>3/22/24</td>
+										  <td>7/27/24</td>
 										</tr>
 										<tr>
-											<td colspan="2"><u>ALERT</u>: Sweet Fighter's 2nd studio album, Escape! From Beautiful Mountain, releasing on 7/27 at Midnight.</td>
+											<td colspan="2"><u>ALERT</u>: Escape! from Beautiful Mountain, out now on all streaming platforms. </td>
 										  </tr>
 					
 									  </table>
-									  <!-- <button onclick="window.location.href='https://ko-fi.com/sweetfighter';" class="Transparent" id="donate" type="button">Click Me</button>
-									  <button class="Transparent" id="movie" type="button">Click Me</button>
-									  <button class="Transparent" id="movie2" type="button">Click Me</button> -->
-					
 								</div>
-
+								<img id="EFBM" src = "gifs/EFBM.webp">
 								<img id="nextimg" src="gifs/nextred.webp">
 							</div>
 			
-							<div id="overlay-models">
+							<div class="overlay" id="overlay-models">
 								<p id="modelTitle"></p>
 								<img id="newModel" class="new" src="gifs/newSpin.webp" alt="new" loading="lazy">
 								<script src="./main.js" type = "module" defer></script>
@@ -156,7 +146,7 @@
 								<p id="Error">Error! Refresh!</p>
 							</div> 
 			
-							<div id = "overlay-lyrics">
+							<div class="overlay" id = "overlay-lyrics">
 								<script type="module" src="./lyrics.js"></script>
 								<div id = "sub-songlist">
 									<img id="poems" src="gifs/StoriesNPoems.gif" alt="stories and poems" loading="lazy">
@@ -191,12 +181,12 @@
 			
 							</div>
 			
-							<div id="overlay-sitemap">
+							<div class="overlay" id="overlay-sitemap">
 								<a class="hov" id="magnify" href="sitemap.html"><img style="width: 100%; height: auto" src="gifs/MagnifyGlassOnEarthAniRoger.gif"></a>
 								<embed src="sitemap.html" class="sitemap">
 							</div>
 			
-							<div id="overlay-merch">
+							<div class="overlay" id="overlay-merch">
 								<a id="buynow" href="https://store.sweetfighter.net"><img style="width: 100%; height: 100%;" class="hov" src="gifs/buynowbutton.gif"></a>
 								<div class="swiffy-slider slider-item-nogap slider-nav-caretfill slider-nav-visible slider-nav-touch slider-indicators-square slider-indicators-highlight slider-indicators-sm" id="merch-slider" id="merch-slider">
 									<ul class="slider-container">
@@ -215,7 +205,7 @@
 								</div>
 							</div>
 			
-							<div id="overlay-radio">
+							<div class="overlay" id="overlay-radio">
 								<script type="text/javascript" src="https://hosted.muses.org/mrp.js" ></script>
 								<script type="text/javascript" >
 								MRP.insert({
@@ -235,10 +225,13 @@
 								});
 								</script>
 							</div>
-			
-			
-							<div id="overlay-email">
-			
+
+							<div class="overlay" id="overlay-movies">
+								<div id="movie-list">
+									<img id="fr6m75" class="movies hov" src="gifs/fr6m75.gif" alt="Farm Route 6, Mile 75" loading="lazy">
+									<img id="sjf_v" class="movies hov" src="gifs/sjf.gif" alt="Strong John Fisher" loading="lazy">
+									<img id="aHaNaG" class="movies hov" src="gifs/aHaNaG.gif" alt="aheartanoseaGHOST!" loading="lazy">
+								</div>
 								<iframe id="sjf_video" class="youtube" title="Strong John Fisher"
 								src="https://www.youtube.com/embed/Qf9zCPCX0jI?si=X6ZuhjWuh6lXUpZt">
 								</iframe>			
@@ -246,6 +239,15 @@
 								<iframe id="fr6m75_video" class="youtube" title="Farm Route 6, Mile 75"
 								src="https://www.youtube.com/embed/HLIpKFdXbhc?si=2XltZo847iJDZHP0">
 								</iframe>
+
+								<iframe id="aHaNaG_video" class="youtube" title="aheartanoseaGHOST!"
+								src="https://www.youtube.com/embed/A1TI6pgs-no?si=zp_ApfpTDWhFDZWz">
+								</iframe>
+								
+							</div>
+			
+			
+							<div class="overlay" id="overlay-email">
 								
 								<p id = "email">
 									See a bug or something? Maybe something else? Something greater? Direct your concerns at
@@ -261,20 +263,6 @@
 			</div>
 
 
-			<!-- <div id="messages">
-				<img id="msgboard" src="gifs/messagelogo.gif">
-				<table style="width:100%">
-					<tr>
-					  <td>From: <em>Sweet Fighter</em></td>
-					  <td>2/27/24</td>
-					</tr>
-					<tr>
-						<td colspan="2">On-line merch store opening <u>soon</u>. Follow our instagram for information about upcoming shows. "Escape from Beautiful Mountain" is imminent.</td>
-					  </tr>
-
-				  </table>
-
-			</div> -->
 			<img id="enter" src="gifs/enter.webp">
 
 

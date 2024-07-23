@@ -12,20 +12,11 @@ export function hideAll() {
 }
 
 function linksOff() {
-    // $("#Buttons").toggle();
-    // $("#Socials").toggle();
-    // $(".Cover").toggle();
-    // $("#Listen").toggle();
-    // $("#newSong").toggle();
-    // $("#donate").toggle();
-    // $("#movie").toggle();
-    // $("#movie2").toggle();
 
     $("#Socials").toggle();
-    $("#messages2").toggle();
+    $("#messages").toggle();
     $("#nextimg").toggle();
-    $("#movie").toggle();
-    $("#movie2").toggle();
+    $("#EFBM").toggle();
 }
 
 $(function(){
@@ -40,9 +31,7 @@ $(function(){
         $("#Interface").css("opacity", "100%");
         $("#Interface").css("z-index", "0").show("slow").css("display", "inline-block");
         $("#overlay-models").css("visibility","hidden");
-        // $("#Overlord").css("background", "url('images/snow.webp')");
         $("#Navigation").css("pointer-events", "all").css("opacity", "100%");
-        $("#messages").hide();
 
     })
 
@@ -173,25 +162,41 @@ $(function(){
           }, "800");
     })
 
-    $("#movie").on("click", function(){
+    $("#Movies").on("click", function(){
         hideAll();
-        $("#sjf_video").hide();
         $("#overlay-loading").show();
-        $("#fr6m75_video").show();
-        $("#overlay-email").show();
+        $("#overlay-movies").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");
     })
 
-    $("#movie2").on("click", function(){
-        hideAll();
-        $("#fr6m75_video").hide();
+    $("#fr6m75").on("click", function(){
+        $("#sjf_video").hide();
+        $("#aHaNaG_video").hide();
         $("#overlay-loading").show();
-        $("#sjf_video").show();
-        $("#overlay-email").show();
+        $("#fr6m75_video").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");
     })
+    $("#sjf_v").on("click", function(){
+        $("#fr6m75_video").hide();
+        $("#aHaNaG_video").hide();
+        $("#overlay-loading").show();
+        $("#sjf_video").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "800");
+    })
+    $("#aHaNaG").on("click", function(){
+        $("#sjf_video").hide();
+        $("#fr6m75_video").hide();
+        $("#overlay-loading").show();
+        $("#aHaNaG_video").show();
+        setTimeout(() => {
+            $("#overlay-loading").hide();
+          }, "800");
+    })
+
   });
