@@ -51,11 +51,13 @@
 
 
 		<div id="Overlord">
-			<div id="header" class="marquee"><p id="tagline">Escape! From Beautiful Mountain, out 7/27 at midnight<img alt="sunglasses cool guy" id="OKAY" src = "images/OKAY.webp"></p> </div>
+			<div id="header" class="marquee"><p id="tagline">Escape! From Beautiful Mountain<img alt="sunglasses cool guy" id="OKAY" src = "images/OKAY.webp"></p> </div>
 			<div id="lights"></div>
 			<button onclick="window.location.href='https://ko-fi.com/sweetfighter';" class="Transparent" id="donate" type="button">Click Me</button>
+			
 
 			<div class="Middlelord">
+				<a id="changelog" href="changelog.html"></a>
 
 						<a class="titleLink" href="https://amsonumnoz.github.io/Iteration3/">
 							<img id="Title" alt="this shit took forever to make" src="./images/globe3.webp">
@@ -81,6 +83,11 @@
 							<img class="hov" id="PowerButton" src="gifs/ColorButton.webp" alt="power button">
 							<img class="hov" id="LinksOff" src="gifs/eyebullet.webp" alt="turns links off">
 							<img class="hov" id="Movies" src="gifs/film.webp" alt="Movies">
+							<div id="movie-list">
+								<img id="fr6m75" class="movies hov" src="gifs/fr6.gif" alt="Farm Route 6, Mile 75" loading="lazy">
+								<img id="sjf_v" class="movies hov" src="gifs/sjf.gif" alt="Strong John Fisher" loading="lazy">
+								<img id="Live" class="movies hov" src="gifs/LIVE.gif" alt="Live Performance" loading="lazy">
+							</div>
 							<div class="overlay" id="overlay-loading">
 							</div>
 							<button id = "back-to-list"></button>
@@ -94,16 +101,16 @@
 
 									<img src="gifs/links.gif" class="links">
 
-									<a href="https://open.spotify.com/track/0YKIe8sOm0g2o9wxWmPFGD?si=fxiFxnbmQAeVRst-ZkaSbQ" class="anchor" style="margin-top: -.3rem">
+									<a href="https://open.spotify.com/album/5aQEkGmYvpzV87VhUJXCK5" class="anchor" style="margin-top: -.3rem">
 										<button class="Streaming" type="button"><img id="Spotify" src="images/spotify.png"></button>
 									</a>
-									<a href="https://music.apple.com/us/album/farm-route-6-mile-75/1718435388?i=1718435389" class="anchor">
+									<a href="https://music.apple.com/us/album/escape-from-beautiful-mountain/1757370693?uo=4&app=music&at=1001lry3&ct=dashboard" class="anchor">
 										<button class="Streaming" type="button"><img id="Apple" src="images/applemusic.png"></button>
 									</a>
-									<a href="https://www.youtube.com/watch?v=gv-dWqrT-DQ&ab_channel=SweetFighter-Topic" class="anchor">
+									<a href="https://www.youtube.com/watch?v=HaSLMin0kGQ&list=OLAK5uy_nvRMBuibrTDqOQEdZNcVpY9aKjxGc5oWQ" class="anchor">
 										<button class="Streaming" type="button"><img id="Youtube" src="images/youtube.png"></button>
 									</a>
-									<a href="https://sweetfighter.bandcamp.com/releases" class="anchor">
+									<a href="https://sweetfighter.bandcamp.com/album/escape-from-beautiful-mountain" class="anchor">
 										<button class="Streaming" type="button"><img id="Bandcamp" src="images/bandcamp.png"></button>
 									</a>
 
@@ -131,6 +138,7 @@
 									  </table>
 								</div>
 								<img id="EFBM" src = "gifs/EFBM.webp">
+								<img id="trophy" src = "images/trophy.webp" style="position: absolute; height: 60%; bottom: 0; right: 0">
 								<img id="nextimg" src="gifs/nextred.webp">
 							</div>
 			
@@ -227,11 +235,7 @@
 							</div>
 
 							<div class="overlay" id="overlay-movies">
-								<div id="movie-list">
-									<img id="fr6m75" class="movies hov" src="gifs/fr6m75.gif" alt="Farm Route 6, Mile 75" loading="lazy">
-									<img id="sjf_v" class="movies hov" src="gifs/sjf.gif" alt="Strong John Fisher" loading="lazy">
-									<img id="aHaNaG" class="movies hov" src="gifs/aHaNaG.gif" alt="aheartanoseaGHOST!" loading="lazy">
-								</div>
+
 								<iframe id="sjf_video" class="youtube" title="Strong John Fisher"
 								src="https://www.youtube.com/embed/Qf9zCPCX0jI?si=X6ZuhjWuh6lXUpZt">
 								</iframe>			
@@ -240,8 +244,8 @@
 								src="https://www.youtube.com/embed/HLIpKFdXbhc?si=2XltZo847iJDZHP0">
 								</iframe>
 
-								<iframe id="aHaNaG_video" class="youtube" title="aheartanoseaGHOST!"
-								src="https://www.youtube.com/embed/A1TI6pgs-no?si=zp_ApfpTDWhFDZWz">
+								<iframe id="Live_video" class="youtube" title="aheartanoseaGHOST!"
+								src="https://www.youtube.com/embed/rX5hlsqDEOM?si=p22JImLy03GF2Nzw">
 								</iframe>
 								
 							</div>

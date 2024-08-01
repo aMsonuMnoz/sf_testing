@@ -162,7 +162,7 @@ table, th, td {
 	z-index: 100;
 	left: 0; top: 0; bottom: 0; right: 0;
 	height: 100%;
-	width: 83%;
+	width: 100%;
 	display: block;
   }
 
@@ -277,18 +277,17 @@ table, th, td {
 
 
 #movie-list{
-	background: white;
+	display: none;
 	position: absolute;
-	bottom: 0;
-	left: 83%;
+	bottom: 85%;
+	left: 20%;
 	right: 0;
-	top: 0;
-	border-left: .2rem solid blue;
+	top: -5%;
 	z-index: 101;
 }
 
 .movies{
-	width: 95%;
+	height: 95%;
 	
 }
 
@@ -1045,6 +1044,17 @@ a:visited{
 #donate:hover {
 	transform: scale(1.2);
   }
+
+#changelog {
+	width: 25px;
+	height: 25px;
+	background-image: url(gifs/log.webp);
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
 
 button{
 	transition-duration: .8s;

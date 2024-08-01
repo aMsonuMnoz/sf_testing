@@ -1,7 +1,8 @@
-2.0.2 
-Merch Store Grand Opening Update
+2.0.6
+Minor Content Updates + Fixes
 
--Added latest garments to the merch page + buy now button
--Homepage now links to store.sweetfighter.net
--Moved merch button to 2nd place
--New gifs and anchors to epk
+- marquee changes
+- message content changes
+- fixed trophy.webp
+- fixed video channel
+- added changelog page

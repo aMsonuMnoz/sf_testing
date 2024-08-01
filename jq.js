@@ -9,6 +9,7 @@ export function hideAll() {
     $(".ComputerLoading").remove();
     $("#scroll").hide();
     $("#back-to-list").hide();
+    $("#movie-list").hide();
 }
 
 function linksOff() {
@@ -41,9 +42,9 @@ $(function(){
     let i = 0;
     let taglines = [ 
         "8 tracks, 3 live videos, 1 album",
-        "Album release tour 7/26 Galveston, 7/27 Beaumont, 7/28 Tyler",
+        "8/18 @ Dan Electros, Houston; 8/24 @ The Art Studio, Beaumont",
         "Click every button!",
-        "Escape from Beautiful Mountain coming soon...",
+        "Escape! The Game coming soon",
         "Rest here before continuing to your next web site.",
         "View our press kit, book us for a show",
         "The guestbook I was using shut down, so now I have to build my own",
@@ -166,6 +167,7 @@ $(function(){
         hideAll();
         $("#overlay-loading").show();
         $("#overlay-movies").show();
+        $("#movie-list").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");
@@ -173,7 +175,7 @@ $(function(){
 
     $("#fr6m75").on("click", function(){
         $("#sjf_video").hide();
-        $("#aHaNaG_video").hide();
+        $("#Live_video").hide();
         $("#overlay-loading").show();
         $("#fr6m75_video").show();
         setTimeout(() => {
@@ -182,18 +184,18 @@ $(function(){
     })
     $("#sjf_v").on("click", function(){
         $("#fr6m75_video").hide();
-        $("#aHaNaG_video").hide();
+        $("#Live_video").hide();
         $("#overlay-loading").show();
         $("#sjf_video").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");
     })
-    $("#aHaNaG").on("click", function(){
+    $("#Live").on("click", function(){
         $("#sjf_video").hide();
         $("#fr6m75_video").hide();
         $("#overlay-loading").show();
-        $("#aHaNaG_video").show();
+        $("#Live_video").show();
         setTimeout(() => {
             $("#overlay-loading").hide();
           }, "800");
