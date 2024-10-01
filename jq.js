@@ -41,8 +41,9 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
-        "8 tracks, 3 live videos, 1 album",
-        "8/18 @ Dan Electros, Houston; 8/24 @ The Art Studio, Beaumont",
+        "10/19 @ SpringStock Music Festival, Houston",
+        "10/20 @ White Oak Music Hal, Houston",
+        "Escape! from Beautiful Mountain, out now on all platforms",
         "Click every button!",
         "Escape! The Game coming soon",
         "Rest here before continuing to your next web site.",
@@ -59,7 +60,7 @@ $(function(){
         if (i%10==0) {
             i=0;
         }
-        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = 'images/OKAY.webp'>");
+        $("#tagline").append("<img alt='sunglasses cool guy' id='OKAY' src = 'images/pumpkin.webp'>");
     });
     
 
