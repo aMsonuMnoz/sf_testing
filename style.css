@@ -35,8 +35,9 @@ body{
 	bottom:0;
 	top:0;
 	margin-top: 2.7rem;
-    background: url(gifs/blackSmoke.webp);
-	background-size: 11rem;
+    background: url(gifs/leaves.webp);
+	background-size:11rem;
+	background-color: brown;
 	border: black inset .3rem;
 }
 
@@ -172,7 +173,7 @@ table, th, td {
 	overflow: hidden;
 	position: relative;
 	background: #000000;
-	color: #eb6123;
+	color: #e36414;
 	border: .2em solid black;
 	border-style: inset;
 	top: 0%;
@@ -1163,7 +1164,7 @@ button{
 /* Temporary */
 
 #lights{
-	background: url(gifs/bloodHeader.webp);
+	background: url(gifs/welcome.webp);
 	background-repeat: repeat-x;
 	height: 25px;
 	width: 100%;
@@ -1183,22 +1184,14 @@ h1{
 	text-shadow: 2px 2px 4px forestgreen;
 }
 
-@keyframes ghost {
-	0% {top: 12%; right: -30%; scale: 1;}
-	20% {top: 80%; right: 120%; scale: 1.8;}
-	100% {top: 80%; right: 120%; scale: 1.8;}
-}
-
-#ghost{
+#under-construction{
+	width: 100%;
+	height: 100%;
+	background-image: url(gifs/construction.webp);
+	background-size: 100%;
+	background-position-y: -3%;
 	position: absolute;
-	top: 12%;
-	right: -30%;
-	overflow: hidden;
-	animation: ghost 20s linear infinite, bounce 1s linear infinite;
-	z-index: 100;
-	animation-delay: 20s;
-	width: 70px;
-	height: auto;
+	top: 0;
 }
 
 

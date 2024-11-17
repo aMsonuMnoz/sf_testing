@@ -1,8 +1,0 @@
-2.0.6
-Minor Content Updates + Fixes
-
-- marquee changes
-- message content changes
-- fixed trophy.webp
-- fixed video channel
-- added changelog page
