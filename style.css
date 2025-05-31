@@ -2,12 +2,13 @@
 /*crimson*/
 body{
 	text-align: center;
-	background-color:#eb6123;
+	background-color:#55598d;
 	overflow: hidden;
 	height: 100dvh;
 	width: 100dvw;
 	position: fixed;
 	margin: 0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 /*grey*/
@@ -18,12 +19,12 @@ body{
 	width: 97vw;
 	margin: auto;
 	margin-top: .9dvh;
-	background: #eb6123;
+	background: #55598d;
 	background-size: 10vh;
 	padding: 0;
 	z-index: 0;
     border-style: solid;
-    border-color: #eb6123;
+    border-color: #55598d;
     border-width: 0.3em;
 	
 }
@@ -35,8 +36,8 @@ body{
 	bottom:0;
 	top:0;
 	margin-top: 2.7rem;
-    background: url(gifs/leaves.webp);
-	background-size:11rem;
+    background: url(gifs/magifondo.webp);
+	background-size:16rem;
 	background-color: brown;
 	border: black inset .3rem;
 }
@@ -173,7 +174,7 @@ table, th, td {
 	overflow: hidden;
 	position: relative;
 	background: #000000;
-	color: #e36414;
+	color: #d3d300;
 	border: .2em solid black;
 	border-style: inset;
 	top: 0%;
@@ -1182,16 +1183,6 @@ h1{
 	color: white;
 	font-size: 1.2em;
 	text-shadow: 2px 2px 4px forestgreen;
-}
-
-#under-construction{
-	width: 100%;
-	height: 100%;
-	background-image: url(gifs/construction.webp);
-	background-size: 100%;
-	background-position-y: -3%;
-	position: absolute;
-	top: 0;
 }
 
 

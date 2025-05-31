@@ -41,15 +41,16 @@ $(function(){
     const animated = document.querySelector(".marquee");
     let i = 0;
     let taglines = [ 
-        "Escape! from Beautiful Mountain, out now on all platforms",
+        "The future is here...is it all you imagined?",
         "Click every button!",
-        "Escape! The Game coming soon",
+        "Thank you for coming along!",
+        "More from me coming eventually",
         "Rest here before continuing to your next web site.",
-        "View our press kit, book us for a show",
+        "If you're seeing this, you're in the future",
         "The guestbook I was using shut down, so now I have to build my own",
         "Strong John Fisher's guitar tuning: Eb Bb Bb Gb Bb D, Capo: 6",
-        "Follow our Instagram for updates about us",
-        "Join our discord and show us some art"
+        "I can stay and chat here for as long as you like",
+        "Add me on discord strongbad__ (two underscores)"
     ];
 
     animated.addEventListener("animationiteration", () => {
